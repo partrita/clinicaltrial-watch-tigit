@@ -1,0 +1,55 @@
+---
+title: "Full Snapshot Data"
+---
+
+<style>
+.full-data-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+table {
+  font-size: 0.8rem;
+}
+</style>
+
+## Consolidated Raw Snapshots
+
+This page displays the consolidated raw data from all monitored trial snapshots. This includes all fields from ClinicalTrials.gov in a flattened format.
+
+[Download Full Snapshots (CSV)](data/all_trials_raw.csv)
+
+::: {.full-data-container}
+
+```{python}
+#| echo: false
+#| output: asis
+import pandas as pd
+from IPython.display import Markdown
+from tabulate import tabulate
+import os
+
+csv_path = "data/all_trials_raw.csv"
+
+if os.path.exists(csv_path):
+    # Reading only the first 100 rows if it's too large for the browser
+    df = pd.read_csv(csv_path)
+    # Replacing NaN with empty string
+    df = df.fillna('')
+    
+    # Truncate long cells to 100 characters to speed up rendering
+    def truncate_cell(val):
+        s = str(val)
+        return s[:100] + "..." if len(s) > 100 else s
+    
+    df = df.applymap(truncate_cell)
+    
+    # Using tabulate for a nice markdown table
+    print(tabulate(df, headers='keys', tablefmt='pipe', showindex=False))
+else:
+    print("No data available. Please run the monitoring script first.")
+```
+
+:::
+
+[Back to Status Summary](index.qmd)
