@@ -1,0 +1,12 @@
+{
+  "hash": "b54c639da6639178b16f6fbf7dd97632",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Change History\"\n---\n\n## Historical Updates\n\nBelow is the history of detected changes for the monitored trials.\n\nNo history recorded yet.\n\n\n[Back to Status Summary](index.qmd)\n\n",
+    "supporting": [
+      "history_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
