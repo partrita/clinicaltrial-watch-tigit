@@ -117,8 +117,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How it Works</a></li>
+  <li><a href="#data-source" id="toc-data-source" class="nav-link" data-scroll-target="#data-source">Data Source</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -142,9 +151,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p><strong>Clinical Trial Watch (TIGIT)</strong> is an automated monitoring system designed to track changes in clinical trials related to TIGIT-targeted therapies. By leveraging the ClinicalTrials.gov API v2, this project provides researchers and clinicians with a clear, up-to-date view of the TIGIT landscape.</p>
+</section>
+<section id="key-features" class="level2">
+<h2 class="anchored" data-anchor-id="key-features">Key Features</h2>
+<ul>
+<li><strong>Automated Monitoring</strong>: Daily updates on the status and key parameters of TIGIT-related clinical trials.</li>
+<li><strong>Change Detection</strong>: Intelligent diffing engine that highlights meaningful changes in recruitment status, phase, and completion dates.</li>
+<li><strong>Data Insights</strong>: Interactive visualizations to help understand clinical trial trends and distributions.</li>
+<li><strong>Open Data</strong>: All consolidated raw data is available for download as a CSV for deeper analysis.</li>
+</ul>
+</section>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">How it Works</h2>
+<ol type="1">
+<li><strong>Daily Watch</strong>: A GitHub Actions workflow runs every 24 hours to fetch the latest data for all NCT IDs listed in <code>trials.yaml</code>.</li>
+<li><strong>Analysis</strong>: The <code>src/main.py</code> script compares current data with previous snapshots to identify any changes.</li>
+<li><strong>Report Generation</strong>: Updates are logged in the <code>history.qmd</code> page, and the dashboard is refreshed with the latest summary stats.</li>
+<li><strong>Publishing</strong>: The updated Quarto website is automatically published to GitHub Pages.</li>
+</ol>
+</section>
+<section id="data-source" class="level2">
+<h2 class="anchored" data-anchor-id="data-source">Data Source</h2>
+<p>All data is sourced from <a href="https://clinicaltrials.gov/">ClinicalTrials.gov</a> via their official API.</p>
+<hr>
+<p><em>This project is built using Python, Quarto, and GitHub Actions.</em></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
