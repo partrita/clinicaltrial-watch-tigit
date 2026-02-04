@@ -1,1 +1,1 @@
-Sitemap: https://partrita.github.io/clinicaltrial-watch-tigit/sitemap.xml
+Sitemap: https://partrita.github.io/clinicaltrial-watch/sitemap.xml
