@@ -1,0 +1,305 @@
+{
+  "protocolSection": {
+    "identificationModule": {
+      "nctId": "NCT03019237",
+      "orgStudyIdInfo": {
+        "id": "2012-004193-25"
+      },
+      "organization": {
+        "fullName": "Medical University of Vienna",
+        "class": "OTHER"
+      },
+      "briefTitle": "Effect of Intranasal Anti-IgE Antibodies on IgE Production",
+      "officialTitle": "The Effect of Intranasal Application of Anti-IgE Antibodies on IgE Production in Patients Suffering From Seasonal Allergic Rhinitis - a Pilot Study"
+    },
+    "statusModule": {
+      "statusVerifiedDate": "2017-01",
+      "overallStatus": "COMPLETED",
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "startDateStruct": {
+        "date": "2012-11"
+      },
+      "primaryCompletionDateStruct": {
+        "date": "2013-05",
+        "type": "ACTUAL"
+      },
+      "completionDateStruct": {
+        "date": "2013-05",
+        "type": "ACTUAL"
+      },
+      "studyFirstSubmitDate": "2017-01-10",
+      "studyFirstSubmitQcDate": "2017-01-10",
+      "studyFirstPostDateStruct": {
+        "date": "2017-01-12",
+        "type": "ESTIMATED"
+      },
+      "lastUpdateSubmitDate": "2017-01-10",
+      "lastUpdatePostDateStruct": {
+        "date": "2017-01-12",
+        "type": "ESTIMATED"
+      }
+    },
+    "sponsorCollaboratorsModule": {
+      "responsibleParty": {
+        "type": "PRINCIPAL_INVESTIGATOR",
+        "investigatorFullName": "Verena Niederberger-Leppin",
+        "investigatorTitle": "ao. Univ.-Prof. Dr.",
+        "investigatorAffiliation": "Medical University of Vienna"
+      },
+      "leadSponsor": {
+        "name": "Medical University of Vienna",
+        "class": "OTHER"
+      }
+    },
+    "oversightModule": {
+      "oversightHasDmc": false
+    },
+    "descriptionModule": {
+      "briefSummary": "In this study, participants will receive either intranasal anti-IgE-antibodies (n=5) or intranasal allergen (n=5) or intranasal placebo (n=5). Blood samples will be obtained before nasal administration of study drugs and 3, 5 and 8 weeks thereafter. In the serum samples, specific and total IgE levels will be assessed.",
+      "detailedDescription": "The intranasal challenge study will be performed over 8 weeks outside of the birch pollen season (November to January) as a randomized, double blind and placebo-controlled study. During a screening visit, 15 individuals will be recruited according to eligibility criteria. They will be randomized into 3 groups (i.n. administration of anti-IgE antibodies, Bet v 1 or placebo). Intranasal administration will take place on three consecutive days and serum samples will be taken 3, 5, and 8 weeks (+/- 4 days) after the treatment for analysis of total and specific IgE levels"
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Allergy"
+      ]
+    },
+    "designModule": {
+      "studyType": "INTERVENTIONAL",
+      "phases": [
+        "NA"
+      ],
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "primaryPurpose": "BASIC_SCIENCE",
+        "maskingInfo": {
+          "masking": "TRIPLE",
+          "whoMasked": [
+            "PARTICIPANT",
+            "INVESTIGATOR",
+            "OUTCOMES_ASSESSOR"
+          ]
+        }
+      },
+      "enrollmentInfo": {
+        "count": 15,
+        "type": "ACTUAL"
+      }
+    },
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "label": "intranasal anti-IgE",
+          "type": "EXPERIMENTAL",
+          "description": "Anti-IgE (Xolair) will be freshly diluted in sterile 0.9% sodium chloride solution (438 μg/ml) and will be administered using a metered pump delivering 15 μl per puff to both nostrils on three consecutive days.",
+          "interventionNames": [
+            "Drug: anti-IgE"
+          ]
+        },
+        {
+          "label": "intranasal allergen",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "GMP produced rBet v 1 will be freshly diluted in sterile 0.9% sodium chloride solution (50 μg/ml) and will be administered using a metered pump delivering 15 μl per puff to both nostrils on three consecutive days.",
+          "interventionNames": [
+            "Other: intranasal allergen"
+          ]
+        },
+        {
+          "label": "intranasal saline",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Sterile 0.9% sodium chloride solution will be administered using a metered pump delivering 15 μl per puff to both nostrils on three consecutive days.",
+          "interventionNames": [
+            "Other: intranasal saline"
+          ]
+        }
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "anti-IgE",
+          "description": "intranasal anti-IgE",
+          "armGroupLabels": [
+            "intranasal anti-IgE"
+          ],
+          "otherNames": [
+            "Omalizumab"
+          ]
+        },
+        {
+          "type": "OTHER",
+          "name": "intranasal allergen",
+          "description": "intranasal allergen",
+          "armGroupLabels": [
+            "intranasal allergen"
+          ],
+          "otherNames": [
+            "GMP produced recombinant Bet v 1"
+          ]
+        },
+        {
+          "type": "OTHER",
+          "name": "intranasal saline",
+          "description": "intranasal placebo",
+          "armGroupLabels": [
+            "intranasal saline"
+          ],
+          "otherNames": [
+            "sodium chloride 0.9%"
+          ]
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "measure": "change of allergen-specific IgE",
+          "timeFrame": "8 weeks"
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "measure": "changes in total IgE",
+          "timeFrame": "8 weeks"
+        }
+      ]
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\nbirch pollen allergy\n\nExclusion Criteria:\n\nhistory of anaphylaxis autoimmune diseases treatment with corticosteroids, antihistamines, immunosuppressant drugs, beta-blockers significant medical conditions pregnancy or lactation",
+      "healthyVolunteers": false,
+      "sex": "ALL",
+      "minimumAge": "18 Years",
+      "maximumAge": "60 Years",
+      "stdAges": [
+        "ADULT"
+      ]
+    },
+    "contactsLocationsModule": {
+      "overallOfficials": [
+        {
+          "name": "Verena Niederberger, MD",
+          "affiliation": "Medical University of Vienna",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ],
+      "locations": [
+        {
+          "facility": "Dept. of Otorhinolaryngology, Medical University of Vienna",
+          "city": "Vienna",
+          "zip": "A-1090",
+          "country": "Austria",
+          "geoPoint": {
+            "lat": 48.20849,
+            "lon": 16.37208
+          }
+        }
+      ]
+    },
+    "ipdSharingStatementModule": {
+      "ipdSharing": "UNDECIDED"
+    }
+  },
+  "derivedSection": {
+    "miscInfoModule": {
+      "versionHolder": "2026-02-04"
+    },
+    "conditionBrowseModule": {
+      "meshes": [
+        {
+          "id": "D006967",
+          "term": "Hypersensitivity"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "D007154",
+          "term": "Immune System Diseases"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "meshes": [
+        {
+          "id": "C026408",
+          "term": "anti-IgE antibodies"
+        },
+        {
+          "id": "D000069444",
+          "term": "Omalizumab"
+        },
+        {
+          "id": "D012965",
+          "term": "Sodium Chloride"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "D000888",
+          "term": "Antibodies, Anti-Idiotypic"
+        },
+        {
+          "id": "D000906",
+          "term": "Antibodies"
+        },
+        {
+          "id": "D007136",
+          "term": "Immunoglobulins"
+        },
+        {
+          "id": "D007162",
+          "term": "Immunoproteins"
+        },
+        {
+          "id": "D001798",
+          "term": "Blood Proteins"
+        },
+        {
+          "id": "D011506",
+          "term": "Proteins"
+        },
+        {
+          "id": "D000602",
+          "term": "Amino Acids, Peptides, and Proteins"
+        },
+        {
+          "id": "D061067",
+          "term": "Antibodies, Monoclonal, Humanized"
+        },
+        {
+          "id": "D000911",
+          "term": "Antibodies, Monoclonal"
+        },
+        {
+          "id": "D012712",
+          "term": "Serum Globulins"
+        },
+        {
+          "id": "D005916",
+          "term": "Globulins"
+        },
+        {
+          "id": "D002712",
+          "term": "Chlorides"
+        },
+        {
+          "id": "D006851",
+          "term": "Hydrochloric Acid"
+        },
+        {
+          "id": "D017606",
+          "term": "Chlorine Compounds"
+        },
+        {
+          "id": "D007287",
+          "term": "Inorganic Chemicals"
+        },
+        {
+          "id": "D017670",
+          "term": "Sodium Compounds"
+        }
+      ]
+    }
+  },
+  "hasResults": false
+}
