@@ -1,0 +1,282 @@
+{
+  "protocolSection": {
+    "identificationModule": {
+      "nctId": "NCT06547840",
+      "orgStudyIdInfo": {
+        "id": "EPS101-10-02"
+      },
+      "organization": {
+        "fullName": "Epsilogen Ltd",
+        "class": "INDUSTRY"
+      },
+      "briefTitle": "A Study of MOv18 IgE in Folate Receptor Alpha-expressing Platinum Resistant Ovarian Cancer",
+      "officialTitle": "A Phase Ib, Open-Label Trial of MOv18 IgE in Patients With Advanced Ovarian Cancer"
+    },
+    "statusModule": {
+      "statusVerifiedDate": "2025-06",
+      "overallStatus": "RECRUITING",
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "startDateStruct": {
+        "date": "2024-09-03",
+        "type": "ACTUAL"
+      },
+      "primaryCompletionDateStruct": {
+        "date": "2026-07",
+        "type": "ESTIMATED"
+      },
+      "completionDateStruct": {
+        "date": "2027-03",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2024-08-05",
+      "studyFirstSubmitQcDate": "2024-08-08",
+      "studyFirstPostDateStruct": {
+        "date": "2024-08-09",
+        "type": "ACTUAL"
+      },
+      "lastUpdateSubmitDate": "2025-06-18",
+      "lastUpdatePostDateStruct": {
+        "date": "2025-06-19",
+        "type": "ACTUAL"
+      }
+    },
+    "sponsorCollaboratorsModule": {
+      "responsibleParty": {
+        "type": "SPONSOR"
+      },
+      "leadSponsor": {
+        "name": "Epsilogen Ltd",
+        "class": "INDUSTRY"
+      }
+    },
+    "oversightModule": {
+      "oversightHasDmc": false,
+      "isFdaRegulatedDrug": false,
+      "isFdaRegulatedDevice": false
+    },
+    "descriptionModule": {
+      "briefSummary": "EPS101-10-02 is a Phase Ib open label, multicentre clinical trial comprising of a Dose Escalation phase (Part 1) followed by a Dose Expansion phase (Part 2) of MOv18 IgE in patients with folate receptor alpha-expressing (5% or higher) platinum resistant ovarian cancer\n\nThe dose escalation part of the study will primarily assess the safety and tolerability of MOv18 IgE in ascending dose cohorts, until the determination of the maximum tolerated dose (MTD) or maximum administered dose (MAD).\n\nPart 2 (dose expansion) will further assess the safety, tolerability and anti-tumour activity of MOv18 IgE.",
+      "detailedDescription": "EPS101-10-02 is a two-part, Phase Ib, open-label, dose escalation and expansion trial in patients with platinum resistant ovarian cancer whose disease has progressed after no more than 4 lines of standard therapy.\n\nIn total, the trial will enrol approximately 45 patients. All enrolled patients will have biopsy accessible, measurable disease with a confirmed FRα expression of 5% or higher.\n\nMOv18 IgE will be administered to approximately 30 patients in Part 1 and up to a further 15 in Part 2.\n\nPatients will receive treatment on Days 1, 8 and 15 of a 21-day cycle and may continue treatment until radiological disease progression or unacceptable toxicity despite optimal medical management or dose or schedule modification, or withdrawal of consent.\n\nThe starting dose of MOv18 IgE is 3 mg.\n\nPatient screening will occur during the 28 days prior to the first administration of MOv18 IgE. All patients will undergo PK, PD and safety assessments, as well as disease response (tumour) assessments to determine the potential clinical benefit of MOv18 IgE. In all instances, patients will be followed up for overall survival (OS) for a maximum of 270 days after their last dose of trial treatment, or until withdrawal of consent, lost to follow-up, death, or the overall end of trial, whichever is earliest.\n\nIn Part 1, MOv18 IgE will be administered at increasing dose levels in different patient cohorts of approximately 6 patients, until selection of the Part 2 dose. The dose of MOv18 IgE administered in Part 1 will be escalated following a Bayesian logistic regression model - Escalation with overdose control (BLRM-EWOC) trial design.\n\nAfter determination of the Part 2 dose, up to 15 additional patients will be enrolled and treated with MOv18 IgE at that dose to further assess anti-tumour activity of MOv18 IgE and obtain additional information on its safety, PK and PD."
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Advanced Ovarian Cancer",
+        "Platinum-resistant Ovarian Cancer"
+      ],
+      "keywords": [
+        "Ovarian",
+        "Cancer",
+        "Resistant",
+        "IgE",
+        "Advanced",
+        "Platinum",
+        "Folate Receptor alpha",
+        "Antibody"
+      ]
+    },
+    "designModule": {
+      "studyType": "INTERVENTIONAL",
+      "phases": [
+        "PHASE1"
+      ],
+      "designInfo": {
+        "allocation": "NA",
+        "interventionModel": "SINGLE_GROUP",
+        "interventionModelDescription": "Bayesian logistic regression model with overdose control",
+        "primaryPurpose": "TREATMENT",
+        "maskingInfo": {
+          "masking": "NONE"
+        }
+      },
+      "enrollmentInfo": {
+        "count": 45,
+        "type": "ESTIMATED"
+      }
+    },
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "label": "Part 1 and Part 2",
+          "type": "EXPERIMENTAL",
+          "description": "Part 1: MOv18 IgE will be administered by intravenous infusion, in dose escalation cohorts, starting at 3 mg.\n\nPart 2: MOv18 IgE will be administered by intravenous infusion at the dose determined in Part 1\n\nPatients will receive treatment on Days 1, 8 and 15 of a 21-day cycle\n\nPatients will continue to receive study drug until disease progression, unacceptable toxicity, withdrawal of consent, death, or until the sponsor terminates the study (whichever comes first).",
+          "interventionNames": [
+            "Drug: MOv18 IgE"
+          ]
+        }
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "MOv18 IgE",
+          "description": "MOv18 IgE is an anti-FRα monoclonal antibody (mAb) of the IgE class",
+          "armGroupLabels": [
+            "Part 1 and Part 2"
+          ]
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "measure": "Part 1: To evaluate the safety and tolerability of MOv18 IgE",
+          "description": "Safety will be assessed by the incidence of AEs, SAEs and laboratory abnormalities characterized by type, incidence, and severity graded according to NCI CTCAE v5.0, seriousness, and relationship to study treatment.",
+          "timeFrame": "1.5 years"
+        },
+        {
+          "measure": "Part 1: To determine the MTD or MAD of MOv18 IgE",
+          "description": "Determination of the highest dose level where the predicted probability of being in the excessive toxicity/overdosing interval (30%-100% toxicity) is less than 0.25, and the predicted probability of being in the target toxicity interval (20%-30% toxicity) is greater than 50%.",
+          "timeFrame": "1.5 years"
+        },
+        {
+          "measure": "Part 1: To determine the recommended Part 2 expansion dose of MOv18 IgE for future dose expansion cohorts",
+          "description": "Establish the recommended Part 2 dose of MOv18 IgE when administered for the dose expansion phase, assessed by the incidence of AEs, SAEs and laboratory abnormalities characterized by type, incidence, and severity graded according to NCI CTCAE v5.0, seriousness, and relationship to study treatment. In addition to, pharmacokinetics and pharmacodynamics in blood or tissue.",
+          "timeFrame": "1.5 years"
+        },
+        {
+          "measure": "Part 2: To make a preliminary assessment of the anti-tumour activity of MOv18 IgE at the selected dose",
+          "description": "Assessment of anti-tumour activity as defined by RECIST version 1.1 and/or iRECIST, in addition to Best Gynecologic Cancer InterGroup (GCIG) overall response, combining the change in CA 125 from baseline with RECIST assessment (per GCIG, 2005)",
+          "timeFrame": "1 year"
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "measure": "Part 1: To document possible anti-tumour activity during dose escalation",
+          "description": "Assessment of anti-tumour activity as defined by RECIST version 1.1and/or iRECIST",
+          "timeFrame": "1.5 years"
+        },
+        {
+          "measure": "Part 2: To make a preliminary assessment of the ability of MOv18 IgE at the selected dose to delay disease progression",
+          "description": "Assessment of anti-tumour activity as defined by RECIST version 1.1and/or iRECIST",
+          "timeFrame": "1 year"
+        },
+        {
+          "measure": "Part 2: To further characterise safety and tolerability of MOv18 IgE at the selected dose",
+          "description": "Safety will be assessed by the incidence of AEs, SAEs and laboratory abnormalities characterized by type, incidence, and severity graded according to NCI CTCAE v5.0, seriousness, and relationship to study treatment.",
+          "timeFrame": "1 year"
+        }
+      ]
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n1. Female ≥18 years of age.\n2. Written (signed and dated) informed consent.\n3. Confirmed diagnosis by CT scan or MRI, of advanced epithelial ovarian, fallopian tube cancer, or primary peritoneal cancer with histologically- high-grade serous or endometrioid features or a predominantly serous/endometrioid component.\n4. Tumour tissue expressing FRα (1+, 2+ or 3+ membrane staining on at least 5% of tumour cells by immunohistochemistry using the BN3.2 antibody (Leica Biosystems).\n\n   i. Patients must be willing to provide an archival tumour tissue block or slides, or undergo procedure to obtain a new biopsy using a low risk, medically routine procedure for immunohistochemistry (IHC) confirmation of FRα positivity ii. Note: Pre-screening for FRα expression may be performed at any point in advance of Cycle 1 Day 1\n5. Negative basophil activation test (BAT) prior to Cycle 1 Day 1. Note: this test may be performed in duplicate at two different sites: (i) at the treatment centre (where possible), and (ii) at a reference laboratory. Where results are discordant, (or in instances where the treatment centre is not able to perform the assay), the reference laboratory results will prevail.\n6. Platinum-free interval since last line of platinum of less than 6 months (182 days).\n7. Progressed following ≤4 prior regimens of anti-cancer therapy for ovarian cancer and no other authorised therapy is considered appropriate in the opinion of the investigator. Prior regimens can include carboplatin/paclitaxel, bevacizumab (if clinically indicated), PARP inhibitors and FRα antibody-drug conjugates.\n\n   i. Patients who received hyperthermic intraperitoneal chemotherapy (HIPEC) or other IP therapies are eligible.\n\n   ii. Neoadjuvant and adjuvant therapy counts as a prior regimen.\n8. Has measurable disease as defined by RECIST v1.1 on CT or MRI scan with at least one lesion that is accessible by image-guided biopsy and which is not a target lesion.\n\n   i. Note: Qualification scans must be performed ≤28 days before Cycle 1 Day 1, after discontinuation of the prior regimen.\n\n   ii. Note: Lesions previously embolised, perfused, or irradiated without objective evidence of progression before Cycle 1 Day 1 are not allowed to be considered for response assessment.\n9. No evidence of bowel obstruction.\n10. ECOG Performance Status Score 0-1 prior to Cycle 1 Day 1.\n11. Estimated life expectancy of \\>3 months, (91 days), in the opinion of the Investigator.\n12. Adequate haematological function, including all of the following:\n\n    i. Absolute neutrophil count (ANC) ≥1.5 × 109/L (\\>1,500/mm3). G-CSF or GM-CSF may not be used to achieve this level.\n\n    ii. Platelets ≥100 × 109/L (\\>100,000 per mm3) iii. Haemoglobin level \\>9 g/dL obtained within 14 days before Day 1. Packed red blood cell transfusion is acceptable, if the patient has a stable result of ≥9 g/dL for at least 1 week post-transfusion. Erythropoietin should not be used to achieve this level.\n\n    iv. Adequate coagulation function at screening as determined by prothrombin time (PT) ≤1.5 × upper limit of normal (ULN) or international normalised ratio (INR) \\<1.5 and activated partial thromboplastin time (aPTT) ≤1.5 × ULN. Does not apply to patients on an anti coagulant with a stable dose within 28 days prior to first dose.\n\n    v. Lymphocyte count ≥1000 cells/mm3, (1.0x10\\*9/L)\n13. Intact immune system as demonstrated by CD4 count ≥500 cells/mm3 and CD8 count ≥150 cells/mm3.\n14. Adequate renal function as demonstrated by creatine or measured and calculated creatinine clearance (estimated glomerular filtration rate \\[eGFR\\] can also be used in place of creatinine or creatinine clearance \\[CrCl\\] - deduced using the Cockcroft-Gault equation: creatinine clearance: (140-age \\[years\\]) × weight (kg)/(serum creatinine \\[mg/dL\\] × 72) × 0.85 ≤1.5 × ULN, or ≥60 mL/min for a patient with creatinine levels \\>1.5 × institutional ULN.\n15. Adequate hepatic function:\n\n    i. Serum total bilirubin ≤1.5 × ULN or direct bilirubin ≤ ULN for a patient with total bilirubin levels \\>1.5 × ULN.\n\n    ii. AST (SGOT) and ALT (SGPT) ≤2.5 × ULN or ≤5 × ULN for a patient with liver metastases.\n\n    iii. Albumin ≥3.0 g/dL.\n16. Recovered from all chemotherapy-related toxicities to Grade ≤1 according to CTCAE v5.0, excluding alopecia (any grade) and peripheral neuropathy (Grade ≤2).\n17. No history of significant cardiac or pulmonary dysfunction, including but not limited to interstitial pulmonary disease and chronic obstructive pulmonary disease.\n18. No history of autoimmune disease.\n19. Negative serum or urine pregnancy test.\n20. Women of childbearing potential must have 2 negative pregnancy tests during Screening, the second within 24 hours prior to the first administration of MOv18 IgE (i.e., pre-dose at C1D1). This criterion does not apply to patients who have had a previous hysterectomy or bilateral oophorectomy.\n21. Female patients of child bearing potential must agree to practice true abstinence or to use two forms of contraception, one of which must be highly effective. These forms of contraception must be used from the time of signing consent, throughout the treatment period, and for 6 months, (182 days), following the last dose of any study medication. Oral or injectable contraceptive agents cannot be the sole method of contraception.\n22. Willing and able to comply with all protocol-specified assessments and the trial visit schedule.\n23. Patient has been advised to take measures to avoid or minimise exposure of the skin to UV light, including sunbathing and solarium use for the duration of the trial and for 4 weeks following last administration of MOv18 IgE.\n\nExclusion Criteria:\n\n1. Non-epithelial tumour origin of the ovary, the fallopian tube, or the peritoneum (i.e., germ cell tumours).\n2. Ongoing malignant ascites requiring drainage \\>500cc within 2 weeks prior to Day 1.\n3. Anorexic and unable to eat.\n4. Taking beta-blockers (at PI discretion) and unable to interrupt beta-blockade (which may counteract the therapeutic effects of adrenaline), or full dose tricyclic anti-depressants/MAOIs (which can dangerously augment the effects of adrenaline). These agents should be discontinued at least 4 half-lives before administration of the first dose of MOv18 IgE. Treatment may be reintroduced 48 hours post dose administration.\n\n   i. Note: Beta blockers may continue if, in the opinion of the Investigator, it would not pose additional risk to the patient ii. Note: Only applies to full dose tricyclic anti-depressants. Low dose tricyclic anti-depressants to support conditions such as peripheral neuropathy, chronic pain, or insomnia, may be permitted at PI discretion\n5. History of laryngeal oedema, uncontrolled or high-risk asthma, or anaphylaxis. Patients with a history of hypersensitivity to carboplatin, taxanes, or contrast media may enter the trial at the Investigator's discretion.\n6. History of parasitic infections, such as helminthiasis.\n7. Baseline elevation in serum tryptase (indicating possible mastocytosis) or a positive BAT. Tryptase normal range is 2-15 ng/mL.\n8. Receiving systemic anti-cancer therapy, including immunostimulatory agents (e.g., cytokine-based modality, antigen-specific peptide immunotherapy, immune checkpoint blockade, co-stimulatory agonists) within 28 days of Cycle 1 Day 1.\n9. Administration of other simultaneous chemotherapy drugs, anti-cancer therapy or anti-neoplastic hormonal therapy, or simultaneous radiotherapy during the trial treatment period (hormonal replacement therapy and denosumab is permitted).\n10. Receiving radiation therapy within 14 days prior to Day 1. Local palliative radiotherapy is permitted; however, if the radiotherapy is to a target lesion, that lesion must be excluded from tumour response assessments.\n11. Chronic treatment with systemic corticosteroids or other systemic immunosuppressive medications (including but not limited to prednisone (\\>10 mg), cyclophosphamide, azathioprine, methotrexate, thalidomide, and anti-TNF agents) within 14 days prior to Day 1, or anticipated requirement for systemic immunosuppressive medications during the trial.\n12. Administration of a live, attenuated vaccine within 28 days prior to Day 1 or anticipation that such a live attenuated vaccine will be required during the trial or within 5 months, (152 days), after the last dose of MOv18 IgE. Influenza vaccination should be given during influenza season only. Patients must not receive live, attenuated influenza vaccination. COVID vaccination is permitted as necessitated.\n13. Previous allogeneic bone marrow transplant or previous solid organ transplantation.\n14. Historical positive serology test for human immunodeficiency virus (HIV).\n15. History of autoimmune disease, including but not limited to inflammatory bowel disease, systemic lupus erythematosus, and autoimmune hepatitis.\n16. History of interstitial lung disease or active pneumonitis.\n17. Has a known hypersensitivity to a component of protocol therapy, MOv18 IgE or its vehicle (sodium citrate, L-arginine, sucrose and polysorbate 20).\n18. Positive serology for hepatitis B or C.\n19. Uncontrolled concurrent illness including, but not limited to, ongoing or active infection, or psychiatric illness.\n20. Has a history within last 12 months or ongoing clinically significant cardiovascular disease such as unstable angina, myocardial infarction, or acute coronary syndrome, symptomatic or uncontrolled arrhythmia, left ventricular failure, congestive heart failure, baseline ECG abnormalities that, in the Investigator's opinion, would be likely to interfere with their participation in the study, or with the interpretation of the results, including, but not limited to, QTc prolongation to greater than 470 ms (as determined by the Fridericia formula), or any Class III or IV cardiac disease as defined by the New York Heart Association Functional Classification.\n21. Concomitant use of drugs known to prolong QT/QTc interval (Appendix 1).\n22. Has a fever ≥38oC within 3 days before the first dose of MOv18 IgE.\n23. No other prior malignancy is allowed except for the following: adequately treated basal cell or squamous cell skin cancer, in-situ cervical cancer, surgically treated Stage I or II cancer from which the patient is currently in complete remission (at least to 5 years), or any other non-metastatic cancer controlled by surgery alone or surgery plus radiotherapy from which the patient has been disease-free for 5 years.\n24. Presence of CNS metastases (including spinal metastases) or CNS primary tumour, e.g., glioblastoma.\n25. Clinically significant illness or major surgery within 4 weeks before the administration of MOv18 IgE.\n26. Currently breastfeeding.\n27. Any condition which could interfere with, or the treatment for which might interfere with, the conduct of the trial, or which would, in the opinion of the Investigator, unacceptably increase the patient's risk by participating in the trial\n28. Patient is under legal custodianship.\n29. First-degree relatives of the Investigator, trial staff or Sponsor employees.",
+      "healthyVolunteers": false,
+      "sex": "FEMALE",
+      "minimumAge": "18 Years",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "contactsLocationsModule": {
+      "centralContacts": [
+        {
+          "name": "Epsilogen Clinical Trials",
+          "role": "CONTACT",
+          "phone": "+44 (0) 203 657 7612",
+          "email": "info@epsilogen.com"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "name": "Rebecca Kristeleit, MD",
+          "affiliation": "Guy's Hospital",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ],
+      "locations": [
+        {
+          "facility": "Bristol Haematology and Oncology Centre",
+          "status": "RECRUITING",
+          "city": "Bristol",
+          "zip": "BS2 8ED",
+          "country": "United Kingdom",
+          "geoPoint": {
+            "lat": 51.45523,
+            "lon": -2.59665
+          }
+        },
+        {
+          "facility": "Edinburgh Cancer Research Centre",
+          "status": "RECRUITING",
+          "city": "Edinburgh",
+          "zip": "EH4 2XR",
+          "country": "United Kingdom",
+          "geoPoint": {
+            "lat": 55.95206,
+            "lon": -3.19648
+          }
+        },
+        {
+          "facility": "Leeds Teaching Hospitals NHS Trust",
+          "status": "RECRUITING",
+          "city": "Leeds",
+          "zip": "LS9 7LP",
+          "country": "United Kingdom",
+          "geoPoint": {
+            "lat": 53.79648,
+            "lon": -1.54785
+          }
+        },
+        {
+          "facility": "Cambridge University - Addenbrooke's Hospital",
+          "status": "RECRUITING",
+          "city": "London",
+          "zip": "CB2 0QQ",
+          "country": "United Kingdom",
+          "geoPoint": {
+            "lat": 51.50853,
+            "lon": -0.12574
+          }
+        },
+        {
+          "facility": "University College London Hospital",
+          "status": "RECRUITING",
+          "city": "London",
+          "zip": "NW1 2BU",
+          "country": "United Kingdom",
+          "geoPoint": {
+            "lat": 51.50853,
+            "lon": -0.12574
+          }
+        },
+        {
+          "facility": "Guy's Hospital",
+          "status": "RECRUITING",
+          "city": "London",
+          "zip": "SE1 3SS",
+          "country": "United Kingdom",
+          "geoPoint": {
+            "lat": 51.50853,
+            "lon": -0.12574
+          }
+        },
+        {
+          "facility": "University Hospital Southampton NHS Foundation Trust",
+          "status": "RECRUITING",
+          "city": "Southampton",
+          "zip": "SO16 6HU",
+          "country": "United Kingdom",
+          "geoPoint": {
+            "lat": 50.90395,
+            "lon": -1.40428
+          }
+        }
+      ]
+    }
+  },
+  "derivedSection": {
+    "miscInfoModule": {
+      "versionHolder": "2026-02-04"
+    },
+    "conditionBrowseModule": {
+      "meshes": [
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        }
+      ]
+    }
+  },
+  "hasResults": false
+}
