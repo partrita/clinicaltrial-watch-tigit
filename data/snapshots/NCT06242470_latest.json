@@ -13,7 +13,7 @@
       "officialTitle": "A Phase 1/1b First-in-Human, Open Label, Dose Escalation and Cohort Expansion Study of MGC026 in Participants With Advanced Solid Tumors"
     },
     "statusModule": {
-      "statusVerifiedDate": "2026-01",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -36,9 +36,9 @@
         "date": "2024-02-05",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-01-08",
+      "lastUpdateSubmitDate": "2026-02-03",
       "lastUpdatePostDateStruct": {
-        "date": "2026-01-12",
+        "date": "2026-02-05",
         "type": "ACTUAL"
       }
     },
@@ -327,6 +327,18 @@
           }
         },
         {
+          "facility": "START-New York Long Island",
+          "status": "RECRUITING",
+          "city": "Lake Success",
+          "state": "New York",
+          "zip": "11042",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 40.77066,
+            "lon": -73.71763
+          }
+        },
+        {
           "facility": "Providence Cancer Institute",
           "status": "RECRUITING",
           "city": "Portland",
@@ -440,7 +452,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-04"
+      "versionHolder": "2026-02-09"
     },
     "conditionBrowseModule": {
       "meshes": [

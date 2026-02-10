@@ -13,7 +13,7 @@
       "officialTitle": "A Phase 1B, Multicenter, Open-Label Study of the Safety and Efficacy of CHS-114 in Combination With Toripalimab With or Without Other Treatments in Participants With Advanced or Metastatic Solid Tumors"
     },
     "statusModule": {
-      "statusVerifiedDate": "2026-01",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -36,9 +36,9 @@
         "date": "2024-10-24",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-01-12",
+      "lastUpdateSubmitDate": "2026-02-03",
       "lastUpdatePostDateStruct": {
-        "date": "2026-01-13",
+        "date": "2026-02-05",
         "type": "ACTUAL"
       }
     },
@@ -732,6 +732,30 @@
           }
         },
         {
+          "facility": "E-Da Cancer Hospital",
+          "status": "RECRUITING",
+          "city": "Kaohsiung City",
+          "zip": "824",
+          "country": "Taiwan",
+          "contacts": [
+            {
+              "name": "Wei-Ching Liu",
+              "role": "CONTACT",
+              "phone": "+886-7-615-0022",
+              "phoneExt": "6007",
+              "email": "a0920365248@gmail.com"
+            },
+            {
+              "name": "Meng-Che Hsieh, MD",
+              "role": "PRINCIPAL_INVESTIGATOR"
+            }
+          ],
+          "geoPoint": {
+            "lat": 22.61626,
+            "lon": 120.31333
+          }
+        },
+        {
           "facility": "Kaohsiung Medical University Chung-Ho Memorial Hospital",
           "status": "RECRUITING",
           "city": "Kaohsiung City",
@@ -886,7 +910,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-04"
+      "versionHolder": "2026-02-09"
     },
     "conditionBrowseModule": {
       "meshes": [

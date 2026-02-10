@@ -9,7 +9,7 @@
         "fullName": "T-MAXIMUM Pharmaceutical Inc",
         "class": "INDUSTRY"
       },
-      "briefTitle": "A Phase II Study of Intracerebroventricular MT027 in Recurrent or Progressive Glioblastoma",
+      "briefTitle": "Study of Intracerebroventricular MT027 in Recurrent or Progressive Glioblastoma",
       "officialTitle": "A Phase II, Open-Label, Multicenter Study With a Safety Run-In to Evaluate the Safety, Tolerability, Efficacy, Pharmacokinetics and Pharmacodynamics of MT027 Administrated Intracerebroventricularly in Patients With Recurrent or Progressive Glioblastoma (WHO Grade 4)"
     },
     "statusModule": {
@@ -36,9 +36,9 @@
         "date": "2026-02-04",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-01-27",
+      "lastUpdateSubmitDate": "2026-02-04",
       "lastUpdatePostDateStruct": {
-        "date": "2026-02-04",
+        "date": "2026-02-06",
         "type": "ACTUAL"
       }
     },
@@ -261,7 +261,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-04"
+      "versionHolder": "2026-02-09"
     },
     "conditionBrowseModule": {
       "meshes": [

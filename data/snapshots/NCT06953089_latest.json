@@ -15,9 +15,6 @@
     "statusModule": {
       "statusVerifiedDate": "2025-08",
       "overallStatus": "RECRUITING",
-      "expandedAccessInfo": {
-        "hasExpandedAccess": false
-      },
       "startDateStruct": {
         "date": "2025-07-18",
         "type": "ACTUAL"
@@ -36,9 +33,9 @@
         "date": "2025-05-01",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-08-27",
+      "lastUpdateSubmitDate": "2026-02-04",
       "lastUpdatePostDateStruct": {
-        "date": "2025-09-04",
+        "date": "2026-02-06",
         "type": "ACTUAL"
       }
     },
@@ -352,6 +349,18 @@
           }
         },
         {
+          "facility": "USA16-0",
+          "status": "RECRUITING",
+          "city": "Los Angeles",
+          "state": "California",
+          "zip": "90025",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 34.05223,
+            "lon": -118.24368
+          }
+        },
+        {
           "facility": "USA01-0",
           "status": "RECRUITING",
           "city": "Wheat Ridge",
@@ -376,6 +385,42 @@
           }
         },
         {
+          "facility": "USA10-0",
+          "status": "RECRUITING",
+          "city": "Atlanta",
+          "state": "Georgia",
+          "zip": "30318",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 33.749,
+            "lon": -84.38798
+          }
+        },
+        {
+          "facility": "USA11-0",
+          "status": "RECRUITING",
+          "city": "Bethesda",
+          "state": "Maryland",
+          "zip": "20817",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 38.98067,
+            "lon": -77.10026
+          }
+        },
+        {
+          "facility": "USA14-0",
+          "status": "RECRUITING",
+          "city": "Lincoln",
+          "state": "Nebraska",
+          "zip": "68506",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 40.8,
+            "lon": -96.66696
+          }
+        },
+        {
           "facility": "USA04-0",
           "status": "RECRUITING",
           "city": "New York",
@@ -388,15 +433,15 @@
           }
         },
         {
-          "facility": "USA02-0",
+          "facility": "USA15-0",
           "status": "RECRUITING",
-          "city": "Pittsburgh",
-          "state": "Pennsylvania",
-          "zip": "15232",
+          "city": "Portland",
+          "state": "Oregon",
+          "zip": "97239",
           "country": "United States",
           "geoPoint": {
-            "lat": 40.44062,
-            "lon": -79.99589
+            "lat": 45.52345,
+            "lon": -122.67621
           }
         },
         {
@@ -412,6 +457,30 @@
           }
         },
         {
+          "facility": "USA13-0",
+          "status": "RECRUITING",
+          "city": "Anderson",
+          "state": "Texas",
+          "zip": "46011",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 30.48715,
+            "lon": -95.9869
+          }
+        },
+        {
+          "facility": "USA12-0",
+          "status": "RECRUITING",
+          "city": "Houston",
+          "state": "Texas",
+          "zip": "77030",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 29.76328,
+            "lon": -95.36327
+          }
+        },
+        {
           "facility": "USA05-0",
           "status": "RECRUITING",
           "city": "Virginia Beach",
@@ -421,6 +490,18 @@
           "geoPoint": {
             "lat": 36.85293,
             "lon": -75.97799
+          }
+        },
+        {
+          "facility": "USA09-0",
+          "status": "RECRUITING",
+          "city": "Puyallup",
+          "state": "Washington",
+          "zip": "98373",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 47.18538,
+            "lon": -122.2929
           }
         },
         {
@@ -695,7 +776,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-04"
+      "versionHolder": "2026-02-09"
     },
     "conditionBrowseModule": {
       "meshes": [
