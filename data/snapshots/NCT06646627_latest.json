@@ -20,7 +20,7 @@
       "officialTitle": "Phase I Clinical Trial of Autologous B7-H3 Chimeric Receptor (CAR) T Cells in Adults With Recurrent, Platinum Resistant Ovarian Tumors"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-07",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -30,11 +30,11 @@
         "type": "ACTUAL"
       },
       "primaryCompletionDateStruct": {
-        "date": "2025-12",
+        "date": "2026-07",
         "type": "ESTIMATED"
       },
       "completionDateStruct": {
-        "date": "2025-12",
+        "date": "2026-07",
         "type": "ESTIMATED"
       },
       "studyFirstSubmitDate": "2024-10-15",
@@ -43,9 +43,9 @@
         "date": "2024-10-17",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-07-07",
+      "lastUpdateSubmitDate": "2026-02-05",
       "lastUpdatePostDateStruct": {
-        "date": "2025-07-10",
+        "date": "2026-02-09",
         "type": "ACTUAL"
       }
     },
@@ -199,7 +199,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-04"
+      "versionHolder": "2026-02-09"
     },
     "conditionBrowseModule": {
       "meshes": [

@@ -13,7 +13,7 @@
       "officialTitle": "A Phase I/II Open-label Dose Escalation and Expansion Study to Evaluate the Safety, Pharmacokinetics, Pharmacodynamics, and Efficacy of AZD6750, a CD8 Guided IL-2 Agent Alone and in Combination With Other Anti-cancer Agents in Participants With Select Advanced or Metastatic Solid Tumors"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-12",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -36,9 +36,9 @@
         "date": "2025-08-11",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-12-18",
+      "lastUpdateSubmitDate": "2026-02-04",
       "lastUpdatePostDateStruct": {
-        "date": "2025-12-19",
+        "date": "2026-02-05",
         "type": "ACTUAL"
       }
     },
@@ -228,7 +228,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "St Louis",
           "state": "Missouri",
           "zip": "63110",
@@ -252,7 +252,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Houston",
           "state": "Texas",
           "zip": "77030",
@@ -335,7 +335,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-04"
+      "versionHolder": "2026-02-09"
     },
     "conditionBrowseModule": {
       "meshes": [

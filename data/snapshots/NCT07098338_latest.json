@@ -14,7 +14,7 @@
       "acronym": "LIBRA"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-09",
+      "statusVerifiedDate": "2026-01",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -24,7 +24,7 @@
         "type": "ACTUAL"
       },
       "primaryCompletionDateStruct": {
-        "date": "2027-03-21",
+        "date": "2029-04-06",
         "type": "ESTIMATED"
       },
       "completionDateStruct": {
@@ -37,9 +37,9 @@
         "date": "2025-08-01",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-09-25",
+      "lastUpdateSubmitDate": "2026-02-03",
       "lastUpdatePostDateStruct": {
-        "date": "2025-09-30",
+        "date": "2026-02-05",
         "type": "ACTUAL"
       }
     },
@@ -65,7 +65,7 @@
     },
     "descriptionModule": {
       "briefSummary": "This is a Phase II, multi-center, open-label platform study evaluating novel combination treatment options in participants with locally advanced or metastatic NSCLC. The study will consist of several sub-studies, each evaluating the safety, tolerability, and preliminary antitumour activity of various treatment combinations. This study will be conducted in approximately 80 centers globally across 10 countries.",
-      "detailedDescription": "The master protocol will include 3 sub-studies, each focused on a specific disease population.\n\n* Sub-study 1 will investigate rilvegostomig± ramucirumab in 1L non-actionable genomic alterations (AGA) NSCLC with PD-L1 ≥50%.\n* Sub-study 2 will investigate rilvegostomig + ramucirumab in 1L non-actionable genomic alterations (AGA) NSCLC with PD-L1 1-49%.\n* Sub-study 3 will investigate Dato-DXd + ramucirumab ± rilvegostomig in 2L AGA+\n\nEach sub-study may include 2 parts (unless stated in the individual sub study protocols): Part A: one or more Safety Run-in cohort(s), and Part B: one or more Dose Expansion cohort(s)."
+      "detailedDescription": "The master protocol will include 3 sub-studies, each focused on a specific disease population.\n\n* Sub-study 1 will investigate rilvegostomig± ramucirumab in 1L non-actionable genomic alterations (AGA) NSCLC with PD-L1 ≥50%.\n* Sub-study 2 will investigate rilvegostomig + ramucirumab in 1L non-actionable genomic alterations (AGA) NSCLC with PD-L1 1-49%.\n* Sub-study 3 will investigate Dato-DXd + ramucirumab ± rilvegostomig in 2/3L AGA+\n\nEach sub-study may include 2 parts (unless stated in the individual sub study protocols): Part A: one or more Safety Run-in cohort(s), and Part B: one or more Dose Expansion cohort(s)."
     },
     "conditionsModule": {
       "conditions": [
@@ -101,7 +101,7 @@
         {
           "label": "Sub-study 1, investigate rilvegostomig± ramucirumab in 1L non-AGA NSCLC with PD-L1 ≥50%",
           "type": "EXPERIMENTAL",
-          "description": "Participants will receive rilvegostomig ± ramucirumab until RECIST 1.1-defined radiological progression as assessed by the investigator, unacceptable toxicity, withdrawal of consent, or other discontinuation criterion",
+          "description": "Participants will receive rilvegostomig ± ramucirumab until RECIST 1.1-defined radiological progression, unacceptable toxicity, withdrawal of consent, or other discontinuation criterion",
           "interventionNames": [
             "Drug: Rilvegostomig",
             "Drug: Ramucirumab"
@@ -110,16 +110,16 @@
         {
           "label": "Sub-study 2, investigate rilvegostomig + ramucirumab in 1L non-AGA NSCLC with PD-L1 1-49%",
           "type": "EXPERIMENTAL",
-          "description": "Participants will receive rilvegostomig + ramucirumab until RECIST 1.1-defined radiological progression as assessed by the investigator, unacceptable toxicity, withdrawal of consent, or other discontinuation criterion",
+          "description": "Participants will receive rilvegostomig + ramucirumab until RECIST 1.1-defined radiological progression, unacceptable toxicity, withdrawal of consent, or other discontinuation criterion",
           "interventionNames": [
             "Drug: Rilvegostomig",
             "Drug: Ramucirumab"
           ]
         },
         {
-          "label": "Sub-study 3, investigate Dato-DXd + ramucirumab ± rilvegostomig in 2L AGA+ NSCLC",
+          "label": "Sub-study 3, investigate Dato-DXd + ramucirumab ± rilvegostomig in 2/3L AGA+ NSCLC",
           "type": "EXPERIMENTAL",
-          "description": "Participants will receive Dato-DXd + ramucirumab ± rilvegostomig until RECIST 1.1-defined radiological progression as assessed by the investigator, unacceptable toxicity, withdrawal of consent, or other discontinuation criterion",
+          "description": "Participants will receive Dato-DXd + ramucirumab ± rilvegostomig until RECIST 1.1-defined radiological progression, unacceptable toxicity, withdrawal of consent, or other discontinuation criterion",
           "interventionNames": [
             "Drug: Rilvegostomig",
             "Drug: Ramucirumab",
@@ -135,7 +135,7 @@
           "armGroupLabels": [
             "Sub-study 1, investigate rilvegostomig± ramucirumab in 1L non-AGA NSCLC with PD-L1 ≥50%",
             "Sub-study 2, investigate rilvegostomig + ramucirumab in 1L non-AGA NSCLC with PD-L1 1-49%",
-            "Sub-study 3, investigate Dato-DXd + ramucirumab ± rilvegostomig in 2L AGA+ NSCLC"
+            "Sub-study 3, investigate Dato-DXd + ramucirumab ± rilvegostomig in 2/3L AGA+ NSCLC"
           ],
           "otherNames": [
             "AZD2936"
@@ -148,7 +148,7 @@
           "armGroupLabels": [
             "Sub-study 1, investigate rilvegostomig± ramucirumab in 1L non-AGA NSCLC with PD-L1 ≥50%",
             "Sub-study 2, investigate rilvegostomig + ramucirumab in 1L non-AGA NSCLC with PD-L1 1-49%",
-            "Sub-study 3, investigate Dato-DXd + ramucirumab ± rilvegostomig in 2L AGA+ NSCLC"
+            "Sub-study 3, investigate Dato-DXd + ramucirumab ± rilvegostomig in 2/3L AGA+ NSCLC"
           ],
           "otherNames": [
             "Cyramza"
@@ -159,7 +159,7 @@
           "name": "Dato-DXd",
           "description": "Dato-DXd will be administered as IV infusion.",
           "armGroupLabels": [
-            "Sub-study 3, investigate Dato-DXd + ramucirumab ± rilvegostomig in 2L AGA+ NSCLC"
+            "Sub-study 3, investigate Dato-DXd + ramucirumab ± rilvegostomig in 2/3L AGA+ NSCLC"
           ],
           "otherNames": [
             "DS-1062"
@@ -176,7 +176,7 @@
         },
         {
           "measure": "Objective response rate (ORR)",
-          "description": "ORR is defined as the proportion of participants who have a confirmed CR (complete response) or confirmed PR (partial response), determined by the Investigator at local site per RECIST 1.1",
+          "description": "ORR is defined as the proportion of participants who have a confirmed CR (complete response) or confirmed PR (partial response) per RECIST 1.1",
           "timeFrame": "Through study completion, an average of 3 years"
         }
       ],
@@ -193,7 +193,7 @@
         },
         {
           "measure": "Progression free survival (PFS)",
-          "description": "PFS is defined as the time from the start of treatment until the date of objective disease progression or death (by any cause in the absence of progression) per RECIST 1.1 as assessed by Investigator.",
+          "description": "PFS is defined as the time from the start of treatment until the date of objective disease progression or death (by any cause in the absence of progression) per RECIST 1.1.",
           "timeFrame": "Through study completion, an average of 3 years"
         },
         {
@@ -367,7 +367,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Chengdu",
           "zip": "610041",
           "country": "China",
@@ -378,7 +378,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Deyang",
           "zip": "618000",
           "country": "China",
@@ -389,7 +389,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Dongguan",
           "zip": "523059",
           "country": "China",
@@ -411,7 +411,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Guangzhou",
           "zip": "510080",
           "country": "China",
@@ -433,7 +433,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Hangzhou",
           "zip": "310014",
           "country": "China",
@@ -444,7 +444,18 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
+          "city": "Hefei",
+          "zip": "230022",
+          "country": "China",
+          "geoPoint": {
+            "lat": 31.86389,
+            "lon": 117.28083
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "RECRUITING",
           "city": "Linyi",
           "zip": "276001",
           "country": "China",
@@ -466,7 +477,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Nanchang",
           "zip": "330000",
           "country": "China",
@@ -542,7 +553,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Zhuhai",
           "zip": "519000",
           "country": "China",
@@ -564,7 +575,14 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
+          "city": "Fukuyama-shi",
+          "zip": "722-0001",
+          "country": "Japan"
+        },
+        {
+          "facility": "Research Site",
+          "status": "RECRUITING",
           "city": "Kobe",
           "zip": "650-0047",
           "country": "Japan",
@@ -575,10 +593,21 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Kurume-shi",
           "zip": "830-0011",
           "country": "Japan"
+        },
+        {
+          "facility": "Research Site",
+          "status": "RECRUITING",
+          "city": "Kyoto",
+          "zip": "602-8566",
+          "country": "Japan",
+          "geoPoint": {
+            "lat": 35.02107,
+            "lon": 135.75385
+          }
         },
         {
           "facility": "Research Site",
@@ -604,7 +633,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Sakaishi",
           "zip": "591-8555",
           "country": "Japan",
@@ -615,14 +644,14 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Shinjuku-ku",
           "zip": "162-8655",
           "country": "Japan"
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Wakayama",
           "zip": "641-8510",
           "country": "Japan",
@@ -644,7 +673,18 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
+          "city": "Singapore",
+          "zip": "119082",
+          "country": "Singapore",
+          "geoPoint": {
+            "lat": 1.28967,
+            "lon": 103.85007
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "RECRUITING",
           "city": "Singapore",
           "zip": "168583",
           "country": "Singapore",
@@ -655,7 +695,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Cheongju-si",
           "zip": "28644",
           "country": "South Korea",
@@ -666,7 +706,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Namdong-gu",
           "zip": "21565",
           "country": "South Korea"
@@ -684,7 +724,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Seoul",
           "zip": "03080",
           "country": "South Korea",
@@ -695,7 +735,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Seoul",
           "zip": "06351",
           "country": "South Korea",
@@ -706,7 +746,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Seoul",
           "zip": "3722",
           "country": "South Korea",
@@ -717,7 +757,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Seoul",
           "zip": "5505",
           "country": "South Korea",
@@ -728,7 +768,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Suwon",
           "zip": "16247",
           "country": "South Korea",
@@ -750,13 +790,24 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Liuying",
           "zip": "736",
           "country": "Taiwan",
           "geoPoint": {
             "lat": 24.44719,
             "lon": 118.3877
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "RECRUITING",
+          "city": "Taichung",
+          "zip": "402",
+          "country": "Taiwan",
+          "geoPoint": {
+            "lat": 24.1469,
+            "lon": 120.6839
           }
         },
         {
@@ -772,9 +823,20 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Tainan",
           "zip": "70403",
+          "country": "Taiwan",
+          "geoPoint": {
+            "lat": 22.99083,
+            "lon": 120.21333
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "RECRUITING",
+          "city": "Tainan",
+          "zip": "710",
           "country": "Taiwan",
           "geoPoint": {
             "lat": 22.99083,
@@ -794,7 +856,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Taipei",
           "zip": "110",
           "country": "Taiwan",
@@ -805,7 +867,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Taipei",
           "zip": "11217",
           "country": "Taiwan",
@@ -881,7 +943,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-04"
+      "versionHolder": "2026-02-09"
     },
     "conditionBrowseModule": {
       "meshes": [

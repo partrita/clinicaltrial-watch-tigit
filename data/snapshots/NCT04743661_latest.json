@@ -35,7 +35,7 @@
       "officialTitle": "Phase 2 Study of Intraventricular Omburtamab-based Radioimmunotherapy for Pediatric Patients With Recurrent Medulloblastoma and Ependymoma"
     },
     "statusModule": {
-      "statusVerifiedDate": "2024-08",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "ACTIVE_NOT_RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -45,11 +45,11 @@
         "type": "ACTUAL"
       },
       "primaryCompletionDateStruct": {
-        "date": "2029-10-30",
+        "date": "2026-03-31",
         "type": "ESTIMATED"
       },
       "completionDateStruct": {
-        "date": "2030-10-30",
+        "date": "2027-09-30",
         "type": "ESTIMATED"
       },
       "studyFirstSubmitDate": "2021-02-03",
@@ -58,9 +58,9 @@
         "date": "2021-02-08",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2024-08-02",
+      "lastUpdateSubmitDate": "2026-02-03",
       "lastUpdatePostDateStruct": {
-        "date": "2024-08-06",
+        "date": "2026-02-05",
         "type": "ACTUAL"
       }
     },
@@ -376,7 +376,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-04"
+      "versionHolder": "2026-02-09"
     },
     "conditionBrowseModule": {
       "meshes": [

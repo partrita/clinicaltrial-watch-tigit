@@ -25,7 +25,7 @@
       "officialTitle": "A Phase 1b/2, Multicenter, Open-label Study of Ifinatamab Deruxtecan (I-DXd), a B7-H3 Antibody-Drug Conjugate (ADC), in Combination With Atezolizumab With or Without Carboplatin as First-line Induction or Maintenance, in Subjects With Extensive-stage Small Cell Lung Cancer (ES-SCLC) (IDeate-Lung03)"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-10",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -48,9 +48,9 @@
         "date": "2024-04-12",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-10-08",
+      "lastUpdateSubmitDate": "2026-02-04",
       "lastUpdatePostDateStruct": {
-        "date": "2025-10-10",
+        "date": "2026-02-06",
         "type": "ACTUAL"
       }
     },
@@ -469,17 +469,11 @@
         },
         {
           "facility": "Henry Ford Hospital",
-          "status": "RECRUITING",
+          "status": "ACTIVE_NOT_RECRUITING",
           "city": "Detroit",
           "state": "Michigan",
           "zip": "48202",
           "country": "United States",
-          "contacts": [
-            {
-              "name": "Principal Investigator",
-              "role": "CONTACT"
-            }
-          ],
           "geoPoint": {
             "lat": 42.33143,
             "lon": -83.04575
@@ -769,7 +763,7 @@
         },
         {
           "facility": "Hopital Albert Calmette - Chu Lille",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Lille",
           "zip": "59037",
           "country": "France",
@@ -786,7 +780,7 @@
         },
         {
           "facility": "Centre Léon Bérard",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Lyon",
           "zip": "69008",
           "country": "France",
@@ -802,8 +796,8 @@
           }
         },
         {
-          "facility": "Assistance Publique-Hă\"Pitaux de Marseille",
-          "status": "NOT_YET_RECRUITING",
+          "facility": "Hôpital de la Timone",
+          "status": "RECRUITING",
           "city": "Marseille",
           "zip": "13005",
           "country": "France",
@@ -820,7 +814,7 @@
         },
         {
           "facility": "Institut Curie - Site de Paris",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Paris",
           "zip": "75005",
           "country": "France",
@@ -837,7 +831,7 @@
         },
         {
           "facility": "Hopital Tenon",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Paris",
           "zip": "75020",
           "country": "France",
@@ -854,7 +848,7 @@
         },
         {
           "facility": "Chu Rennes - Hopital Pontchaillou",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Rennes",
           "zip": "35000",
           "country": "France",
@@ -870,8 +864,8 @@
           }
         },
         {
-          "facility": "Chu Nantes - Hă\"Pital Guillaume Et Renă Laă<Nnec",
-          "status": "NOT_YET_RECRUITING",
+          "facility": "CHU Nantes - Hôpital Guillaume et René Laënnec",
+          "status": "RECRUITING",
           "city": "Saint-Herblain",
           "zip": "44805",
           "country": "France",
@@ -887,8 +881,8 @@
           }
         },
         {
-          "facility": "Hă\"Pital Foch",
-          "status": "NOT_YET_RECRUITING",
+          "facility": "Hôpital Foch",
+          "status": "RECRUITING",
           "city": "Suresnes",
           "zip": "92151",
           "country": "France",
@@ -1075,7 +1069,7 @@
         },
         {
           "facility": "Hospital Clinic de Barcelona",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Barcelona",
           "zip": "08036",
           "country": "Spain",
@@ -1092,7 +1086,7 @@
         },
         {
           "facility": "Hospital Universitari Vall D'Hebron",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Barcelona",
           "zip": "8035",
           "country": "Spain",
@@ -1109,7 +1103,7 @@
         },
         {
           "facility": "Ico Girona - Hospital Universitari de Girona Dr Josep Trueta",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Girona",
           "zip": "17007",
           "country": "Spain",
@@ -1125,8 +1119,8 @@
           }
         },
         {
-          "facility": "Ico L'Hospitalet - Hospital Duran I Reynals",
-          "status": "NOT_YET_RECRUITING",
+          "facility": "ICO l'Hospitalet - Hospital Duran i Reynals",
+          "status": "RECRUITING",
           "city": "L'Hospitalet de Llobregat",
           "zip": "08908",
           "country": "Spain",
@@ -1143,7 +1137,7 @@
         },
         {
           "facility": "Hospital General Universitario Gregorio Marañon",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Madrid",
           "zip": "28007",
           "country": "Spain",
@@ -1160,7 +1154,7 @@
         },
         {
           "facility": "Hospital Universitario Ramon Y Cajal",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Madrid",
           "zip": "28034",
           "country": "Spain",
@@ -1177,7 +1171,7 @@
         },
         {
           "facility": "Hospital Universitario 12 de Octubre",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Madrid",
           "zip": "28041",
           "country": "Spain",
@@ -1194,7 +1188,7 @@
         },
         {
           "facility": "Next Madrid",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Madrid",
           "zip": "28223",
           "country": "Spain",
@@ -1211,7 +1205,7 @@
         },
         {
           "facility": "Hospital Regional Universitario de Malaga",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Málaga",
           "zip": "29010",
           "country": "Spain",
@@ -1228,7 +1222,7 @@
         },
         {
           "facility": "Hospital Universitario Virgen Macarena",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Seville",
           "zip": "41009",
           "country": "Spain",
@@ -1245,7 +1239,7 @@
         },
         {
           "facility": "Hospital Universitario Virgen Del Rocio",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Seville",
           "zip": "41013",
           "country": "Spain",
@@ -1262,7 +1256,7 @@
         },
         {
           "facility": "Hospital Alvaro Cunqueiro",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Vigo",
           "zip": "36312",
           "country": "Spain",
@@ -1294,7 +1288,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-04"
+      "versionHolder": "2026-02-09"
     },
     "interventionBrowseModule": {
       "meshes": [

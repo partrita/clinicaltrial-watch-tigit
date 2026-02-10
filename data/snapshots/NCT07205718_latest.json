@@ -13,7 +13,7 @@
       "officialTitle": "An Open-label, Dose Escalation and Expansion, Phase 1/2 Trial to Evaluate the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics, and Efficacy of TAK- 188, an Anti-CCR8 Antibody-Drug- Conjugate, as a Single Agent in Adult Participants With Locally Advanced or Metastatic Solid Tumors"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-11",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -36,9 +36,9 @@
         "date": "2025-10-03",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-11-28",
+      "lastUpdateSubmitDate": "2026-02-04",
       "lastUpdatePostDateStruct": {
-        "date": "2025-12-01",
+        "date": "2026-02-06",
         "type": "ACTUAL"
       }
     },
@@ -385,7 +385,7 @@
         },
         {
           "facility": "Florida Cancer Specialists - Lake Nona",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Orlando",
           "state": "Florida",
           "zip": "32827",
@@ -433,7 +433,7 @@
         },
         {
           "facility": "Barbara Ann Karmanos Cancer Institute",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Detroit",
           "state": "Michigan",
           "zip": "48201",
@@ -577,7 +577,7 @@
         },
         {
           "facility": "SCRI Oncology",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Nashville",
           "state": "Tennessee",
           "zip": "37203",
@@ -720,7 +720,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-04"
+      "versionHolder": "2026-02-09"
     }
   },
   "hasResults": false

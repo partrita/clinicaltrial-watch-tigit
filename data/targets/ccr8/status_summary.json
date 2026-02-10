@@ -109,14 +109,14 @@
     "status": "RECRUITING",
     "conditions": "Advanced or Metastatic Solid Tumors",
     "phases": "PHASE1, PHASE2",
-    "last_updated": "2025-11-28",
+    "last_updated": "2026-02-04",
     "study_start": "2025-11-19",
     "study_end": "2029-12-21",
     "enrollment": 223,
     "primary_outcome": "Phase 1: Number of Participants with Treatment-emergent Adverse Events (TEAEs)",
-    "monitor_status": "No Change",
-    "last_monitored_change": "2026-02-05",
-    "details": "TAK-188 is a new medicine that targets a protein called CCR8, which is found on the surface of certain cells (Tregs) inside tumors. These cells can weaken the body's ability to fight cancer. TAK-188 may help to remove these Tregs. Removing these Tregs may allow more cancer-fighting cells (CD8+ T cells) to attack the tumor and potentially stop tumors from growing.\n\nIn this study, researchers want to learn if TAK-188 can help the body's immune system better fight cancer in adults with advanced cancers which have not gotten better with regular treatments. The main aims of this study are to check if TAK-188 is safe in adults with advanced or spreading (metastatic) solid tumors, if participants tolerate the treatment with TAK-188 and to learn if TAK-188 works well in adults with certain advanced cancers after their previous treatments didn't work. Participants may receive TAK-188 for up to 1 year. Their health will be monitored after the treatment has ended for up to another year."
+    "monitor_status": "Changed",
+    "last_monitored_change": "2026-02-10",
+    "details": "**[CHANGES FOUND]**\nField `statusModule.statusVerifiedDate` changed from `2025-11` to `2026-02`\nField `statusModule.lastUpdateSubmitDate` changed from `2025-11-28` to `2026-02-04`\nField `statusModule.lastUpdatePostDateStruct.date` changed from `2025-12-01` to `2026-02-06`\nField `contactsLocationsModule.locations.[2]status` changed from `NOT_YET_RECRUITING` to `RECRUITING`\nField `contactsLocationsModule.locations.[4]status` changed from `NOT_YET_RECRUITING` to `RECRUITING`\nField `contactsLocationsModule.locations.[10]status` changed from `NOT_YET_RECRUITING` to `RECRUITING`\n\n---\nTAK-188 is a new medicine that targets a protein called CCR8, which is found on the surface of certain cells (Tregs) inside tumors. These cells can weaken the body's ability to fight cancer. TAK-188 may help to remove these Tregs. Removing these Tregs may allow more cancer-fighting cells (CD8+ T cells) to attack the tumor and potentially stop tumors from growing.\n\nIn this study, researchers want to learn if TAK-188 can help the body's immune system better fight cancer in adults with advanced cancers which have not gotten better with regular treatments. The main aims of this study are to check if TAK-188 is safe in adults with advanced or spreading (metastatic) solid tumors, if participants tolerate the treatment with TAK-188 and to learn if TAK-188 works well in adults with certain advanced cancers after their previous treatments didn't work. Participants may receive TAK-188 for up to 1 year. Their health will be monitored after the treatment has ended for up to another year."
   },
   {
     "id": "NCT05635643",
@@ -160,14 +160,14 @@
     "status": "RECRUITING",
     "conditions": "Metastatic Solid Tumor, Advanced Solid Tumor",
     "phases": "PHASE1",
-    "last_updated": "2026-01-12",
+    "last_updated": "2026-02-03",
     "study_start": "2025-04-01",
     "study_end": "2027-05",
     "enrollment": 154,
     "primary_outcome": "Number of Participants With Treatment-emergent Adverse Events (TEAEs)",
-    "monitor_status": "No Change",
-    "last_monitored_change": "2026-02-05",
-    "details": "The main purpose of this study is to evaluate the safety and preliminary efficacy of CHS-114 in combination with toripalimab and/or other standard of care (SOC) compound(s) in participants with advanced or metastatic solid tumors."
+    "monitor_status": "Changed",
+    "last_monitored_change": "2026-02-10",
+    "details": "**[CHANGES FOUND]**\nField `statusModule.statusVerifiedDate` changed from `2026-01` to `2026-02`\nField `statusModule.lastUpdateSubmitDate` changed from `2026-01-12` to `2026-02-03`\nField `statusModule.lastUpdatePostDateStruct.date` changed from `2026-01-13` to `2026-02-05`\n\n---\nThe main purpose of this study is to evaluate the safety and preliminary efficacy of CHS-114 in combination with toripalimab and/or other standard of care (SOC) compound(s) in participants with advanced or metastatic solid tumors."
   },
   {
     "id": "NCT06620822",
