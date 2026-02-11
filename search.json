@@ -93,14 +93,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Clinical Trial Watch",
-    "section": "",
-    "text": "임상시험을 타겟별로 모니터링합니다.\n\n\n\nTarget\nDescription\nTrials\nChanged\n\n\n\n\nCCR8\nCCR8 타겟 임상시험 모니터링\n32\n🔴 1\n\n\nTIGIT\nTIGIT 타겟 임상시험 모니터링\n133\n🔴 2\n\n\nIgE\n그냥 테스트용\n3\n🟢 0\n\n\nB7-H3\nB7-H3 타겟 임상시험 모니터링\n111\n🔴 3"
-  },
-  {
-    "objectID": "index.html#targets-overview",
-    "href": "index.html#targets-overview",
-    "title": "Clinical Trial Watch",
+    "title": "Targets Overview",
     "section": "",
     "text": "임상시험을 타겟별로 모니터링합니다.\n\n\n\nTarget\nDescription\nTrials\nChanged\n\n\n\n\nCCR8\nCCR8 타겟 임상시험 모니터링\n32\n🔴 1\n\n\nTIGIT\nTIGIT 타겟 임상시험 모니터링\n133\n🔴 2\n\n\nIgE\n그냥 테스트용\n3\n🟢 0\n\n\nB7-H3\nB7-H3 타겟 임상시험 모니터링\n111\n🔴 3"
   },
