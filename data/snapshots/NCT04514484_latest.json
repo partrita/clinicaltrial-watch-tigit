@@ -43,11 +43,11 @@
         "type": "ACTUAL"
       },
       "primaryCompletionDateStruct": {
-        "date": "2025-11-02",
+        "date": "2024-11-11",
         "type": "ACTUAL"
       },
       "completionDateStruct": {
-        "date": "2027-02-04",
+        "date": "2027-02-06",
         "type": "ESTIMATED"
       },
       "studyFirstSubmitDate": "2020-08-14",
@@ -56,9 +56,9 @@
         "date": "2020-08-17",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-02-06",
+      "lastUpdateSubmitDate": "2026-02-07",
       "lastUpdatePostDateStruct": {
-        "date": "2026-02-09",
+        "date": "2026-02-10",
         "type": "ACTUAL"
       }
     },
@@ -409,7 +409,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-09"
+      "versionHolder": "2026-02-10"
     },
     "conditionBrowseModule": {
       "meshes": [

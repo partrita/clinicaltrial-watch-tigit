@@ -14,7 +14,7 @@
       "acronym": "AB02"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-12",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -37,9 +37,9 @@
         "date": "2025-10-27",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-01-07",
+      "lastUpdateSubmitDate": "2026-02-09",
       "lastUpdatePostDateStruct": {
-        "date": "2026-01-08",
+        "date": "2026-02-10",
         "type": "ACTUAL"
       }
     },
@@ -374,6 +374,18 @@
         {
           "facility": "Research Site",
           "status": "NOT_YET_RECRUITING",
+          "city": "New Haven",
+          "state": "Connecticut",
+          "zip": "06510",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 41.30815,
+            "lon": -72.92816
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "NOT_YET_RECRUITING",
           "city": "Washington D.C.",
           "state": "District of Columbia",
           "zip": "20007",
@@ -649,7 +661,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Darlinghurst",
           "zip": "2010",
           "country": "Australia",
@@ -726,7 +738,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Barretos",
           "zip": "14784-400",
           "country": "Brazil",
@@ -737,7 +749,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Natal",
           "zip": "59075-740",
           "country": "Brazil",
@@ -770,7 +782,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "São Paulo",
           "zip": "01246-000",
           "country": "Brazil",
@@ -943,7 +955,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "SUSPENDED",
           "city": "Changsha",
           "zip": "410013",
           "country": "China",
@@ -1064,6 +1076,17 @@
         {
           "facility": "Research Site",
           "status": "NOT_YET_RECRUITING",
+          "city": "Shanghai",
+          "zip": "200032",
+          "country": "China",
+          "geoPoint": {
+            "lat": 31.22222,
+            "lon": 121.45806
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "NOT_YET_RECRUITING",
           "city": "Shenyang",
           "zip": "110016",
           "country": "China",
@@ -1158,6 +1181,17 @@
           "geoPoint": {
             "lat": 50.77664,
             "lon": 6.08342
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "NOT_YET_RECRUITING",
+          "city": "Berlin",
+          "zip": "10365",
+          "country": "Germany",
+          "geoPoint": {
+            "lat": 52.52437,
+            "lon": 13.41053
           }
         },
         {
@@ -1279,17 +1313,6 @@
           "geoPoint": {
             "lat": 49.00937,
             "lon": 8.40444
-          }
-        },
-        {
-          "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
-          "city": "Lichtenberg",
-          "zip": "10365",
-          "country": "Germany",
-          "geoPoint": {
-            "lat": 52.51395,
-            "lon": 13.49975
           }
         },
         {
@@ -1437,7 +1460,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Chiba",
           "zip": "260-8717",
           "country": "Japan",
@@ -1733,7 +1756,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Seoul",
           "zip": "06351",
           "country": "South Korea",
@@ -1810,7 +1833,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Kaohsiung City",
           "zip": "82445",
           "country": "Taiwan",
@@ -1843,7 +1866,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Taichung",
           "zip": "40705",
           "country": "Taiwan",
@@ -1865,7 +1888,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Taipei",
           "zip": "10002",
           "country": "Taiwan",
@@ -1887,7 +1910,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Taoyuan District",
           "zip": "333",
           "country": "Taiwan",
@@ -1909,7 +1932,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Chiang Mai",
           "zip": "50200",
           "country": "Thailand",
@@ -2016,6 +2039,17 @@
         {
           "facility": "Research Site",
           "status": "NOT_YET_RECRUITING",
+          "city": "Birmingham",
+          "zip": "B15 2GW",
+          "country": "United Kingdom",
+          "geoPoint": {
+            "lat": 52.48142,
+            "lon": -1.89983
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "NOT_YET_RECRUITING",
           "city": "Glasgow",
           "zip": "G12 OYN",
           "country": "United Kingdom",
@@ -2080,7 +2114,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-09"
+      "versionHolder": "2026-02-10"
     },
     "conditionBrowseModule": {
       "meshes": [

@@ -1,5 +1,22 @@
 [
   {
+    "id": "NCT06547840",
+    "name": "A Study of MOv18 IgE in Folate Receptor Alpha-expressing Platinum Resistant Ovarian Cancer",
+    "target": "IgE",
+    "sponsor": "Epsilogen Ltd",
+    "status": "RECRUITING",
+    "conditions": "Advanced Ovarian Cancer, Platinum-resistant Ovarian Cancer",
+    "phases": "PHASE1",
+    "last_updated": "2025-06-18",
+    "study_start": "2024-09-03",
+    "study_end": "2027-03",
+    "enrollment": 45,
+    "primary_outcome": "Part 1: To evaluate the safety and tolerability of MOv18 IgE",
+    "monitor_status": "No Change",
+    "last_monitored_change": "2026-02-05",
+    "details": "EPS101-10-02 is a two-part, Phase Ib, open-label, dose escalation and expansion trial in patients with platinum resistant ovarian cancer whose disease has progressed after no more than 4 lines of standard therapy.\n\nIn total, the trial will enrol approximately 45 patients. All enrolled patients will have biopsy accessible, measurable disease with a confirmed FRα expression of 5% or higher.\n\nMOv18 IgE will be administered to approximately 30 patients in Part 1 and up to a further 15 in Part 2.\n\nPatients will receive treatment on Days 1, 8 and 15 of a 21-day cycle and may continue treatment until radiological disease progression or unacceptable toxicity despite optimal medical management or dose or schedule modification, or withdrawal of consent.\n\nThe starting dose of MOv18 IgE is 3 mg.\n\nPatient screening will occur during the 28 days prior to the first administration of MOv18 IgE. All patients will undergo PK, PD and safety assessments, as well as disease response (tumour) assessments to determine the potential clinical benefit of MOv18 IgE. In all instances, patients will be followed up for overall survival (OS) for a maximum of 270 days after their last dose of trial treatment, or until withdrawal of consent, lost to follow-up, death, or the overall end of trial, whichever is earliest.\n\nIn Part 1, MOv18 IgE will be administered at increasing dose levels in different patient cohorts of approximately 6 patients, until selection of the Part 2 dose. The dose of MOv18 IgE administered in Part 1 will be escalated following a Bayesian logistic regression model - Escalation with overdose control (BLRM-EWOC) trial design.\n\nAfter determination of the Part 2 dose, up to 15 additional patients will be enrolled and treated with MOv18 IgE at that dose to further assess anti-tumour activity of MOv18 IgE and obtain additional information on its safety, PK and PD."
+  },
+  {
     "id": "NCT02546921",
     "name": "Phase I Study of MOv18 IgE",
     "target": "IgE",
@@ -32,22 +49,5 @@
     "monitor_status": "No Change",
     "last_monitored_change": "2026-02-05",
     "details": "The intranasal challenge study will be performed over 8 weeks outside of the birch pollen season (November to January) as a randomized, double blind and placebo-controlled study. During a screening visit, 15 individuals will be recruited according to eligibility criteria. They will be randomized into 3 groups (i.n. administration of anti-IgE antibodies, Bet v 1 or placebo). Intranasal administration will take place on three consecutive days and serum samples will be taken 3, 5, and 8 weeks (+/- 4 days) after the treatment for analysis of total and specific IgE levels"
-  },
-  {
-    "id": "NCT06547840",
-    "name": "A Study of MOv18 IgE in Folate Receptor Alpha-expressing Platinum Resistant Ovarian Cancer",
-    "target": "IgE",
-    "sponsor": "Epsilogen Ltd",
-    "status": "RECRUITING",
-    "conditions": "Advanced Ovarian Cancer, Platinum-resistant Ovarian Cancer",
-    "phases": "PHASE1",
-    "last_updated": "2025-06-18",
-    "study_start": "2024-09-03",
-    "study_end": "2027-03",
-    "enrollment": 45,
-    "primary_outcome": "Part 1: To evaluate the safety and tolerability of MOv18 IgE",
-    "monitor_status": "No Change",
-    "last_monitored_change": "2026-02-05",
-    "details": "EPS101-10-02 is a two-part, Phase Ib, open-label, dose escalation and expansion trial in patients with platinum resistant ovarian cancer whose disease has progressed after no more than 4 lines of standard therapy.\n\nIn total, the trial will enrol approximately 45 patients. All enrolled patients will have biopsy accessible, measurable disease with a confirmed FRα expression of 5% or higher.\n\nMOv18 IgE will be administered to approximately 30 patients in Part 1 and up to a further 15 in Part 2.\n\nPatients will receive treatment on Days 1, 8 and 15 of a 21-day cycle and may continue treatment until radiological disease progression or unacceptable toxicity despite optimal medical management or dose or schedule modification, or withdrawal of consent.\n\nThe starting dose of MOv18 IgE is 3 mg.\n\nPatient screening will occur during the 28 days prior to the first administration of MOv18 IgE. All patients will undergo PK, PD and safety assessments, as well as disease response (tumour) assessments to determine the potential clinical benefit of MOv18 IgE. In all instances, patients will be followed up for overall survival (OS) for a maximum of 270 days after their last dose of trial treatment, or until withdrawal of consent, lost to follow-up, death, or the overall end of trial, whichever is earliest.\n\nIn Part 1, MOv18 IgE will be administered at increasing dose levels in different patient cohorts of approximately 6 patients, until selection of the Part 2 dose. The dose of MOv18 IgE administered in Part 1 will be escalated following a Bayesian logistic regression model - Escalation with overdose control (BLRM-EWOC) trial design.\n\nAfter determination of the Part 2 dose, up to 15 additional patients will be enrolled and treated with MOv18 IgE at that dose to further assess anti-tumour activity of MOv18 IgE and obtain additional information on its safety, PK and PD."
   }
 ]

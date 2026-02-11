@@ -31,7 +31,7 @@
       "acronym": "DE-01"
     },
     "statusModule": {
-      "statusVerifiedDate": "2026-01",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -54,9 +54,9 @@
         "date": "2025-05-25",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-01-14",
+      "lastUpdateSubmitDate": "2026-02-09",
       "lastUpdatePostDateStruct": {
-        "date": "2026-01-15",
+        "date": "2026-02-10",
         "type": "ACTUAL"
       }
     },
@@ -465,7 +465,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Tampa",
           "state": "Florida",
           "zip": "33612",
@@ -885,7 +885,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Providence",
           "state": "Rhode Island",
           "zip": "02905",
@@ -1020,7 +1020,7 @@
           "status": "NOT_YET_RECRUITING",
           "city": "Madison",
           "state": "Wisconsin",
-          "zip": "53705",
+          "zip": "53792",
           "country": "United States",
           "geoPoint": {
             "lat": 43.07305,
@@ -1157,7 +1157,18 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
+          "city": "Ghent",
+          "zip": "9000",
+          "country": "Belgium",
+          "geoPoint": {
+            "lat": 51.05,
+            "lon": 3.71667
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "RECRUITING",
           "city": "Leuven",
           "zip": "3000",
           "country": "Belgium",
@@ -1223,7 +1234,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Porto Alegre",
           "zip": "90020-090",
           "country": "Brazil",
@@ -1245,7 +1256,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Rio de Janeiro",
           "zip": "20220-410",
           "country": "Brazil",
@@ -1256,7 +1267,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Salvador",
           "zip": "41.950-610",
           "country": "Brazil",
@@ -1728,7 +1739,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Shenyang",
           "zip": "110042",
           "country": "China",
@@ -2036,7 +2047,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Toulouse",
           "zip": "31059",
           "country": "France",
@@ -2383,7 +2394,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Kashiwa-shi",
           "zip": "277-8567",
           "country": "Japan"
@@ -2463,7 +2474,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Osaka",
           "zip": "541-8567",
           "country": "Japan",
@@ -2814,7 +2825,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Valencia",
           "zip": "46006",
           "country": "Spain",
@@ -3056,7 +3067,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Northwood",
           "zip": "HA6 2RN",
           "country": "United Kingdom",
@@ -3092,7 +3103,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-09"
+      "versionHolder": "2026-02-10"
     },
     "conditionBrowseModule": {
       "meshes": [
