@@ -3,13 +3,21 @@
     "name": "CCR8",
     "description": "CCR8 타겟 임상시험 모니터링",
     "trial_count": 32,
+<<<<<<< HEAD
     "changed_count": 3
+=======
+    "changed_count": 0
+>>>>>>> 9c89203a9f2cb1eaa3b6135c64a7b6df028ba260
   },
   {
     "name": "TIGIT",
     "description": "TIGIT 타겟 임상시험 모니터링",
     "trial_count": 133,
+<<<<<<< HEAD
     "changed_count": 5
+=======
+    "changed_count": 1
+>>>>>>> 9c89203a9f2cb1eaa3b6135c64a7b6df028ba260
   },
   {
     "name": "IgE",
@@ -21,6 +29,10 @@
     "name": "B7-H3",
     "description": "B7-H3 타겟 임상시험 모니터링",
     "trial_count": 111,
+<<<<<<< HEAD
     "changed_count": 11
+=======
+    "changed_count": 2
+>>>>>>> 9c89203a9f2cb1eaa3b6135c64a7b6df028ba260
   }
 ]
