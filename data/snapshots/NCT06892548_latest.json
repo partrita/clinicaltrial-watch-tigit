@@ -19,7 +19,7 @@
       "officialTitle": "A Phase Ib/II, Multi-site, Open-label, Two-part Trial to Evaluate the Efficacy, Safety, Pharmacokinetics, and Recommended Combination Dose of BNT324 With BNT327 in Participants With Advanced Lung Cancer"
     },
     "statusModule": {
-      "statusVerifiedDate": "2026-01",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -42,9 +42,9 @@
         "date": "2025-03-24",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-01-19",
+      "lastUpdateSubmitDate": "2026-02-10",
       "lastUpdatePostDateStruct": {
-        "date": "2026-01-21",
+        "date": "2026-02-11",
         "type": "ACTUAL"
       }
     },
@@ -356,6 +356,30 @@
           }
         },
         {
+          "facility": "UCLA - David Geffen School of Medicine",
+          "status": "RECRUITING",
+          "city": "Santa Monica",
+          "state": "California",
+          "zip": "90404",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 34.01949,
+            "lon": -118.49138
+          }
+        },
+        {
+          "facility": "University of Iowa Hospitals & Clinics PARENT",
+          "status": "RECRUITING",
+          "city": "Iowa City",
+          "state": "Iowa",
+          "zip": "52242",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 41.66113,
+            "lon": -91.53017
+          }
+        },
+        {
           "facility": "John Theurer Cancer Center at Hackensack UMC",
           "status": "RECRUITING",
           "city": "Hackensack",
@@ -401,6 +425,18 @@
           "geoPoint": {
             "lat": 41.4995,
             "lon": -81.69541
+          }
+        },
+        {
+          "facility": "Texas Oncology - DFW",
+          "status": "RECRUITING",
+          "city": "Dallas",
+          "state": "Texas",
+          "zip": "75246",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 32.78306,
+            "lon": -96.80667
           }
         },
         {
@@ -488,6 +524,30 @@
           }
         },
         {
+          "facility": "St John of God Subiaco Hospital",
+          "status": "RECRUITING",
+          "city": "Subiaco",
+          "state": "Western Australia",
+          "zip": "6008",
+          "country": "Australia",
+          "geoPoint": {
+            "lat": -31.9485,
+            "lon": 115.8268
+          }
+        },
+        {
+          "facility": "Beijing Cancer Hospital",
+          "status": "RECRUITING",
+          "city": "Beijing",
+          "state": "Beijing Municipality",
+          "zip": "100142",
+          "country": "China",
+          "geoPoint": {
+            "lat": 39.9075,
+            "lon": 116.39723
+          }
+        },
+        {
           "facility": "Beijing GoBroad Hospital",
           "status": "RECRUITING",
           "city": "Beijing",
@@ -560,6 +620,30 @@
           }
         },
         {
+          "facility": "The First Affiliated Hospital of Nanchang University",
+          "status": "RECRUITING",
+          "city": "Nanchang",
+          "state": "Jiangxi",
+          "zip": "330209",
+          "country": "China",
+          "geoPoint": {
+            "lat": 28.68396,
+            "lon": 115.85306
+          }
+        },
+        {
+          "facility": "Jilin Cancer Hospital",
+          "status": "RECRUITING",
+          "city": "Changchun",
+          "state": "Jilin",
+          "zip": "130000",
+          "country": "China",
+          "geoPoint": {
+            "lat": 43.88,
+            "lon": 125.32278
+          }
+        },
+        {
           "facility": "Linyi Cancer Hospital",
           "status": "RECRUITING",
           "city": "Shandong",
@@ -572,6 +656,18 @@
           }
         },
         {
+          "facility": "The First Affiliated Hospital of Xian Jiaotong University",
+          "status": "RECRUITING",
+          "city": "Xi'an",
+          "state": "Shaanxi",
+          "zip": "710061",
+          "country": "China",
+          "geoPoint": {
+            "lat": 34.25833,
+            "lon": 108.92861
+          }
+        },
+        {
           "facility": "Shandong Cancer Hospital",
           "status": "RECRUITING",
           "city": "Jinan",
@@ -581,6 +677,18 @@
           "geoPoint": {
             "lat": 36.66833,
             "lon": 116.99722
+          }
+        },
+        {
+          "facility": "Shanghai GoBroad Cancer Hospital",
+          "status": "RECRUITING",
+          "city": "Shanghai",
+          "state": "Shanghai Municipality",
+          "zip": "200125",
+          "country": "China",
+          "geoPoint": {
+            "lat": 31.22222,
+            "lon": 121.45806
           }
         },
         {
@@ -608,47 +716,15 @@
           }
         },
         {
-          "facility": "Beijing Cancer Hospital",
+          "facility": "Zhejiang Cancer Hospital",
           "status": "RECRUITING",
-          "city": "Beijing",
-          "zip": "100142",
+          "city": "Hangzhou",
+          "state": "Zhejiang",
+          "zip": "310022",
           "country": "China",
           "geoPoint": {
-            "lat": 39.9075,
-            "lon": 116.39723
-          }
-        },
-        {
-          "facility": "Jilin Cancer Hospital",
-          "status": "RECRUITING",
-          "city": "Changchun",
-          "zip": "130000",
-          "country": "China",
-          "geoPoint": {
-            "lat": 43.88,
-            "lon": 125.32278
-          }
-        },
-        {
-          "facility": "The First Affiliated Hospital of Nanchang University",
-          "status": "RECRUITING",
-          "city": "Nanchang",
-          "zip": "330209",
-          "country": "China",
-          "geoPoint": {
-            "lat": 28.68396,
-            "lon": 115.85306
-          }
-        },
-        {
-          "facility": "The First Affiliated Hospital of Xian Jiaotong University",
-          "status": "RECRUITING",
-          "city": "Xi'an",
-          "zip": "´710061",
-          "country": "China",
-          "geoPoint": {
-            "lat": 34.25833,
-            "lon": 108.92861
+            "lat": 30.29365,
+            "lon": 120.16142
           }
         },
         {
@@ -682,6 +758,17 @@
           "geoPoint": {
             "lat": 22.99083,
             "lon": 120.21333
+          }
+        },
+        {
+          "facility": "Taipei Veterans General Hospital",
+          "status": "RECRUITING",
+          "city": "Taipei",
+          "zip": "11217",
+          "country": "Taiwan",
+          "geoPoint": {
+            "lat": 25.05306,
+            "lon": 121.52639
           }
         },
         {
@@ -780,7 +867,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-09"
+      "versionHolder": "2026-02-11"
     },
     "conditionBrowseModule": {
       "meshes": [

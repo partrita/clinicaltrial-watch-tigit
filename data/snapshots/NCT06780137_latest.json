@@ -30,7 +30,7 @@
       "officialTitle": "A Phase 1b/2 Open-Label Clinical Study to Evaluate the Safety and Efficacy of MK-6070 and Ifinatamab Deruxtecan (I-DXd) in Participants With Relapsed/Refractory Extensive-Stage Small Cell Lung Cancer"
     },
     "statusModule": {
-      "statusVerifiedDate": "2026-01",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -53,9 +53,9 @@
         "date": "2025-01-17",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-02-03",
+      "lastUpdateSubmitDate": "2026-02-06",
       "lastUpdatePostDateStruct": {
-        "date": "2026-02-04",
+        "date": "2026-02-10",
         "type": "ACTUAL"
       }
     },
@@ -1251,7 +1251,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-09"
+      "versionHolder": "2026-02-11"
     },
     "conditionBrowseModule": {
       "meshes": [

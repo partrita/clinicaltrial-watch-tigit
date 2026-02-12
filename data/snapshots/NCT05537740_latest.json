@@ -495,12 +495,6 @@
           "type": "DERIVED",
           "citation": "Roider HG, Hoff S, Tseng SY, Berndt S, Trautwein M, Filarsky K, Gritzan U, Camps J, Nadler WM, Grudzinska-Goebel J, Ellinger P, Pesch T, Soon CF, Geyer M, Gluske K, Stelte-Ludwig B, Gorjanacz M. Selective depletion of tumor-infiltrating regulatory T cells with BAY 3375968, a novel Fc-optimized anti-CCR8 antibody. Clin Exp Med. 2024 Jun 10;24(1):122. doi: 10.1007/s10238-024-01362-8."
         }
-      ],
-      "seeAlsoLinks": [
-        {
-          "label": "Click here to find information for studies related to Bayer products. To find this study enter the ClinicalTrials.gov identifier (NCT) number or Bayer Study Identifier (ID) in the search field.",
-          "url": "https://clinicaltrials.bayer.com/"
-        }
       ]
     },
     "ipdSharingStatementModule": {
@@ -510,7 +504,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-09"
+      "versionHolder": "2026-02-11"
     },
     "conditionBrowseModule": {
       "meshes": [

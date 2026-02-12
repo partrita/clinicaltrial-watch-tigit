@@ -351,6 +351,14 @@
           {
             "type": "RESET",
             "date": "2025-12-31"
+          },
+          {
+            "type": "RELEASE",
+            "date": "2026-01-23"
+          },
+          {
+            "type": "RESET",
+            "date": "2026-02-09"
           }
         ]
       }
@@ -358,7 +366,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-09",
+      "versionHolder": "2026-02-11",
       "removedCountries": [
         "Germany"
       ],
@@ -370,7 +378,8 @@
             "resetDate": "2025-12-31"
           },
           {
-            "releaseDate": "2026-01-23"
+            "releaseDate": "2026-01-23",
+            "resetDate": "2026-02-09"
           }
         ]
       }
