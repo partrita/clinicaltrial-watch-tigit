@@ -14,7 +14,7 @@
       "acronym": "DESIGNATE"
     },
     "statusModule": {
-      "statusVerifiedDate": "2026-01",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "TERMINATED",
       "whyStopped": "Prior to termination the DESIGNATE study was an on enrollment hold due to greater than anticipated lymphodepletion. The pharmaceutical partner decided not to reopen its own T1D trial and ceased development of siplizumab in autoimmunity.",
       "expandedAccessInfo": {
@@ -38,9 +38,9 @@
         "date": "2022-10-10",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-01-05",
+      "lastUpdateSubmitDate": "2026-02-10",
       "lastUpdatePostDateStruct": {
-        "date": "2026-01-06",
+        "date": "2026-02-11",
         "type": "ACTUAL"
       }
     },
@@ -308,7 +308,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-10"
+      "versionHolder": "2026-02-11"
     },
     "conditionBrowseModule": {
       "meshes": [

@@ -3,13 +3,13 @@
     "name": "CCR8",
     "description": "CCR8 타겟 임상시험 모니터링",
     "trial_count": 32,
-    "changed_count": 1
+    "changed_count": 0
   },
   {
     "name": "TIGIT",
     "description": "TIGIT 타겟 임상시험 모니터링",
     "trial_count": 133,
-    "changed_count": 2
+    "changed_count": 1
   },
   {
     "name": "IgE",
@@ -21,6 +21,6 @@
     "name": "B7-H3",
     "description": "B7-H3 타겟 임상시험 모니터링",
     "trial_count": 111,
-    "changed_count": 3
+    "changed_count": 2
   }
 ]
