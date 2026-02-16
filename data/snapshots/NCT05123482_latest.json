@@ -24,7 +24,7 @@
       "officialTitle": "A Phase I/IIa Multi-center, Open-label Master Protocol Dose Escalation and Expansion Study of AZD8205 as Monotherapy and in Combination With Anticancer Agents in Participants With Advanced Solid Tumors (BLUESTAR)"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-11",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -47,9 +47,9 @@
         "date": "2021-11-17",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-12-02",
+      "lastUpdateSubmitDate": "2026-02-11",
       "lastUpdatePostDateStruct": {
-        "date": "2025-12-08",
+        "date": "2026-02-13",
         "type": "ACTUAL"
       }
     },
@@ -350,7 +350,7 @@
       "locations": [
         {
           "facility": "Research Site",
-          "status": "RECRUITING",
+          "status": "COMPLETED",
           "city": "Duarte",
           "state": "California",
           "zip": "91010",
@@ -362,7 +362,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "RECRUITING",
+          "status": "COMPLETED",
           "city": "Irvine",
           "state": "California",
           "zip": "92618",
@@ -394,18 +394,6 @@
           "geoPoint": {
             "lat": 38.44047,
             "lon": -122.71443
-          }
-        },
-        {
-          "facility": "Research Site",
-          "status": "WITHDRAWN",
-          "city": "Sarasota",
-          "state": "Florida",
-          "zip": "34232",
-          "country": "United States",
-          "geoPoint": {
-            "lat": 27.33643,
-            "lon": -82.53065
           }
         },
         {
@@ -559,17 +547,6 @@
           "geoPoint": {
             "lat": -31.98184,
             "lon": 115.8073
-          }
-        },
-        {
-          "facility": "Research Site",
-          "status": "WITHDRAWN",
-          "city": "South Brisbane",
-          "zip": "4101",
-          "country": "Australia",
-          "geoPoint": {
-            "lat": -27.48034,
-            "lon": 153.02049
           }
         },
         {
@@ -1006,6 +983,17 @@
         },
         {
           "facility": "Research Site",
+          "status": "NOT_YET_RECRUITING",
+          "city": "Taichung",
+          "zip": "40705",
+          "country": "Taiwan",
+          "geoPoint": {
+            "lat": 24.1469,
+            "lon": 120.6839
+          }
+        },
+        {
+          "facility": "Research Site",
           "status": "RECRUITING",
           "city": "Tainan",
           "zip": "704",
@@ -1134,7 +1122,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-11"
+      "versionHolder": "2026-02-13"
     },
     "conditionBrowseModule": {
       "meshes": [

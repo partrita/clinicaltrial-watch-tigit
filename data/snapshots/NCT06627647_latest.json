@@ -20,7 +20,7 @@
       "officialTitle": "A Phase III, Randomized, Double-blind, Multicenter, Global Study of Rilvegostomig or Pembrolizumab in Combination With Platinum-based Chemotherapy for the First-line Treatment of Patients With Metastatic Non-squamous Non-small Cell Lung Cancer Whose Tumors Express PD-L1 (ARTEMIDE-Lung03)"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-12",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -43,9 +43,9 @@
         "date": "2024-10-04",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-12-19",
+      "lastUpdateSubmitDate": "2026-02-11",
       "lastUpdatePostDateStruct": {
-        "date": "2025-12-22",
+        "date": "2026-02-12",
         "type": "ACTUAL"
       }
     },
@@ -468,7 +468,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Fort Lauderdale",
           "state": "Florida",
           "zip": "33308",
@@ -552,7 +552,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Boise",
           "state": "Idaho",
           "zip": "83712",
@@ -2322,7 +2322,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "WITHDRAWN",
           "city": "Kolkata",
           "zip": "700054",
           "country": "India",
@@ -2366,7 +2366,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "RECRUITING",
+          "status": "WITHDRAWN",
           "city": "New Delhi",
           "zip": "110075",
           "country": "India",
@@ -2501,7 +2501,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Kawasaki-shi",
           "zip": "216-8511",
           "country": "Japan"
@@ -2555,13 +2555,24 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Kumamoto",
           "zip": "861-4193",
           "country": "Japan",
           "geoPoint": {
             "lat": 32.80589,
             "lon": 130.69181
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "NOT_YET_RECRUITING",
+          "city": "Kyoto",
+          "zip": "612-8555",
+          "country": "Japan",
+          "geoPoint": {
+            "lat": 35.02107,
+            "lon": 135.75385
           }
         },
         {
@@ -2861,7 +2872,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "SUSPENDED",
           "city": "San Juan",
           "zip": "00918",
           "country": "Puerto Rico",
@@ -3406,7 +3417,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-11"
+      "versionHolder": "2026-02-13"
     },
     "interventionBrowseModule": {
       "meshes": [

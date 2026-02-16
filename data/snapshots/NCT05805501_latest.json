@@ -13,7 +13,7 @@
       "officialTitle": "A Randomized Open Label Phase II Study of Immune Checkpoint Inhibitor Combinations With Axitinib in Patients With Previously Untreated Locally Advanced Unresectable or Metastatic Renal Cell Carcinoma"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-11",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "ACTIVE_NOT_RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -23,11 +23,11 @@
         "type": "ACTUAL"
       },
       "primaryCompletionDateStruct": {
-        "date": "2026-07-31",
+        "date": "2026-10-31",
         "type": "ESTIMATED"
       },
       "completionDateStruct": {
-        "date": "2026-07-31",
+        "date": "2026-10-31",
         "type": "ESTIMATED"
       },
       "studyFirstSubmitDate": "2023-03-28",
@@ -36,9 +36,9 @@
         "date": "2023-04-10",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-11-12",
+      "lastUpdateSubmitDate": "2026-02-10",
       "lastUpdatePostDateStruct": {
-        "date": "2025-11-13",
+        "date": "2026-02-12",
         "type": "ACTUAL"
       }
     },
@@ -513,16 +513,6 @@
           }
         },
         {
-          "facility": "Asan Medical Center",
-          "city": "Seoul",
-          "zip": "05505",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 37.566,
-            "lon": 126.9784
-          }
-        },
-        {
           "facility": "Samsung Medical Center",
           "city": "Seoul",
           "zip": "06351",
@@ -642,7 +632,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-11"
+      "versionHolder": "2026-02-13"
     },
     "conditionBrowseModule": {
       "meshes": [
