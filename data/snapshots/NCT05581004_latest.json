@@ -19,7 +19,7 @@
       "officialTitle": "A Phase Ia/Ib, Open Label, Multicenter, Dose-escalation Study to Evaluate the Safety, Pharmacokinetics, and Activity of RO7502175 as a Single Agent and in Combination With Checkpoint Inhibitor in Patients With Locally Advanced or Metastatic Solid Tumors"
     },
     "statusModule": {
-      "statusVerifiedDate": "2026-01",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -42,9 +42,9 @@
         "date": "2022-10-14",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-01-16",
+      "lastUpdateSubmitDate": "2026-02-16",
       "lastUpdatePostDateStruct": {
-        "date": "2026-01-20",
+        "date": "2026-02-17",
         "type": "ACTUAL"
       }
     },
@@ -494,7 +494,7 @@
         {
           "facility": "Papageorgiou General Hospital of Thessaloniki",
           "status": "RECRUITING",
-          "city": "N. Efkapria-Pavlos Melas",
+          "city": "Pavlos Melas",
           "state": "Thessaloniki",
           "zip": "564 03",
           "country": "Greece"
@@ -577,7 +577,7 @@
           }
         },
         {
-          "facility": "ICO l?Hospitalet ? Hospital Duran i Reynals",
+          "facility": "ICO Hospitalet- Hospital Duran i Reynals",
           "status": "RECRUITING",
           "city": "L'Hospitalet de Llobregat",
           "state": "Barcelona",
@@ -702,7 +702,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-13"
+      "versionHolder": "2026-02-17"
     },
     "conditionBrowseModule": {
       "meshes": [
