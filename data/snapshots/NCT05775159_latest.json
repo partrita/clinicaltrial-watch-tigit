@@ -13,7 +13,7 @@
       "officialTitle": "A Phase II, Open-Label, Multi-Drug, Multi-Center, Master Protocol to Evaluate the Efficacy and Safety of Novel Immunomodulators as Monotherapy and in Combination With Anticancer Agents in Participants With Advanced Hepatobiliary Cancer (GEMINI-Hepatobiliary)"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-11",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -36,9 +36,9 @@
         "date": "2023-03-20",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-11-12",
+      "lastUpdateSubmitDate": "2026-02-16",
       "lastUpdatePostDateStruct": {
-        "date": "2025-11-13",
+        "date": "2026-02-18",
         "type": "ACTUAL"
       }
     },
@@ -995,7 +995,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-17"
+      "versionHolder": "2026-02-18"
     },
     "conditionBrowseModule": {
       "meshes": [

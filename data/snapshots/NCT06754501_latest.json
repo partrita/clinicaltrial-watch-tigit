@@ -20,11 +20,8 @@
       "officialTitle": "A Phase 2 Clinical Trial Evaluating the Efficacy and Safety of Dual Immune Checkpoint Inhibition With Anti-PD-L1 (Atezolizumab) and Anti-TIGIT (Tiragolumab) in Cancer of Unknown Primary"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-08",
-      "overallStatus": "RECRUITING",
-      "expandedAccessInfo": {
-        "hasExpandedAccess": false
-      },
+      "statusVerifiedDate": "2026-02",
+      "overallStatus": "ACTIVE_NOT_RECRUITING",
       "startDateStruct": {
         "date": "2025-04-11",
         "type": "ACTUAL"
@@ -43,9 +40,9 @@
         "date": "2024-12-31",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-10-01",
+      "lastUpdateSubmitDate": "2026-02-16",
       "lastUpdatePostDateStruct": {
-        "date": "2025-10-07",
+        "date": "2026-02-18",
         "type": "ACTUAL"
       }
     },
@@ -97,8 +94,8 @@
         }
       },
       "enrollmentInfo": {
-        "count": 35,
-        "type": "ESTIMATED"
+        "count": 4,
+        "type": "ACTUAL"
       }
     },
     "armsInterventionsModule": {
@@ -151,14 +148,6 @@
       ]
     },
     "contactsLocationsModule": {
-      "centralContacts": [
-        {
-          "name": "Ryan Huey, MD",
-          "role": "CONTACT",
-          "phone": "(713) 792-2828",
-          "email": "rwhuey@mdanderson.org"
-        }
-      ],
       "overallOfficials": [
         {
           "name": "Ryan Huey, MD",
@@ -169,23 +158,10 @@
       "locations": [
         {
           "facility": "The University of Texas M. D. Anderson Cancer Center",
-          "status": "RECRUITING",
           "city": "Houston",
           "state": "Texas",
           "zip": "77030",
           "country": "United States",
-          "contacts": [
-            {
-              "name": "Ryan Huey, MD",
-              "role": "CONTACT",
-              "phone": "(713) 792-2828",
-              "email": "rwhuey@mdanderson.org"
-            },
-            {
-              "name": "Ryan Huey, MD",
-              "role": "PRINCIPAL_INVESTIGATOR"
-            }
-          ],
           "geoPoint": {
             "lat": 29.76328,
             "lon": -95.36327
@@ -204,7 +180,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-17"
+      "versionHolder": "2026-02-18"
     },
     "conditionBrowseModule": {
       "meshes": [
