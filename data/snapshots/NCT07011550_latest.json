@@ -20,14 +20,15 @@
       "officialTitle": "Phase 2, Single-arm Trial of BMS-986340 in Association With Nivolumab, Trifluridine/Tipiracil and Bevacizumab for Patients Refractory to Standard of Care Treatment and With Microsatellite-stable Colorectal Cancer"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-08",
-      "overallStatus": "RECRUITING",
+      "statusVerifiedDate": "2026-02",
+      "overallStatus": "SUSPENDED",
+      "whyStopped": "FDA",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
       },
       "startDateStruct": {
-        "date": "2025-11-30",
-        "type": "ESTIMATED"
+        "date": "2025-08-15",
+        "type": "ACTUAL"
       },
       "primaryCompletionDateStruct": {
         "date": "2028-07-01",
@@ -43,9 +44,9 @@
         "date": "2025-06-09",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-08-20",
+      "lastUpdateSubmitDate": "2026-02-17",
       "lastUpdatePostDateStruct": {
-        "date": "2025-08-27",
+        "date": "2026-02-19",
         "type": "ACTUAL"
       }
     },
@@ -96,8 +97,8 @@
         }
       },
       "enrollmentInfo": {
-        "count": 40,
-        "type": "ESTIMATED"
+        "count": 7,
+        "type": "ACTUAL"
       }
     },
     "armsInterventionsModule": {
@@ -169,14 +170,6 @@
       ]
     },
     "contactsLocationsModule": {
-      "centralContacts": [
-        {
-          "name": "Kim Ross",
-          "role": "CONTACT",
-          "phone": "713-794-1623",
-          "email": "GIClinicalTrials@mdanderson.org"
-        }
-      ],
       "overallOfficials": [
         {
           "name": "Madhulika Eluri, MD",
@@ -187,23 +180,10 @@
       "locations": [
         {
           "facility": "MD Anderson Cancer Center",
-          "status": "RECRUITING",
           "city": "Houston",
           "state": "Texas",
           "zip": "77030",
           "country": "United States",
-          "contacts": [
-            {
-              "name": "Eluri, MD",
-              "role": "CONTACT",
-              "phone": "713-794-1623",
-              "email": "GIClinicalTrials@mdanderson.org"
-            },
-            {
-              "name": "Madhulika Eluri, MD",
-              "role": "PRINCIPAL_INVESTIGATOR"
-            }
-          ],
           "geoPoint": {
             "lat": 29.76328,
             "lon": -95.36327
@@ -222,7 +202,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-18"
+      "versionHolder": "2026-02-19"
     },
     "interventionBrowseModule": {
       "meshes": [
