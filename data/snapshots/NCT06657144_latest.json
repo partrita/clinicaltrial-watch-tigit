@@ -36,9 +36,9 @@
         "date": "2024-10-24",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-02-03",
+      "lastUpdateSubmitDate": "2026-02-19",
       "lastUpdatePostDateStruct": {
-        "date": "2026-02-05",
+        "date": "2026-02-20",
         "type": "ACTUAL"
       }
     },
@@ -436,7 +436,7 @@
             {
               "name": "AnaArlene Ramirez",
               "role": "CONTACT",
-              "phone": "702-952-3406",
+              "phone": "702-487-9428",
               "email": "anaarlene.ramirez@usoncology.com"
             },
             {
@@ -512,6 +512,29 @@
             },
             {
               "name": "Yelena Janjigian, MD",
+              "role": "PRINCIPAL_INVESTIGATOR"
+            }
+          ],
+          "geoPoint": {
+            "lat": 40.71427,
+            "lon": -74.00597
+          }
+        },
+        {
+          "facility": "Icahn School of Medicine at Mount Sinai",
+          "status": "RECRUITING",
+          "city": "New York",
+          "state": "New York",
+          "zip": "11766",
+          "country": "United States",
+          "contacts": [
+            {
+              "name": "Joseph Waters",
+              "role": "CONTACT",
+              "email": "Joseph.waters@mssm.edu"
+            },
+            {
+              "name": "Dan Feng, MD",
               "role": "PRINCIPAL_INVESTIGATOR"
             }
           ],
@@ -732,6 +755,29 @@
           }
         },
         {
+          "facility": "Changhua Christian Hospital",
+          "status": "RECRUITING",
+          "city": "Chang-hua",
+          "country": "Taiwan",
+          "contacts": [
+            {
+              "name": "Ai-Ping Lai",
+              "role": "CONTACT",
+              "phone": "+88647238595",
+              "phoneExt": "3935",
+              "email": "96953@cch.org.tw"
+            },
+            {
+              "name": "Kuan-Ming Lai, MD",
+              "role": "PRINCIPAL_INVESTIGATOR"
+            }
+          ],
+          "geoPoint": {
+            "lat": 24.07327,
+            "lon": 120.56276
+          }
+        },
+        {
           "facility": "E-Da Cancer Hospital",
           "status": "RECRUITING",
           "city": "Kaohsiung City",
@@ -910,7 +956,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-19"
+      "versionHolder": "2026-02-20"
     },
     "conditionBrowseModule": {
       "meshes": [
