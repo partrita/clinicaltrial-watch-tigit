@@ -21,7 +21,7 @@
       "acronym": "ARTEMIDE-subQ"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-12",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -44,9 +44,9 @@
         "date": "2025-09-08",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-12-18",
+      "lastUpdateSubmitDate": "2026-02-20",
       "lastUpdatePostDateStruct": {
-        "date": "2025-12-24",
+        "date": "2026-02-23",
         "type": "ACTUAL"
       }
     },
@@ -286,6 +286,17 @@
         {
           "facility": "Research Site",
           "status": "NOT_YET_RECRUITING",
+          "city": "Seoul",
+          "zip": "03722",
+          "country": "South Korea",
+          "geoPoint": {
+            "lat": 37.566,
+            "lon": 126.9784
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "NOT_YET_RECRUITING",
           "city": "Barcelona",
           "zip": "08035",
           "country": "Spain",
@@ -329,7 +340,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "SUSPENDED",
           "city": "Newcastle upon Tyne",
           "zip": "NE7 7DN",
           "country": "United Kingdom",
@@ -340,7 +351,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "SUSPENDED",
           "city": "Sutton",
           "zip": "SM2 5PT",
           "country": "United Kingdom",
@@ -361,7 +372,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-20"
+      "versionHolder": "2026-02-23"
     },
     "conditionBrowseModule": {
       "meshes": [
