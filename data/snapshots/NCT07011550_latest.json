@@ -23,9 +23,6 @@
       "statusVerifiedDate": "2026-02",
       "overallStatus": "SUSPENDED",
       "whyStopped": "FDA",
-      "expandedAccessInfo": {
-        "hasExpandedAccess": false
-      },
       "startDateStruct": {
         "date": "2025-08-15",
         "type": "ACTUAL"
@@ -44,9 +41,9 @@
         "date": "2025-06-09",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-02-17",
+      "lastUpdateSubmitDate": "2026-02-20",
       "lastUpdatePostDateStruct": {
-        "date": "2026-02-19",
+        "date": "2026-02-24",
         "type": "ACTUAL"
       }
     },
@@ -202,7 +199,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-23"
+      "versionHolder": "2026-02-24"
     },
     "interventionBrowseModule": {
       "meshes": [
