@@ -25,7 +25,7 @@
       "officialTitle": "A Phase 1/2 Study of BMS-986340 as Monotherapy and in Combination With Nivolumab or Docetaxel in Participants With Advanced Solid Tumors"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-12",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -48,9 +48,9 @@
         "date": "2021-05-20",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-12-16",
+      "lastUpdateSubmitDate": "2026-02-23",
       "lastUpdatePostDateStruct": {
-        "date": "2025-12-17",
+        "date": "2026-02-25",
         "type": "ACTUAL"
       }
     },
@@ -336,7 +336,7 @@
     "contactsLocationsModule": {
       "centralContacts": [
         {
-          "name": "BMS Study Connect Contact Center www.BMSStudyConnect.com",
+          "name": "BMS Clinical Trials Contact Center www.BMSClinicalTrials.com",
           "role": "CONTACT",
           "phone": "855-907-3286",
           "email": "Clinical.Trials@bms.com"
@@ -413,7 +413,7 @@
         },
         {
           "facility": "Local Institution - 0062",
-          "status": "COMPLETED",
+          "status": "ACTIVE_NOT_RECRUITING",
           "city": "Iowa City",
           "state": "Iowa",
           "zip": "52242",
@@ -468,7 +468,7 @@
         },
         {
           "facility": "Local Institution - 0001",
-          "status": "COMPLETED",
+          "status": "ACTIVE_NOT_RECRUITING",
           "city": "Portland",
           "state": "Oregon",
           "zip": "97213",
@@ -1247,11 +1247,23 @@
           "url": "https://www.bmsclinicaltrials.com/us/en/clinical-trials/NCT04895709.html"
         }
       ]
+    },
+    "ipdSharingStatementModule": {
+      "ipdSharing": "YES",
+      "description": "BMS will provide access to individual anonymized participant data upon request from qualified researchers, and subject to certain criteria. Additional information regarding Bristol Myer Squibb's data sharing policy and process can be found at https://www.bms.com/researchers-and-partners/clinical-trials-and-research.html",
+      "infoTypes": [
+        "STUDY_PROTOCOL",
+        "SAP",
+        "CSR"
+      ],
+      "timeFrame": "See Plan Description",
+      "accessCriteria": "See Plan Description",
+      "url": "https://www.bms.com/researchers-and-partners/clinical-trials-and-research.html"
     }
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-24"
+      "versionHolder": "2026-02-25"
     },
     "conditionBrowseModule": {
       "meshes": [

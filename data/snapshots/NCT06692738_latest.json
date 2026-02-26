@@ -20,7 +20,7 @@
       "officialTitle": "A Phase III, Randomized, Double-blind, Multicenter, Global Study of Rilvegostomig or Pembrolizumab in Combination With Platinum-based Chemotherapy for the First-line Treatment of Patients With Metastatic Squamous Non-small Cell Lung Cancer Whose Tumors Express PD-L1 (ARTEMIDE-Lung02)"
     },
     "statusModule": {
-      "statusVerifiedDate": "2026-01",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -43,9 +43,9 @@
         "date": "2024-11-18",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-01-20",
+      "lastUpdateSubmitDate": "2026-02-24",
       "lastUpdatePostDateStruct": {
-        "date": "2026-01-21",
+        "date": "2026-02-25",
         "type": "ACTUAL"
       }
     },
@@ -875,6 +875,18 @@
         },
         {
           "facility": "Research Site",
+          "status": "NOT_YET_RECRUITING",
+          "city": "Canton",
+          "state": "Ohio",
+          "zip": "44718",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 40.79895,
+            "lon": -81.37845
+          }
+        },
+        {
+          "facility": "Research Site",
           "status": "RECRUITING",
           "city": "Cincinnati",
           "state": "Ohio",
@@ -923,7 +935,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Hershey",
           "state": "Pennsylvania",
           "zip": "17033",
@@ -1333,7 +1345,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Ottignies",
           "zip": "1340",
           "country": "Belgium",
@@ -2065,7 +2077,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "SUSPENDED",
+          "status": "RECRUITING",
           "city": "Berlin",
           "zip": "13125",
           "country": "Germany",
@@ -2131,7 +2143,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Giessen",
           "zip": "35392",
           "country": "Germany",
@@ -2435,7 +2447,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "WITHDRAWN",
           "city": "Kolkata",
           "zip": "700054",
           "country": "India",
@@ -2479,7 +2491,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "RECRUITING",
+          "status": "WITHDRAWN",
           "city": "New Delhi",
           "zip": "110075",
           "country": "India",
@@ -2490,7 +2502,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "WITHDRAWN",
           "city": "Puducherry",
           "zip": "605006",
           "country": "India",
@@ -2658,7 +2670,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Kawasaki-shi",
           "zip": "216-8511",
           "country": "Japan"
@@ -2719,6 +2731,17 @@
           "geoPoint": {
             "lat": 32.80589,
             "lon": 130.69181
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "NOT_YET_RECRUITING",
+          "city": "Kyoto",
+          "zip": "612-8555",
+          "country": "Japan",
+          "geoPoint": {
+            "lat": 35.02107,
+            "lon": 135.75385
           }
         },
         {
@@ -3592,7 +3615,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-24"
+      "versionHolder": "2026-02-25"
     },
     "conditionBrowseModule": {
       "meshes": [

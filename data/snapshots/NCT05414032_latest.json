@@ -14,7 +14,7 @@
       "acronym": "MERIDIAN"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-03",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -24,11 +24,11 @@
         "type": "ACTUAL"
       },
       "primaryCompletionDateStruct": {
-        "date": "2026-07",
+        "date": "2027-09",
         "type": "ESTIMATED"
       },
       "completionDateStruct": {
-        "date": "2026-07",
+        "date": "2028-07",
         "type": "ESTIMATED"
       },
       "studyFirstSubmitDate": "2022-05-26",
@@ -37,9 +37,9 @@
         "date": "2022-06-10",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-03-25",
+      "lastUpdateSubmitDate": "2026-02-23",
       "lastUpdatePostDateStruct": {
-        "date": "2025-03-30",
+        "date": "2026-02-25",
         "type": "ACTUAL"
       }
     },
@@ -59,6 +59,10 @@
         {
           "name": "NeoGenomics Laboratories, Inc.",
           "class": "UNKNOWN"
+        },
+        {
+          "name": "Personalis Inc.",
+          "class": "INDUSTRY"
         }
       ]
     },
@@ -68,8 +72,8 @@
       "isFdaRegulatedDevice": false
     },
     "descriptionModule": {
-      "briefSummary": "This is a phase II, open-label study to assess the efficacy of AZD2936 in terms of molecular residual disease (MRD) clearance and treatment outcome in patients with MRD after definitive treatment for high risk locoregionally advanced head and neck squamous cell carcinoma (LA-HNSCC). MRD is defined as ctDNA detection in plasma after definitive treatment. Approximately 200 patients are expected to be enrolled.",
-      "detailedDescription": "This is a phase II, open-label study to assess the efficacy of AZD2936 in terms of molecular residual disease (MRD) clearance and treatment outcome in patients with MRD after definitive treatment for high risk locoregionally advanced head and neck squamous cell carcinoma (LA-HNSCC). MRD is defined as ctDNA detection in plasma after definitive treatment. Approximately 200 patients are expected to be enrolled.\n\nThe study is divided in 5 parts:\n\nPart A and Part B are common for all patients in the study, which are defined as the periods of definitive treatment and post definitive treatment. Definitive treatment will be either surgery followed by radiation or chemoradiation; definitive radiation or definitive chemoradiation according to standard of care (SOC) in our institution. A baseline ctDNA sample collection and CT staging will be done before treatment. ctDNA analysis will be performed in Part B at approximately week 5 and at week 10 of this period, and patients will be classified as MRD positive or MRD negative based on the week 10 results. If a patient has equivocal results, a new sample will be taken around week 14. Patients who receive surgery as part of their treatment, will also get ctDNA analysis post-surgery.\n\nPart C is the randomized and interventional part of the study (n=60) for patients with MRD. The patient will be randomized 3:1 to Arm A (treatment with AZD2936) or Arm B (observation). Patients in Arm A will continue treatment until the occurrence of any of these circumstances: after completion of 6 cycles, intolerable toxicity or patient decision. ctDNA analysis will be done at week 10 of Part C.\n\nPart D is the follow up part for patients with MRD. Two ctDNA samples will be analyzed at week 2 and at week 10 of Part D. Plasma samples will be collected every 6 months for the first 3 years and a final sample will be also collected if the patient has radiological or clinical progression. A CT/MRI scan will be performed at week 2 of Part D and, if clinically needed, according to SOC.\n\nPart E is the observational follow up part for patients without MRD. A ctDNA sample will be collected at the time of the first follow up and at radiological or clinical progression if applicable."
+      "briefSummary": "This is a phase II, open-label study to assess the efficacy of AZD2936 in terms of molecular residual disease (MRD) clearance and treatment outcome in patients with MRD after definitive treatment for high risk locoregionally advanced head and neck squamous cell carcinoma (LA-HNSCC). MRD is defined as ctDNA detection in plasma after definitive treatment. Approximately 100 patients are expected to be enrolled.",
+      "detailedDescription": "This is a phase II, open-label study to assess the efficacy of AZD2936 in terms of molecular residual disease (MRD) clearance and treatment outcome in patients with MRD after definitive treatment for high risk locoregionally advanced head and neck squamous cell carcinoma (LA-HNSCC). MRD is defined as ctDNA detection in plasma after definitive treatment. Approximately 100 patients are expected to be enrolled.\n\nThe study is divided in 5 parts:\n\nPart A and Part B are common for all patients in the study, which are defined as the periods of definitive treatment and post definitive treatment. Definitive treatment will be either surgery followed by radiation or chemoradiation; definitive radiation or definitive chemoradiation according to standard of care (SOC) in our institution. A baseline ctDNA sample collection and CT staging will be done before treatment. ctDNA analysis will be performed in Part B at approximately week 5, week 10, week 26 and week 52 of this period, and patients will be classified as MRD positive or MRD negative. Patients who receive surgery as part of their treatment, will also get ctDNA analysis post-surgery.\n\nPart C is the interventional part of the study (n=14) for patients with MRD or radiological/clinical progression. Patients will continue treatment until the occurrence of any of these circumstances: after completion of 6 cycles, intolerable toxicity or patient decision. ctDNA analysis will be done at week 10 of Part C.\n\nPart D is the follow up part for patients with MRD or radiological/clinical progression. Two ctDNA samples will be analyzed at week 2 and at week 10 of Part D. Plasma samples will be collected every 6 months for the first 3 years and a final sample will be also collected if the patient has radiological or clinical progression. A CT/MRI scan will be performed at week 2 of Part D and, if clinically needed, according to SOC.\n\nPart E is the observational follow up part for patients without MRD at the completion of part B or with MRD but fail screening to enter Parts C and D. ctDNA samples will be collected at radiological or clinical progression. Additional plasma samples at 6 and 12 months after completion of part B are strongly recommended."
     },
     "conditionsModule": {
       "conditions": [
@@ -90,24 +94,19 @@
         }
       },
       "enrollmentInfo": {
-        "count": 200,
+        "count": 102,
         "type": "ESTIMATED"
       }
     },
     "armsInterventionsModule": {
       "armGroups": [
         {
-          "label": "MRD positive Cohort - Arm A (treatment)",
+          "label": "MRD positive and/or radiological/clinical progression Cohort",
           "type": "EXPERIMENTAL",
           "description": "Dose formulation- AZD2936 is supplied as a liquid drug product in a 20R vial containing 750 mg (nominal) of active AZD2936. The solution contains 50 mg/mL AZD2936 in 20 mM L-histidine/L- histidine-hydrochloride, 240 mM sucrose, 0.04% (w/v) poloxamer 188, at pH 6.0.\n\nUnit dose strength(s)- 750 mg/vial (50 mg/mL) Dosage levels- 750mg administered Q3W Route of administration- IV infusion over 1 hour",
           "interventionNames": [
             "Biological: AZD2936"
           ]
-        },
-        {
-          "label": "MRD positive Cohort - Arm B (observation)",
-          "type": "NO_INTERVENTION",
-          "description": "Observation"
         },
         {
           "label": "MRD negative Cohort",
@@ -121,7 +120,7 @@
           "name": "AZD2936",
           "description": "AZD2936 is a monovalent, bispecific, humanized, IgG1 triple mutant mAb antibody against human PD 1 and TIGIT. AZD2936 was constructed on the backbone of the DuetMab molecule (Mazor et al., 2015), and its antigen binding fragment portions are comprised of the variable domains of the anti TIGIT COM902 antibody and anti PD 1 LO115 antibody. The IgG1 Fc domain carries the triple mutation (L234F/L235E/P331S) designed to reduce Fc mediated immune effector functions. In the preclinical studies, dual blockade of TIGIT and PD 1 by AZD2936 enhanced human T cell function and promoted antitumor immune responses.",
           "armGroupLabels": [
-            "MRD positive Cohort - Arm A (treatment)"
+            "MRD positive and/or radiological/clinical progression Cohort"
           ]
         }
       ]
@@ -289,7 +288,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-24"
+      "versionHolder": "2026-02-25"
     }
   },
   "hasResults": false
