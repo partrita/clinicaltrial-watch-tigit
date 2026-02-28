@@ -274,6 +274,15 @@
         }
       ]
     },
+    "referencesModule": {
+      "references": [
+        {
+          "pmid": "41529226",
+          "type": "DERIVED",
+          "citation": "Tang W, Wu A, Lan P, Ding K, Wang Z, Wang J, Chen N, Wu X, Jiao Y, Liu F, Tong L, Shi Y, Xu J. Randomized Parallel-Group Phase II Study (NEOTERIC) of Atezolizumab With or Without Tiragolumab After Neoadjuvant Chemoradiotherapy in Locally Advanced Rectal Cancer. J Clin Oncol. 2026 Mar;44(7):565-574. doi: 10.1200/JCO-25-01883. Epub 2026 Jan 13."
+        }
+      ]
+    },
     "ipdSharingStatementModule": {
       "ipdSharing": "YES",
       "description": "For eligible studies, qualified researchers may request access to individual patient level clinical data. See Roche's commitment to transparency of clinical study information here: https://go.roche.com/data\\_sharing"
@@ -281,7 +290,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-25"
+      "versionHolder": "2026-02-27"
     },
     "conditionBrowseModule": {
       "meshes": [
