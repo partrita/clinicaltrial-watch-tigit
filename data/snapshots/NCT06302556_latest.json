@@ -22,7 +22,8 @@
     },
     "statusModule": {
       "statusVerifiedDate": "2024-02",
-      "overallStatus": "NOT_YET_RECRUITING",
+      "overallStatus": "UNKNOWN",
+      "lastKnownStatus": "NOT_YET_RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
       },
@@ -341,7 +342,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-27"
+      "versionHolder": "2026-03-02"
     }
   },
   "hasResults": false

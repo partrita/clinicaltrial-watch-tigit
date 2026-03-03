@@ -36,9 +36,9 @@
         "date": "2024-10-24",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-02-19",
+      "lastUpdateSubmitDate": "2026-02-26",
       "lastUpdatePostDateStruct": {
-        "date": "2026-02-20",
+        "date": "2026-03-02",
         "type": "ACTUAL"
       }
     },
@@ -938,6 +938,28 @@
             "lat": 25.05306,
             "lon": 121.52639
           }
+        },
+        {
+          "facility": "Mackay Memorial Hospital",
+          "status": "RECRUITING",
+          "city": "Taipei",
+          "country": "Taiwan",
+          "contacts": [
+            {
+              "name": "Chia Jung Lee",
+              "role": "CONTACT",
+              "phone": "+886-919301468",
+              "email": "chialee113312@gmail.com"
+            },
+            {
+              "name": "Nai-Wen Su, MD",
+              "role": "PRINCIPAL_INVESTIGATOR"
+            }
+          ],
+          "geoPoint": {
+            "lat": 25.05306,
+            "lon": 121.52639
+          }
         }
       ]
     },
@@ -956,7 +978,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-27"
+      "versionHolder": "2026-03-02"
     },
     "conditionBrowseModule": {
       "meshes": [

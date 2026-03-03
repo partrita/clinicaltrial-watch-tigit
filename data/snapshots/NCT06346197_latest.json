@@ -14,7 +14,7 @@
       "acronym": "CIME"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-12",
+      "statusVerifiedDate": "2026-02",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -37,9 +37,9 @@
         "date": "2024-04-03",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-12-19",
+      "lastUpdateSubmitDate": "2026-02-27",
       "lastUpdatePostDateStruct": {
-        "date": "2025-12-26",
+        "date": "2026-03-02",
         "type": "ACTUAL"
       }
     },
@@ -264,13 +264,33 @@
             "lat": 43.29695,
             "lon": 5.38107
           }
+        },
+        {
+          "facility": "CHU de Poitiers",
+          "status": "RECRUITING",
+          "city": "Poitiers",
+          "zip": "86000",
+          "country": "France",
+          "contacts": [
+            {
+              "name": "David TOUGERON, Pr",
+              "role": "CONTACT",
+              "phone": "5 49 44 42 93",
+              "phoneExt": "+33",
+              "email": "David.TOUGERON@chu-poitiers.fr"
+            }
+          ],
+          "geoPoint": {
+            "lat": 46.58261,
+            "lon": 0.34348
+          }
         }
       ]
     }
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-27"
+      "versionHolder": "2026-03-02"
     },
     "conditionBrowseModule": {
       "meshes": [
