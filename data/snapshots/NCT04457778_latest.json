@@ -366,7 +366,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-03-02",
+      "versionHolder": "2026-03-03",
       "removedCountries": [
         "Germany"
       ],
@@ -380,6 +380,9 @@
           {
             "releaseDate": "2026-01-23",
             "resetDate": "2026-02-09"
+          },
+          {
+            "releaseDate": "2026-03-02"
           }
         ]
       }
