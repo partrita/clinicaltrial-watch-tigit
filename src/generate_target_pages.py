@@ -316,13 +316,16 @@ if os.path.exists(summary_path):
         print(f"Error loading summary: {e}")
         targets = []
     
-    print("| Target | Description | Trials | Changed |")
+    print("| Target | Description | Trials | Status (Last 30d) |")
     print("| --- | --- | --- | --- |")
     for target in targets:
         name = target['name']
         link = f"targets/{name.lower()}.qmd"
-        changed_badge = f"🔴 {target['changed_count']}" if target['changed_count'] > 0 else "🟢 0"
-        print(f"| [{name}]({link}) | {target.get('description', '')} | {target['trial_count']} | {changed_badge} |")
+        if target['changed_count'] > 0:
+            changed_badge = f'<span class="badge bg-danger" aria-label="{target["changed_count"]} changes detected">🔴 {target["changed_count"]} Changes</span>'
+        else:
+            changed_badge = f'<span class="badge bg-success" aria-label="Stable, no recent changes">🟢 Stable</span>'
+        print(f"| [**{name}**]({link}) | {target.get('description', '')} | {target['trial_count']} | {changed_badge} |")
 else:
     print("No summary data available yet. Showing targets from configuration:")
     print("")
