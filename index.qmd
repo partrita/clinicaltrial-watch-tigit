@@ -11,6 +11,19 @@ title: "Clinical Trial Watch"
 #| output: asis
 import json
 import os
+import html
+import sys
+
+# Add src to sys.path if running from project root
+sys.path.append(os.path.join(os.getcwd(), "src"))
+try:
+    from utils import sanitize_id
+except ImportError:
+    # Fallback if already in src or other structure
+    try:
+        from src.utils import sanitize_id
+    except ImportError:
+        def sanitize_id(x): return x.lower()
 
 summary_path = "data/targets_summary.json"
 
@@ -26,9 +39,13 @@ if os.path.exists(summary_path):
     print("| --- | --- | --- | --- |")
     for target in targets:
         name = target['name']
-        link = f"targets/{name.lower()}.qmd"
+        link = f"targets/{sanitize_id(name).lower()}.qmd"
         changed_badge = f"🔴 {target['changed_count']}" if target['changed_count'] > 0 else "🟢 0"
-        print(f"| [{name}]({link}) | {target.get('description', '')} | {target['trial_count']} | {changed_badge} |")
+
+        esc_name = html.escape(name)
+        esc_desc = html.escape(target.get('description', ''))
+
+        print(f"| [{esc_name}]({link}) | {esc_desc} | {target['trial_count']} | {changed_badge} |")
 else:
     print("No summary data available yet. Showing targets from configuration:")
     print("")
@@ -42,7 +59,12 @@ else:
             for target in config.get('targets', []):
                 name = target['name']
                 desc = target.get('description', f"{name} 타겟 임상시험 모니터링")
-                print(f"| [{name}](targets/{name.lower()}.qmd) | {desc} |")
+
+                link = f"targets/{sanitize_id(name).lower()}.qmd"
+                esc_name = html.escape(name)
+                esc_desc = html.escape(desc)
+
+                print(f"| [{esc_name}]({link}) | {esc_desc} |")
     except Exception as e:
         print(f"Error loading targets: {e}")
 ```
