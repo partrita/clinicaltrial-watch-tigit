@@ -69,7 +69,6 @@ def generate_target_qmd(
 import pandas as pd
 import plotly.express as px
 import os
-from utils import sanitize_id
 
 target_name = "'''
         + target_lower
@@ -145,7 +144,7 @@ if os.path.exists(csv_path):
 #| output: asis
 import json
 import os
-from utils import sanitize_id
+import html
 
 target_name = "'''
         + target_lower
@@ -161,8 +160,10 @@ if os.path.exists(target_h_file):
         history = []
     
     for record in reversed(history[-10:]):
-        print(f"**Date:** {record['timestamp']}")
-        print(f"\n{record['event']}\n")
+        print(f"**Date:** {html.escape(record['timestamp'])}")
+        # Escape the event content
+        escaped_event = html.escape(record['event']).replace('\n', '<br>')
+        print(f"\n{escaped_event}\n")
         print("***")
 else:
     print(f"No target-level milestones recorded yet for {target_name}.")
@@ -175,7 +176,7 @@ else:
 #| output: asis
 import json
 import os
-from utils import sanitize_id
+import html
 
 target_name = "'''
         + target_lower
@@ -207,13 +208,13 @@ for trial_id in target_trials:
         if real_changes:
             if not history_found:
                 history_found = True
-            print(f"#### {trial_id}")
+            print(f"#### {html.escape(trial_id)}")
             for record in reversed(real_changes[-5:]):
-                print(f"**{record['timestamp']}**")
+                print(f"**{html.escape(record['timestamp'])}**")
                 for line in record['diff'].splitlines():
                     line = line.strip()
                     if line:
-                        print(f"- {line}")
+                        print(f"- {html.escape(line)}")
                 print("")
                 print("***")
 
@@ -241,7 +242,7 @@ if not history_found:
 #| output: asis
 import json
 import os
-from utils import sanitize_id
+import html
 
 target_name = "'''
         + target_lower
@@ -272,8 +273,20 @@ if os.path.exists(summary_path):
             'WITHDRAWN': 'danger'
         }
         badge_class = status_map.get(status, 'light text-dark')
-        status_badge = f'<span class="badge bg-{badge_class}">{status}</span>'
-        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {item.get('sponsor', 'N/A')} | {update_color} {item.get('monitor_status')} | {status_badge} | {item.get('conditions', 'N/A')} | {item.get('phases', 'N/A')} | {item.get('study_start', 'N/A')} | {item.get('study_end', 'N/A')} | {item.get('enrollment', 'N/A')} | {item.get('last_updated', 'N/A')} |")
+        status_badge = f'<span class="badge bg-{badge_class}">{html.escape(status)}</span>'
+
+        # Escape all text fields for table
+        esc_id = html.escape(item['id'])
+        esc_sponsor = html.escape(item.get('sponsor', 'N/A'))
+        esc_mon_status = html.escape(item.get('monitor_status', 'N/A'))
+        esc_conditions = html.escape(item.get('conditions', 'N/A'))
+        esc_phases = html.escape(item.get('phases', 'N/A'))
+        esc_start = html.escape(item.get('study_start', 'N/A'))
+        esc_end = html.escape(item.get('study_end', 'N/A'))
+        esc_enroll = html.escape(str(item.get('enrollment', 'N/A')))
+        esc_last_upd = html.escape(item.get('last_updated', 'N/A'))
+
+        print(f"| [{esc_id}](https://clinicaltrials.gov/study/{esc_id}) | {esc_sponsor} | {update_color} {esc_mon_status} | {status_badge} | {esc_conditions} | {esc_phases} | {esc_start} | {esc_end} | {esc_enroll} | {esc_last_upd} |")
     print('</div>')
 else:
     print(f"No monitoring data available yet for {target_name} at {os.path.abspath(summary_path)}. Run the data collection script first.")
@@ -304,7 +317,19 @@ title: "Clinical Trial Watch"
 #| output: asis
 import json
 import os
-from utils import sanitize_id
+import html
+import sys
+
+# Add src to sys.path if running from project root
+sys.path.append(os.path.join(os.getcwd(), "src"))
+try:
+    from utils import sanitize_id
+except ImportError:
+    # Fallback if already in src or other structure
+    try:
+        from src.utils import sanitize_id
+    except ImportError:
+        def sanitize_id(x): return x.lower()
 
 summary_path = "data/targets_summary.json"
 
@@ -320,9 +345,13 @@ if os.path.exists(summary_path):
     print("| --- | --- | --- | --- |")
     for target in targets:
         name = target['name']
-        link = f"targets/{name.lower()}.qmd"
+        link = f"targets/{sanitize_id(name).lower()}.qmd"
         changed_badge = f"🔴 {target['changed_count']}" if target['changed_count'] > 0 else "🟢 0"
-        print(f"| [{name}]({link}) | {target.get('description', '')} | {target['trial_count']} | {changed_badge} |")
+
+        esc_name = html.escape(name)
+        esc_desc = html.escape(target.get('description', ''))
+
+        print(f"| [{esc_name}]({link}) | {esc_desc} | {target['trial_count']} | {changed_badge} |")
 else:
     print("No summary data available yet. Showing targets from configuration:")
     print("")
@@ -336,7 +365,12 @@ else:
             for target in config.get('targets', []):
                 name = target['name']
                 desc = target.get('description', f"{name} 타겟 임상시험 모니터링")
-                print(f"| [{name}](targets/{name.lower()}.qmd) | {desc} |")
+
+                link = f"targets/{sanitize_id(name).lower()}.qmd"
+                esc_name = html.escape(name)
+                esc_desc = html.escape(desc)
+
+                print(f"| [{esc_name}]({link}) | {esc_desc} |")
     except Exception as e:
         print(f"Error loading targets: {e}")
 ```

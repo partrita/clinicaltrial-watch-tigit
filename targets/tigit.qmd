@@ -91,6 +91,7 @@ if os.path.exists(csv_path):
 #| output: asis
 import json
 import os
+import html
 
 target_name = "tigit"
 target_h_file = f"data/history/target_{target_name}.json"
@@ -104,8 +105,10 @@ if os.path.exists(target_h_file):
         history = []
     
     for record in reversed(history[-10:]):
-        print(f"**Date:** {record['timestamp']}")
-        print(f"\n{record['event']}\n")
+        print(f"**Date:** {html.escape(record['timestamp'])}")
+        # Escape the event content
+        escaped_event = html.escape(record['event']).replace('\n', '<br>')
+        print(f"\n{escaped_event}\n")
         print("***")
 else:
     print(f"No target-level milestones recorded yet for {target_name}.")
@@ -118,6 +121,7 @@ else:
 #| output: asis
 import json
 import os
+import html
 
 target_name = "tigit"
 summary_path = f"data/targets/{target_name}/status_summary.json"
@@ -147,13 +151,13 @@ for trial_id in target_trials:
         if real_changes:
             if not history_found:
                 history_found = True
-            print(f"#### {trial_id}")
+            print(f"#### {html.escape(trial_id)}")
             for record in reversed(real_changes[-5:]):
-                print(f"**{record['timestamp']}**")
+                print(f"**{html.escape(record['timestamp'])}**")
                 for line in record['diff'].splitlines():
                     line = line.strip()
                     if line:
-                        print(f"- {line}")
+                        print(f"- {html.escape(line)}")
                 print("")
                 print("***")
 
@@ -177,6 +181,7 @@ if not history_found:
 #| output: asis
 import json
 import os
+import html
 
 target_name = "tigit"
 summary_path = f"data/targets/{target_name}/status_summary.json"
@@ -205,8 +210,20 @@ if os.path.exists(summary_path):
             'WITHDRAWN': 'danger'
         }
         badge_class = status_map.get(status, 'light text-dark')
-        status_badge = f'<span class="badge bg-{badge_class}">{status}</span>'
-        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {item.get('sponsor', 'N/A')} | {update_color} {item.get('monitor_status')} | {status_badge} | {item.get('conditions', 'N/A')} | {item.get('phases', 'N/A')} | {item.get('study_start', 'N/A')} | {item.get('study_end', 'N/A')} | {item.get('enrollment', 'N/A')} | {item.get('last_updated', 'N/A')} |")
+        status_badge = f'<span class="badge bg-{badge_class}">{html.escape(status)}</span>'
+
+        # Escape all text fields for table
+        esc_id = html.escape(item['id'])
+        esc_sponsor = html.escape(item.get('sponsor', 'N/A'))
+        esc_mon_status = html.escape(item.get('monitor_status', 'N/A'))
+        esc_conditions = html.escape(item.get('conditions', 'N/A'))
+        esc_phases = html.escape(item.get('phases', 'N/A'))
+        esc_start = html.escape(item.get('study_start', 'N/A'))
+        esc_end = html.escape(item.get('study_end', 'N/A'))
+        esc_enroll = html.escape(str(item.get('enrollment', 'N/A')))
+        esc_last_upd = html.escape(item.get('last_updated', 'N/A'))
+
+        print(f"| [{esc_id}](https://clinicaltrials.gov/study/{esc_id}) | {esc_sponsor} | {update_color} {esc_mon_status} | {status_badge} | {esc_conditions} | {esc_phases} | {esc_start} | {esc_end} | {esc_enroll} | {esc_last_upd} |")
     print('</div>')
 else:
     print(f"No monitoring data available yet for {target_name} at {os.path.abspath(summary_path)}. Run the data collection script first.")
