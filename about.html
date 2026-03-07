@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Clinical Trial Watch</title>
+<title>About – Clinicaltrials.gov Watcher</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4cad563b89d51a7306807a9bca28adc0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-1e36d4a1cb9e1a3a892e0277d3d46338.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Clinical Trial Watch</span>
+    <span class="navbar-title">Clinicaltrials.gov Watcher</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -106,10 +106,6 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="./targets/tigit.html">
  <span class="dropdown-text">TIGIT</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./targets/ige.html">
- <span class="dropdown-text">IgE</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./targets/b7-h3.html">
@@ -137,10 +133,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
-  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
-  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How it Works</a></li>
-  <li><a href="#data-source" id="toc-data-source" class="nav-link" data-scroll-target="#data-source">Data Source</a></li>
+  <li><a href="#프로젝트-개요" id="toc-프로젝트-개요" class="nav-link active" data-scroll-target="#프로젝트-개요">프로젝트 개요</a></li>
+  <li><a href="#주요-기능" id="toc-주요-기능" class="nav-link" data-scroll-target="#주요-기능">주요 기능</a></li>
+  <li><a href="#동작-방식" id="toc-동작-방식" class="nav-link" data-scroll-target="#동작-방식">동작 방식</a></li>
+  <li><a href="#데이터-출처" id="toc-데이터-출처" class="nav-link" data-scroll-target="#데이터-출처">데이터 출처</a></li>
   </ul>
 </nav>
     </div>
@@ -166,33 +162,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="project-overview" class="level2">
-<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
-<p>Clinical Trial Watch is an automated monitoring system designed to track changes in clinical trials related to selected therapeutic targets (e.g., CCR8, TIGIT, IgE). By leveraging the ClinicalTrials.gov API v2, this project provides researchers and clinicians with a clear, up-to-date view of the competitive landscape.</p>
+<section id="프로젝트-개요" class="level2">
+<h2 class="anchored" data-anchor-id="프로젝트-개요">프로젝트 개요</h2>
+<p>Clinicaltrials.gov Watcher는 선택된 치료 타겟(예: CCR8, TIGIT, B7-H3)과 관련된 임상시험의 변동 사항을 추적하도록 설계된 자동 모니터링 시스템입니다. ClinicalTrials.gov API v2를 활용하여, 이 프로젝트는 연구자와 임상의에게 경쟁 환경에 대한 명확하고 최신의 뷰를 제공합니다.</p>
 </section>
-<section id="key-features" class="level2">
-<h2 class="anchored" data-anchor-id="key-features">Key Features</h2>
+<section id="주요-기능" class="level2">
+<h2 class="anchored" data-anchor-id="주요-기능">주요 기능</h2>
 <ul>
-<li>Automated Monitoring: Daily updates on the status and key parameters of clinical trials for multiple targets.</li>
-<li>Change Detection: Intelligent diffing engine that highlights meaningful changes in recruitment status, phase, and completion dates.</li>
-<li>Data Insights: Interactive visualizations to help understand clinical trial trends and distributions for each target.</li>
-<li>Open Data: All consolidated raw data is available for download as a CSV for deeper analysis.</li>
+<li>자동 탐색 (Auto-Discovery): 정의된 타겟과 일치하는 새로운 임상시험을 자동으로 검색하고 등록합니다.</li>
+<li>자동 모니터링 (Automated Monitoring): 여러 타겟에 대한 임상시험의 상태 및 주요 매개변수에 대한 일 단위 업데이트를 제공합니다.</li>
+<li>변경 감지 (Change Detection): 모집 현황, 단계, 예상 종료일 등의 의미 있는 변화를 강조하는 지능형 비교(diffing) 엔진을 포함합니다.</li>
+<li>데이터 인사이트 (Data Insights): 각 타겟에 대한 임상시험 동향과 분포를 이해하는 데 도움이 되는 대화형 시각화 자료를 제공합니다.</li>
+<li>오픈 데이터 (Open Data): 심층 분석을 위해 통합된 모든 원시 데이터를 CSV 형식으로 다운로드할 수 있습니다.</li>
 </ul>
 </section>
-<section id="how-it-works" class="level2">
-<h2 class="anchored" data-anchor-id="how-it-works">How it Works</h2>
+<section id="동작-방식" class="level2">
+<h2 class="anchored" data-anchor-id="동작-방식">동작 방식</h2>
 <ol type="1">
-<li>Daily Watch: A GitHub Actions workflow runs every 24 hours to fetch the latest data for all NCT IDs listed in <code>trials.yaml</code>.</li>
-<li>Analysis: The <code>src/main.py</code> script compares current data with previous snapshots to identify any changes.</li>
-<li>Report Generation: Updates are logged in the <code>history.qmd</code> page, and the dashboard is refreshed with the latest summary stats.</li>
-<li>Publishing: The updated Quarto website is automatically published to GitHub Pages.</li>
+<li>자동 탐색 (Auto-Discovery): 각 타겟과 관련된 새로운 임상에 대해 ClinicalTrials.gov API를 질의하고 <code>trials.yaml</code>을 자동으로 업데이트합니다.</li>
+<li>일일 감시 (Daily Watch): GitHub Actions 워크플로우가 24시간마다 실행되어 <code>trials.yaml</code>에 나열된 모든 NCT ID에 대한 최신 데이터를 가져옵니다.</li>
+<li>분석 (Analysis): <code>src/main.py</code> 스크립트가 현재 데이터와 이전 스냅샷을 비교하여 변경 사항을 식별합니다.</li>
+<li>리포트 생성 (Report Generation): 업데이트 내역이 타겟별 페이지에 기록되며, 최신 통계로 요약 정보가 갱신됩니다.</li>
+<li>배포 (Publishing): 업데이트된 Quarto 웹사이트가 GitHub Pages에 자동으로 배포됩니다.</li>
 </ol>
 </section>
-<section id="data-source" class="level2">
-<h2 class="anchored" data-anchor-id="data-source">Data Source</h2>
-<p>All data is sourced from <a href="https://clinicaltrials.gov/">ClinicalTrials.gov</a> via their official API.</p>
+<section id="데이터-출처" class="level2">
+<h2 class="anchored" data-anchor-id="데이터-출처">데이터 출처</h2>
+<p>모든 데이터는 공식 API를 통해 <a href="https://clinicaltrials.gov/">ClinicalTrials.gov</a>에서 수집됩니다.</p>
 <hr>
-<p><em>This project is built using Python, Quarto, and GitHub Actions.</em></p>
+<p><em>이 프로젝트는 Python, Quarto 및 GitHub Actions를 사용하였습니다.</em></p>
 
 
 </section>
