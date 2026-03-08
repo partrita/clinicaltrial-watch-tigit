@@ -18,6 +18,7 @@ B7-H3 타겟 임상시험 모니터링
 import pandas as pd
 import plotly.express as px
 import os
+from utils import sanitize_id
 
 target_name = "b7-h3"
 csv_path = f"data/targets/{target_name}/all_trials_raw.csv"
@@ -91,6 +92,7 @@ if os.path.exists(csv_path):
 #| output: asis
 import json
 import os
+from utils import sanitize_id
 
 target_name = "b7-h3"
 target_h_file = f"data/history/target_{target_name}.json"
@@ -118,6 +120,7 @@ else:
 #| output: asis
 import json
 import os
+from utils import sanitize_id
 
 target_name = "b7-h3"
 summary_path = f"data/targets/{target_name}/status_summary.json"
@@ -177,6 +180,7 @@ if not history_found:
 #| output: asis
 import json
 import os
+from utils import sanitize_id
 
 target_name = "b7-h3"
 summary_path = f"data/targets/{target_name}/status_summary.json"
@@ -189,24 +193,15 @@ if os.path.exists(summary_path):
         print(f"Error loading data: {e}")
         summary = []
     
+    from utils import get_status_badge, get_update_badge
+
     print('<div style="font-size:0.8em">')
     print("| Trial ID | Sponsor | Update | Status | Conditions | Phases | Start | End | Enroll | Last Updated |")
     print("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
     for item in summary:
-        update_color = "🟢" if item.get('monitor_status') == "No Change" else "🔴"
-        status = item.get('status', 'N/A')
-        status_map = {
-            'RECRUITING': 'success',
-            'ACTIVE_NOT_RECRUITING': 'info',
-            'COMPLETED': 'secondary',
-            'NOT_YET_RECRUITING': 'warning',
-            'SUSPENDED': 'danger',
-            'TERMINATED': 'danger',
-            'WITHDRAWN': 'danger'
-        }
-        badge_class = status_map.get(status, 'light text-dark')
-        status_badge = f'<span class="badge bg-{badge_class}">{status}</span>'
-        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {item.get('sponsor', 'N/A')} | {update_color} {item.get('monitor_status')} | {status_badge} | {item.get('conditions', 'N/A')} | {item.get('phases', 'N/A')} | {item.get('study_start', 'N/A')} | {item.get('study_end', 'N/A')} | {item.get('enrollment', 'N/A')} | {item.get('last_updated', 'N/A')} |")
+        update_badge = get_update_badge(item.get('monitor_status', 'No Change'))
+        status_badge = get_status_badge(item.get('status', 'N/A'))
+        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {item.get('sponsor', 'N/A')} | {update_badge} | {status_badge} | {item.get('conditions', 'N/A')} | {item.get('phases', 'N/A')} | {item.get('study_start', 'N/A')} | {item.get('study_end', 'N/A')} | {item.get('enrollment', 'N/A')} | {item.get('last_updated', 'N/A')} |")
     print('</div>')
 else:
     print(f"No monitoring data available yet for {target_name} at {os.path.abspath(summary_path)}. Run the data collection script first.")
