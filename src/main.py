@@ -205,7 +205,6 @@ def process_trial(
 ) -> Tuple[Optional[Dict[str, Any]], Optional[Dict[str, Any]]]:
     """Process a single trial and return report data."""
     trial_id = trial["id"]
-    print(f"Processing {trial_id}...")
 
     new_data = fetch_trial_data(trial_id)
     if not new_data:
@@ -364,9 +363,9 @@ def save_target_data(
     print(f"  Saved target data to {target_dir}/")
 
 
-MAX_WORKERS = 10  # Reasonable number of concurrent requests to avoid getting blocked
+MAX_WORKERS = 20  # Performance: Increased from 10 to 20 for higher concurrency
 PER_TRIAL_TIMEOUT = 30  # Seconds per trial before skipping
-TARGET_TIMEOUT = 120  # 2 minutes max per target
+GLOBAL_TIMEOUT = 600  # 10 minutes max for all trials
 
 
 def main() -> None:
@@ -383,65 +382,77 @@ def main() -> None:
     if not os.path.exists("data/snapshots"):
         os.makedirs("data/snapshots", exist_ok=True)
 
-    # Collect all trials for batch processing if needed, but here we process target by target
-    target_summaries = []
-    all_reports = []
-    all_raw = []
+    # 1. Collect and deduplicate trials
+    unique_trials = {}  # trial_id -> trial_info
+    for target in targets:
+        target_name = target["name"]
+        for trial in target.get("trials", []):
+            trial_id = trial["id"]
+            if trial_id not in unique_trials:
+                unique_trials[trial_id] = {
+                    "info": trial,
+                    "target_name": target_name,
+                }
 
-    total_trials = sum(len(target.get("trials", [])) for target in targets)
-    current_trial_idx = 0
+    total_unique = len(unique_trials)
+    print(f"\nFound {total_unique} unique trials across {len(targets)} targets")
+
+    # 2. Process all unique trials in parallel
+    trial_results = {}  # trial_id -> (report, raw)
+    processed_count = 0
+
+    executor = ThreadPoolExecutor(max_workers=MAX_WORKERS)
+    future_to_trial_id = {
+        executor.submit(process_trial, item["info"], item["target_name"]): tid
+        for tid, item in unique_trials.items()
+    }
+
+    try:
+        for future in as_completed(future_to_trial_id, timeout=GLOBAL_TIMEOUT):
+            processed_count += 1
+            tid = future_to_trial_id[future]
+            try:
+                report, raw = future.result(timeout=PER_TRIAL_TIMEOUT)
+                trial_results[tid] = (report, raw)
+                print(f"[{processed_count}/{total_unique}] Processed {tid}")
+            except TimeoutError:
+                print(f"[{processed_count}/{total_unique}] Timeout processing {tid}")
+            except Exception as e:
+                print(f"[{processed_count}/{total_unique}] Error processing {tid}: {e}")
+    except TimeoutError:
+        print(f"  ⚠ Global processing timed out after {GLOBAL_TIMEOUT}s")
+    finally:
+        executor.shutdown(wait=False, cancel_futures=True)
+
+    # 3. Distribute results to targets and save
+    target_summaries = []
 
     for target in targets:
         target_name = target["name"]
         trials = target.get("trials", [])
 
-        print(f"\nProcessing target: {target_name} ({len(trials)} trials)")
+        print(f"\nFinalizing target: {target_name} ({len(trials)} trials)")
 
         target_reports = []
         target_raw = []
 
-        # Parallel processing of trials within each target
-        executor = ThreadPoolExecutor(max_workers=MAX_WORKERS)
-        future_to_trial = {
-            executor.submit(process_trial, trial, target_name): trial
-            for trial in trials
-        }
+        for trial in trials:
+            tid = trial["id"]
+            if tid in trial_results:
+                report, raw = trial_results[tid]
+                if report:
+                    # Context-specific report copy
+                    target_report = report.copy()
+                    target_report["target"] = target_name
+                    # Also update trial name if different in this target context
+                    target_report["name"] = trial.get("name", report["name"])
+                    target_reports.append(target_report)
+                if raw:
+                    # Context-specific raw data copy
+                    target_raw_item = raw.copy()
+                    target_raw_item["_target"] = target_name
+                    target_raw.append(target_raw_item)
 
-        try:
-            for future in as_completed(future_to_trial, timeout=TARGET_TIMEOUT):
-                current_trial_idx += 1
-                try:
-                    report, raw = future.result(timeout=PER_TRIAL_TIMEOUT)
-                    if report:
-                        target_reports.append(report)
-                        all_reports.append(report)
-                    if raw:
-                        target_raw.append(raw)
-                        all_raw.append(raw)
-
-                    print(
-                        f"[{current_trial_idx}/{total_trials}] Processed {future_to_trial[future]['id']}"
-                    )
-                except TimeoutError:
-                    trial_id = future_to_trial[future]["id"]
-                    print(
-                        f"[{current_trial_idx}/{total_trials}] Timeout processing {trial_id}, skipping"
-                    )
-                except Exception as e:
-                    trial_id = future_to_trial[future]["id"]
-                    print(
-                        f"[{current_trial_idx}/{total_trials}] Error processing {trial_id}: {e}"
-                    )
-        except TimeoutError:
-            skipped = sum(1 for f in future_to_trial if not f.done())
-            print(
-                f"  ⚠ Target {target_name} timed out after {TARGET_TIMEOUT}s, skipped {skipped} remaining trials"
-            )
-        finally:
-            # Don't wait for remaining threads — move on immediately
-            executor.shutdown(wait=False, cancel_futures=True)
-
-        # Save target-specific data
         if target_reports:
             try:
                 save_target_data(target_name, target_reports, target_raw)
@@ -449,23 +460,22 @@ def main() -> None:
             except Exception as e:
                 print(f"  Error saving data for target {target_name}: {e}")
 
-        # Collect target summary
         target_summaries.append(
             {
                 "name": target_name,
                 "description": target.get("description", ""),
-                "trial_count": len(trials),  # Use expected count from config
+                "trial_count": len(trials),
                 "changed_count": sum(
-                    1 for r in target_reports if r["monitor_status"] == "Changed"
+                    1 for r in target_reports if r.get("monitor_status") == "Changed"
                 ),
             }
         )
 
-        # Save global target summary after each target for better visibility
-        with open("data/targets_summary.json", "w", encoding="utf-8") as f:
-            json.dump(target_summaries, f, indent=2, ensure_ascii=False)
+    # Save global target summary
+    with open("data/targets_summary.json", "w", encoding="utf-8") as f:
+        json.dump(target_summaries, f, indent=2, ensure_ascii=False)
 
-    print(f"\n✓ Processed {len(targets)} targets, {len(all_reports)} total trials")
+    print(f"\n✓ Processed {len(targets)} targets, {total_unique} unique trials")
 
     # Automatically update target pages and _quarto.yml
     print("\nUpdating website pages...")
@@ -474,5 +484,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-    # Force exit to kill any lingering background threads from timed-out targets
+    # Force exit to kill any lingering background threads
     os._exit(0)
