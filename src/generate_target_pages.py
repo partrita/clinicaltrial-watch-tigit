@@ -256,24 +256,15 @@ if os.path.exists(summary_path):
         print(f"Error loading data: {e}")
         summary = []
     
+    from utils import get_status_badge, get_update_badge
+
     print('<div style="font-size:0.8em">')
     print("| Trial ID | Sponsor | Update | Status | Conditions | Phases | Start | End | Enroll | Last Updated |")
     print("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
     for item in summary:
-        update_color = "🟢" if item.get('monitor_status') == "No Change" else "🔴"
-        status = item.get('status', 'N/A')
-        status_map = {
-            'RECRUITING': 'success',
-            'ACTIVE_NOT_RECRUITING': 'info',
-            'COMPLETED': 'secondary',
-            'NOT_YET_RECRUITING': 'warning',
-            'SUSPENDED': 'danger',
-            'TERMINATED': 'danger',
-            'WITHDRAWN': 'danger'
-        }
-        badge_class = status_map.get(status, 'light text-dark')
-        status_badge = f'<span class="badge bg-{badge_class}">{status}</span>'
-        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {item.get('sponsor', 'N/A')} | {update_color} {item.get('monitor_status')} | {status_badge} | {item.get('conditions', 'N/A')} | {item.get('phases', 'N/A')} | {item.get('study_start', 'N/A')} | {item.get('study_end', 'N/A')} | {item.get('enrollment', 'N/A')} | {item.get('last_updated', 'N/A')} |")
+        update_badge = get_update_badge(item.get('monitor_status', 'No Change'))
+        status_badge = get_status_badge(item.get('status', 'N/A'))
+        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {item.get('sponsor', 'N/A')} | {update_badge} | {status_badge} | {item.get('conditions', 'N/A')} | {item.get('phases', 'N/A')} | {item.get('study_start', 'N/A')} | {item.get('study_end', 'N/A')} | {item.get('enrollment', 'N/A')} | {item.get('last_updated', 'N/A')} |")
     print('</div>')
 else:
     print(f"No monitoring data available yet for {target_name} at {os.path.abspath(summary_path)}. Run the data collection script first.")
@@ -321,7 +312,10 @@ if os.path.exists(summary_path):
     for target in targets:
         name = target['name']
         link = f"targets/{name.lower()}.qmd"
-        changed_badge = f"🔴 {target['changed_count']}" if target['changed_count'] > 0 else "🟢 0"
+        count = target['changed_count']
+        badge_class = "danger" if count > 0 else "success"
+        aria_label = f"{count} changes detected" if count > 0 else "No changes"
+        changed_badge = f'<span class="badge bg-{badge_class}" aria-label="{aria_label}">{count}</span>'
         print(f"| [{name}]({link}) | {target.get('description', '')} | {target['trial_count']} | {changed_badge} |")
 else:
     print("No summary data available yet. Showing targets from configuration:")

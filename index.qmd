@@ -11,6 +11,7 @@ title: "Clinical Trial Watch"
 #| output: asis
 import json
 import os
+from utils import sanitize_id
 
 summary_path = "data/targets_summary.json"
 
@@ -27,7 +28,10 @@ if os.path.exists(summary_path):
     for target in targets:
         name = target['name']
         link = f"targets/{name.lower()}.qmd"
-        changed_badge = f"🔴 {target['changed_count']}" if target['changed_count'] > 0 else "🟢 0"
+        count = target['changed_count']
+        badge_class = "danger" if count > 0 else "success"
+        aria_label = f"{count} changes detected" if count > 0 else "No changes"
+        changed_badge = f'<span class="badge bg-{badge_class}" aria-label="{aria_label}">{count}</span>'
         print(f"| [{name}]({link}) | {target.get('description', '')} | {target['trial_count']} | {changed_badge} |")
 else:
     print("No summary data available yet. Showing targets from configuration:")
