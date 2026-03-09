@@ -53,7 +53,13 @@ def generate_target_qmd(
     qmd_path = os.path.join(output_dir, f"{target_lower}.qmd")
 
     # Using a literal string for most of the content to avoid f-string brace hell
-    header = f'---\ntitle: "{target_name}"\n---\n\n::: {{.callout-note}}\n{description}\n:::\n'
+    # Note: Target title is handled by Quarto/Pandoc, so we don't manually escape it here.
+    # But description in the callout-note should be escaped in the Python block if it was dynamic,
+    # or we can escape it here as it's being baked into the QMD.
+    from utils import escape_html
+
+    safe_description = escape_html(description)
+    header = f'---\ntitle: "{target_name}"\n---\n\n::: {{.callout-note}}\n{safe_description}\n:::\n'
 
     body = (
         r'''
@@ -145,7 +151,7 @@ if os.path.exists(csv_path):
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 target_name = "'''
         + target_lower
@@ -162,7 +168,8 @@ if os.path.exists(target_h_file):
     
     for record in reversed(history[-10:]):
         print(f"**Date:** {record['timestamp']}")
-        print(f"\n{record['event']}\n")
+        # Event is usually system generated but let's be safe
+        print(f"\n{escape_html(record['event'])}\n")
         print("***")
 else:
     print(f"No target-level milestones recorded yet for {target_name}.")
@@ -175,7 +182,7 @@ else:
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 target_name = "'''
         + target_lower
@@ -213,7 +220,7 @@ for trial_id in target_trials:
                 for line in record['diff'].splitlines():
                     line = line.strip()
                     if line:
-                        print(f"- {line}")
+                        print(f"- {escape_html(line)}")
                 print("")
                 print("***")
 
@@ -241,7 +248,7 @@ if not history_found:
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html, get_status_badge, get_update_badge
 
 target_name = "'''
         + target_lower
@@ -260,23 +267,21 @@ if os.path.exists(summary_path):
     print("| Trial ID | Sponsor | Update | Status | Conditions | Phases | Start | End | Enroll | Last Updated |")
     print("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
     for item in summary:
-        update_color = "🟢" if item.get('monitor_status') == "No Change" else "🔴"
-        status = item.get('status', 'N/A')
-        status_map = {
-            'RECRUITING': 'success',
-            'ACTIVE_NOT_RECRUITING': 'info',
-            'COMPLETED': 'secondary',
-            'NOT_YET_RECRUITING': 'warning',
-            'SUSPENDED': 'danger',
-            'TERMINATED': 'danger',
-            'WITHDRAWN': 'danger'
-        }
-        badge_class = status_map.get(status, 'light text-dark')
-        status_badge = f'<span class="badge bg-{badge_class}">{status}</span>'
-        conditions = item.get('conditions', 'N/A')
+        update_badge = get_update_badge(item.get('monitor_status'))
+        status_badge = get_status_badge(item.get('status'))
+
+        sponsor = escape_html(item.get('sponsor', 'N/A'))
+        conditions = escape_html(item.get('conditions', 'N/A'))
         if len(conditions) > 30:
             conditions = conditions[:30] + "..."
-        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {item.get('sponsor', 'N/A')} | {update_color} {item.get('monitor_status')} | {status_badge} | {conditions} | {item.get('phases', 'N/A')} | {item.get('study_start', 'N/A')} | {item.get('study_end', 'N/A')} | {item.get('enrollment', 'N/A')} | {item.get('last_updated', 'N/A')} |")
+
+        phases = escape_html(item.get('phases', 'N/A'))
+        start = escape_html(item.get('study_start', 'N/A'))
+        end = escape_html(item.get('study_end', 'N/A'))
+        enroll = str(item.get('enrollment', 'N/A'))
+        updated = escape_html(item.get('last_updated', 'N/A'))
+
+        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {sponsor} | {update_badge} | {status_badge} | {conditions} | {phases} | {start} | {end} | {enroll} | {updated} |")
     print('</div>')
 else:
     print(f"No monitoring data available yet for {target_name} at {os.path.abspath(summary_path)}. Run the data collection script first.")
@@ -307,7 +312,7 @@ title: "Clinical Trial Watch"
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 summary_path = "data/targets_summary.json"
 
@@ -325,7 +330,8 @@ if os.path.exists(summary_path):
         name = target['name']
         link = f"targets/{name.lower()}.qmd"
         changed_badge = f"🔴 {target['changed_count']}" if target['changed_count'] > 0 else "🟢 0"
-        print(f"| [{name}]({link}) | {target.get('description', '')} | {target['trial_count']} | {changed_badge} |")
+        description = escape_html(target.get('description', ''))
+        print(f"| [{name}]({link}) | {description} | {target['trial_count']} | {changed_badge} |")
 else:
     print("No summary data available yet. Showing targets from configuration:")
     print("")
@@ -339,7 +345,8 @@ else:
             for target in config.get('targets', []):
                 name = target['name']
                 desc = target.get('description', f"{name} 타겟 임상시험 모니터링")
-                print(f"| [{name}](targets/{name.lower()}.qmd) | {desc} |")
+                description = escape_html(desc)
+                print(f"| [{name}](targets/{name.lower()}.qmd) | {description} |")
     except Exception as e:
         print(f"Error loading targets: {e}")
 ```

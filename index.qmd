@@ -11,7 +11,7 @@ title: "Clinical Trial Watch"
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 summary_path = "data/targets_summary.json"
 
@@ -29,7 +29,8 @@ if os.path.exists(summary_path):
         name = target['name']
         link = f"targets/{name.lower()}.qmd"
         changed_badge = f"🔴 {target['changed_count']}" if target['changed_count'] > 0 else "🟢 0"
-        print(f"| [{name}]({link}) | {target.get('description', '')} | {target['trial_count']} | {changed_badge} |")
+        description = escape_html(target.get('description', ''))
+        print(f"| [{name}]({link}) | {description} | {target['trial_count']} | {changed_badge} |")
 else:
     print("No summary data available yet. Showing targets from configuration:")
     print("")
@@ -43,7 +44,8 @@ else:
             for target in config.get('targets', []):
                 name = target['name']
                 desc = target.get('description', f"{name} 타겟 임상시험 모니터링")
-                print(f"| [{name}](targets/{name.lower()}.qmd) | {desc} |")
+                description = escape_html(desc)
+                print(f"| [{name}](targets/{name.lower()}.qmd) | {description} |")
     except Exception as e:
         print(f"Error loading targets: {e}")
 ```
