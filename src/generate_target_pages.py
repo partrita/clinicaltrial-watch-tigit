@@ -179,7 +179,7 @@ from src.utils import sanitize_id
 
 target_name = "'''
         + target_lower
-        + r""""
+        + r'''"
 summary_path = f"data/targets/{target_name}/status_summary.json"
 
 # Get trial IDs for this target
@@ -225,12 +225,12 @@ if not history_found:
 
 ---
 
-<a href="../data/targets/"""
+<a href="../data/targets/'''
         + target_lower
-        + r"""/all_trials_raw.csv" class="btn btn-primary" role="button">📥 Download Full Data (CSV)</a>
-<a href="../data/targets/"""
+        + r'''/all_trials_raw.csv" class="btn btn-primary" role="button" aria-label="Download Full Data CSV">📥 Download Full Data (CSV)</a>
+<a href="../data/targets/'''
         + target_lower
-        + r'''/status_summary.csv" class="btn btn-outline-secondary" role="button">📥 Download Status Summary (CSV)</a>
+        + r'''/status_summary.csv" class="btn btn-outline-secondary" role="button" aria-label="Download Status Summary CSV">📥 Download Status Summary (CSV)</a>
 
 ---
 
@@ -241,11 +241,11 @@ if not history_found:
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html, get_status_badge, get_update_badge
 
 target_name = "'''
         + target_lower
-        + r""""
+        + r'''"
 summary_path = f"data/targets/{target_name}/status_summary.json"
 
 if os.path.exists(summary_path):
@@ -260,28 +260,31 @@ if os.path.exists(summary_path):
     print("| Trial ID | Sponsor | Update | Status | Conditions | Phases | Start | End | Enroll | Last Updated |")
     print("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
     for item in summary:
-        update_color = "🟢" if item.get('monitor_status') == "No Change" else "🔴"
-        status = item.get('status', 'N/A')
-        status_map = {
-            'RECRUITING': 'success',
-            'ACTIVE_NOT_RECRUITING': 'info',
-            'COMPLETED': 'secondary',
-            'NOT_YET_RECRUITING': 'warning',
-            'SUSPENDED': 'danger',
-            'TERMINATED': 'danger',
-            'WITHDRAWN': 'danger'
-        }
-        badge_class = status_map.get(status, 'light text-dark')
-        status_badge = f'<span class="badge bg-{badge_class}">{status}</span>'
-        conditions = item.get('conditions', 'N/A')
-        if len(conditions) > 30:
-            conditions = conditions[:30] + "..."
-        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {item.get('sponsor', 'N/A')} | {update_color} {item.get('monitor_status')} | {status_badge} | {conditions} | {item.get('phases', 'N/A')} | {item.get('study_start', 'N/A')} | {item.get('study_end', 'N/A')} | {item.get('enrollment', 'N/A')} | {item.get('last_updated', 'N/A')} |")
+        update_badge = get_update_badge(item.get('monitor_status'))
+        status_badge = get_status_badge(item.get('status', 'N/A'))
+
+        # Escape external data for XSS prevention
+        trial_id = escape_html(item['id'])
+        sponsor = escape_html(item.get('sponsor', 'N/A'))
+
+        # Truncate raw string before escaping to avoid breaking HTML entities
+        conditions_raw = str(item.get('conditions', 'N/A'))
+        if len(conditions_raw) > 30:
+            conditions_raw = conditions_raw[:30] + "..."
+        conditions = escape_html(conditions_raw)
+
+        phases = escape_html(item.get('phases', 'N/A'))
+        start_date = escape_html(item.get('study_start', 'N/A'))
+        end_date = escape_html(item.get('study_end', 'N/A'))
+        enrollment = escape_html(item.get('enrollment', 'N/A'))
+        last_updated = escape_html(item.get('last_updated', 'N/A'))
+
+        print(f"| [{trial_id}](https://clinicaltrials.gov/study/{trial_id}) | {sponsor} | {update_badge} | {status_badge} | {conditions} | {phases} | {start_date} | {end_date} | {enrollment} | {last_updated} |")
     print('</div>')
 else:
     print(f"No monitoring data available yet for {target_name} at {os.path.abspath(summary_path)}. Run the data collection script first.")
 ```
-"""
+'''
     )
 
     with open(qmd_path, "w", encoding="utf-8") as f:
