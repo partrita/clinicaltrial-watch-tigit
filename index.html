@@ -108,10 +108,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">TIGIT</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./targets/ige.html">
- <span class="dropdown-text">IgE</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="./targets/b7-h3.html">
  <span class="dropdown-text">B7-H3</span></a>
   </li>  
@@ -189,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 <td>🔴 23</td>
 </tr>
 <tr class="odd">
-<td><a href="./targets/ige.html">IgE</a></td>
+<td><a href="targets/ige.qmd">IgE</a></td>
 <td>그냥 테스트용</td>
 <td>1002</td>
 <td>🔴 1</td>
@@ -280,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/partrita\.github\.io\/clinicaltrial-watch\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
