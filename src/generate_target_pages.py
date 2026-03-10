@@ -69,7 +69,7 @@ def generate_target_qmd(
 import pandas as pd
 import plotly.express as px
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 target_name = "'''
         + target_lower
@@ -145,7 +145,7 @@ if os.path.exists(csv_path):
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 target_name = "'''
         + target_lower
@@ -161,8 +161,8 @@ if os.path.exists(target_h_file):
         history = []
     
     for record in reversed(history[-10:]):
-        print(f"**Date:** {record['timestamp']}")
-        print(f"\n{record['event']}\n")
+        print(f"**Date:** {escape_html(record['timestamp'])}")
+        print(f"\n{escape_html(record['event'])}\n")
         print("***")
 else:
     print(f"No target-level milestones recorded yet for {target_name}.")
@@ -175,11 +175,11 @@ else:
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 target_name = "'''
         + target_lower
-        + r""""
+        + r'''"
 summary_path = f"data/targets/{target_name}/status_summary.json"
 
 # Get trial IDs for this target
@@ -207,13 +207,13 @@ for trial_id in target_trials:
         if real_changes:
             if not history_found:
                 history_found = True
-            print(f"#### {trial_id}")
+            print(f"#### {escape_html(trial_id)}")
             for record in reversed(real_changes[-5:]):
-                print(f"**{record['timestamp']}**")
+                print(f"**{escape_html(record['timestamp'])}**")
                 for line in record['diff'].splitlines():
                     line = line.strip()
                     if line:
-                        print(f"- {line}")
+                        print(f"- {escape_html(line)}")
                 print("")
                 print("***")
 
@@ -225,10 +225,10 @@ if not history_found:
 
 ---
 
-<a href="../data/targets/"""
+<a href="../data/targets/'''
         + target_lower
-        + r"""/all_trials_raw.csv" class="btn btn-primary" role="button">📥 Download Full Data (CSV)</a>
-<a href="../data/targets/"""
+        + r'''/all_trials_raw.csv" class="btn btn-primary" role="button">📥 Download Full Data (CSV)</a>
+<a href="../data/targets/'''
         + target_lower
         + r'''/status_summary.csv" class="btn btn-outline-secondary" role="button">📥 Download Status Summary (CSV)</a>
 
@@ -241,11 +241,11 @@ if not history_found:
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html, get_status_badge, get_update_badge
 
 target_name = "'''
         + target_lower
-        + r""""
+        + r'''"
 summary_path = f"data/targets/{target_name}/status_summary.json"
 
 if os.path.exists(summary_path):
@@ -260,31 +260,25 @@ if os.path.exists(summary_path):
     print("| Trial ID | Sponsor | Update | Status | Conditions | Phases | Start | End | Enroll | Last Updated |")
     print("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
     for item in summary:
-        update_color = "🟢" if item.get('monitor_status') == "No Change" else "🔴"
-        status = item.get('status', 'N/A')
-        status_map = {
-            'RECRUITING': 'success',
-            'ACTIVE_NOT_RECRUITING': 'info',
-            'COMPLETED': 'secondary',
-            'NOT_YET_RECRUITING': 'warning',
-            'SUSPENDED': 'danger',
-            'TERMINATED': 'danger',
-            'WITHDRAWN': 'danger'
-        }
-        badge_class = status_map.get(status, 'light text-dark')
-        status_badge = f'<span class="badge bg-{badge_class}">{status}</span>'
+        update_badge = get_update_badge(item.get('monitor_status'))
+        status_badge = get_status_badge(item.get('status', 'N/A'))
+
         sponsor = item.get('sponsor', 'N/A')
         if len(sponsor) > 30:
             sponsor = sponsor[:30] + "..."
+        sponsor = escape_html(sponsor)
+
         conditions = item.get('conditions', 'N/A')
         if len(conditions) > 30:
             conditions = conditions[:30] + "..."
-        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {sponsor} | {update_color} {item.get('monitor_status')} | {status_badge} | {conditions} | {item.get('phases', 'N/A')} | {item.get('study_start', 'N/A')} | {item.get('study_end', 'N/A')} | {item.get('enrollment', 'N/A')} | {item.get('last_updated', 'N/A')} |")
+        conditions = escape_html(conditions)
+
+        print(f"| [{escape_html(item['id'])}](https://clinicaltrials.gov/study/{escape_html(item['id'])}) | {sponsor} | {update_badge} | {status_badge} | {conditions} | {escape_html(item.get('phases', 'N/A'))} | {escape_html(item.get('study_start', 'N/A'))} | {escape_html(item.get('study_end', 'N/A'))} | {escape_html(item.get('enrollment', 'N/A'))} | {escape_html(item.get('last_updated', 'N/A'))} |")
     print('</div>')
 else:
     print(f"No monitoring data available yet for {target_name} at {os.path.abspath(summary_path)}. Run the data collection script first.")
 ```
-"""
+'''
     )
 
     with open(qmd_path, "w", encoding="utf-8") as f:
@@ -310,7 +304,7 @@ title: "Clinical Trial Watch"
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 summary_path = "data/targets_summary.json"
 
@@ -326,9 +320,10 @@ if os.path.exists(summary_path):
     print("| --- | --- | --- | --- |")
     for target in targets:
         name = target['name']
-        link = f"targets/{name.lower()}.qmd"
+        safe_name = sanitize_id(name)
+        link = f"targets/{safe_name.lower()}.qmd"
         changed_badge = f"🔴 {target['changed_count']}" if target['changed_count'] > 0 else "🟢 0"
-        print(f"| [{name}]({link}) | {target.get('description', '')} | {target['trial_count']} | {changed_badge} |")
+        print(f"| [{escape_html(name)}]({link}) | {escape_html(target.get('description', ''))} | {target['trial_count']} | {changed_badge} |")
 else:
     print("No summary data available yet. Showing targets from configuration:")
     print("")
@@ -341,8 +336,9 @@ else:
             config = yaml.safe_load(f) or {}
             for target in config.get('targets', []):
                 name = target['name']
+                safe_name = sanitize_id(name)
                 desc = target.get('description', f"{name} 타겟 임상시험 모니터링")
-                print(f"| [{name}](targets/{name.lower()}.qmd) | {desc} |")
+                print(f"| [{escape_html(name)}](targets/{safe_name.lower()}.qmd) | {escape_html(desc)} |")
     except Exception as e:
         print(f"Error loading targets: {e}")
 ```
