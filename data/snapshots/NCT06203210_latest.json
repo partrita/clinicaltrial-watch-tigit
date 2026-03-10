@@ -49,9 +49,9 @@
         "date": "2024-01-12",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-02-05",
+      "lastUpdateSubmitDate": "2026-02-27",
       "lastUpdatePostDateStruct": {
-        "date": "2026-02-09",
+        "date": "2026-03-02",
         "type": "ACTUAL"
       }
     },
@@ -1221,7 +1221,7 @@
           }
         },
         {
-          "facility": "Hospital Beneficăncia Portuguesa de Săo Paulo",
+          "facility": "Hospital Benefică Ncia Portuguesa de Să O Paulo",
           "status": "RECRUITING",
           "city": "São Paulo",
           "zip": "01321-001",
@@ -1850,7 +1850,7 @@
           }
         },
         {
-          "facility": "Centre Hospitalier Intercommunal de Crăteil",
+          "facility": "Centre Hospitalier Intercommunal de Cră Teil",
           "status": "RECRUITING",
           "city": "Créteil",
           "zip": "94010",
@@ -1912,7 +1912,7 @@
           }
         },
         {
-          "facility": "Assistance Publique-Hăpitaux de Marseille",
+          "facility": "Assistance Publique-Hă\"Pitaux de Marseille",
           "status": "RECRUITING",
           "city": "Marseille",
           "zip": "13005",
@@ -1963,7 +1963,7 @@
           }
         },
         {
-          "facility": "Ch de Mulhouse - Hăpital Emile Muller",
+          "facility": "Ch de Mulhouse - Hă\"Pital Emile Muller",
           "status": "RECRUITING",
           "city": "Mulhouse",
           "zip": "68100",
@@ -2025,7 +2025,7 @@
           }
         },
         {
-          "facility": "Chu Nantes - Hăpital Guillaume Et Renă Laănnec",
+          "facility": "Chu Nantes - Hă\"Pital Guillaume Et Renă Laă<Nnec",
           "status": "NOT_YET_RECRUITING",
           "city": "Saint-Herblain",
           "zip": "44805",
@@ -2059,7 +2059,7 @@
           }
         },
         {
-          "facility": "Hăpital Foch",
+          "facility": "Hă\"Pital Foch",
           "status": "NOT_YET_RECRUITING",
           "city": "Suresnes",
           "zip": "92151",
@@ -2722,7 +2722,7 @@
           }
         },
         {
-          "facility": "Azienda Ospedaliera Universitaria- Universită Degli Studi Della Campania Âluigi Vanvitelliâ",
+          "facility": "Azienda Ospedaliera Universitaria- Universită Degli Studi Della Campania Â Luigi Vanvitelliâ",
           "status": "RECRUITING",
           "city": "Napoli",
           "zip": "80131",
@@ -2825,7 +2825,7 @@
         },
         {
           "facility": "National Cancer Center Hospital",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Chūōku",
           "zip": "104-0045",
           "country": "Japan",
@@ -3184,7 +3184,7 @@
           }
         },
         {
-          "facility": "Centro Hospitalar E Universitărio de Coimbra E.P.E.",
+          "facility": "Centro Hospitalar E Universită Rio de Coimbra E.P.E.",
           "status": "NOT_YET_RECRUITING",
           "city": "Coimbra",
           "zip": "3040",
@@ -3201,7 +3201,7 @@
           }
         },
         {
-          "facility": "Hospital Da Senhora Da Oliveira Guimarăes",
+          "facility": "Hospital Da Senhora Da Oliveira Guimară Es",
           "status": "RECRUITING",
           "city": "Guimarães",
           "zip": "4835-044",
@@ -4149,7 +4149,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-13"
+      "versionHolder": "2026-03-09"
     },
     "conditionBrowseModule": {
       "meshes": [

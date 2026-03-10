@@ -52,9 +52,9 @@
         "date": "2021-02-03",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-12-09",
+      "lastUpdateSubmitDate": "2026-03-06",
       "lastUpdatePostDateStruct": {
-        "date": "2025-12-15",
+        "date": "2026-03-09",
         "type": "ACTUAL"
       }
     },
@@ -263,59 +263,36 @@
       ],
       "locations": [
         {
-          "facility": "Hope and Healing Cancer Service",
-          "city": "Hinsdale",
-          "state": "Illinois",
-          "zip": "60521",
+          "facility": "John B. Amos Cancer Center",
+          "city": "Columbus",
+          "state": "Georgia",
+          "zip": "31904",
           "country": "United States",
           "geoPoint": {
-            "lat": 41.80086,
-            "lon": -87.93701
+            "lat": 32.46098,
+            "lon": -84.98771
           }
         },
         {
-          "facility": "General hospital of Athens, chest diseases Sotiria",
-          "city": "Athens",
-          "country": "Greece",
+          "facility": "Lumi Cancer Institute",
+          "city": "Kingwood",
+          "state": "Texas",
+          "zip": "77339",
+          "country": "United States",
           "geoPoint": {
-            "lat": 37.98376,
-            "lon": 23.72784
+            "lat": 30.05691,
+            "lon": -95.18349
           }
         },
         {
-          "facility": "University General Hospital \"Attikon\"",
-          "city": "Chaïdári",
-          "country": "Greece",
+          "facility": "Oncology and Hematology Associates of Southwest Virginia, Inc.",
+          "city": "Blacksburg",
+          "state": "Virginia",
+          "zip": "24014",
+          "country": "United States",
           "geoPoint": {
-            "lat": 38.01135,
-            "lon": 23.66597
-          }
-        },
-        {
-          "facility": "General Oncology Hospital of Kifissia \" Agioi Anargyroi\"",
-          "city": "Kifissia",
-          "country": "Greece",
-          "geoPoint": {
-            "lat": 38.07438,
-            "lon": 23.81106
-          }
-        },
-        {
-          "facility": "General Hospital of Patra Agios Andreas",
-          "city": "Pátrai",
-          "country": "Greece",
-          "geoPoint": {
-            "lat": 38.2462,
-            "lon": 21.73508
-          }
-        },
-        {
-          "facility": "Hong Kong Integrated Oncology Centre",
-          "city": "Hong Kong",
-          "country": "Hong Kong",
-          "geoPoint": {
-            "lat": 22.27832,
-            "lon": 114.17469
+            "lat": 37.22957,
+            "lon": -80.41394
           }
         },
         {
@@ -329,24 +306,6 @@
         },
         {
           "facility": "Humanity and Health Clinical Trial Centre",
-          "city": "Hong Kong",
-          "country": "Hong Kong",
-          "geoPoint": {
-            "lat": 22.27832,
-            "lon": 114.17469
-          }
-        },
-        {
-          "facility": "Princess Margaret Hospital",
-          "city": "Hong Kong",
-          "country": "Hong Kong",
-          "geoPoint": {
-            "lat": 22.27832,
-            "lon": 114.17469
-          }
-        },
-        {
-          "facility": "Queen Mary Hospital",
           "city": "Hong Kong",
           "country": "Hong Kong",
           "geoPoint": {
@@ -427,15 +386,6 @@
           }
         },
         {
-          "facility": "Mount Miriam Cancer Hospital",
-          "city": "Pulau Pinang",
-          "country": "Malaysia",
-          "geoPoint": {
-            "lat": 3.55,
-            "lon": 102.56667
-          }
-        },
-        {
           "facility": "Institut Kanser Negara",
           "city": "Putrajaya",
           "country": "Malaysia",
@@ -445,48 +395,12 @@
           }
         },
         {
-          "facility": "Health Pharma Professional Research",
-          "city": "Benito Juárez",
-          "country": "Mexico",
-          "geoPoint": {
-            "lat": 19.3727,
-            "lon": -99.1564
-          }
-        },
-        {
-          "facility": "Hospital Civil Fray Antonio Alcalde",
-          "city": "Guadalajara",
-          "country": "Mexico",
-          "geoPoint": {
-            "lat": 20.67738,
-            "lon": -103.34749
-          }
-        },
-        {
-          "facility": "Chong Hua Hospital",
-          "city": "Cebu",
-          "country": "Philippines",
-          "geoPoint": {
-            "lat": 16.75187,
-            "lon": 121.5961
-          }
-        },
-        {
-          "facility": "Metro Davao Medical and Research Centre",
+          "facility": "Metro Davao Medical And Research Center Inc.",
           "city": "Davao City",
           "country": "Philippines",
           "geoPoint": {
             "lat": 7.07306,
             "lon": 125.61278
-          }
-        },
-        {
-          "facility": "Makati Medical Centre",
-          "city": "Manila",
-          "country": "Philippines",
-          "geoPoint": {
-            "lat": 14.6042,
-            "lon": 120.9822
           }
         },
         {
@@ -499,12 +413,12 @@
           }
         },
         {
-          "facility": "St. Luke Medical Centre Quezon City",
-          "city": "Quezon City",
+          "facility": "St Luke's Medical Center",
+          "city": "Manila",
           "country": "Philippines",
           "geoPoint": {
-            "lat": 14.6488,
-            "lon": 121.0509
+            "lat": 14.6042,
+            "lon": 120.9822
           }
         },
         {
@@ -526,33 +440,6 @@
           }
         },
         {
-          "facility": "The Medical Oncology Centre of Rosebank",
-          "city": "Johannesburg",
-          "country": "South Africa",
-          "geoPoint": {
-            "lat": -26.20227,
-            "lon": 28.04363
-          }
-        },
-        {
-          "facility": "Wits Clinical Research CMJAH Clinical Trial Site",
-          "city": "Johannesburg",
-          "country": "South Africa",
-          "geoPoint": {
-            "lat": -26.20227,
-            "lon": 28.04363
-          }
-        },
-        {
-          "facility": "Port Elizabeth Oncology Centre-Cancercare",
-          "city": "Port Elizabeth",
-          "country": "South Africa",
-          "geoPoint": {
-            "lat": -33.96109,
-            "lon": 25.61494
-          }
-        },
-        {
           "facility": "University of Pretoria Medical Oncology",
           "city": "Pretoria",
           "country": "South Africa",
@@ -571,48 +458,12 @@
           }
         },
         {
-          "facility": "Dong-A University Hospital",
-          "city": "Busan",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 35.10168,
-            "lon": 129.03004
-          }
-        },
-        {
-          "facility": "Kosin University Gospel Hospital",
-          "city": "Busan",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 35.10168,
-            "lon": 129.03004
-          }
-        },
-        {
-          "facility": "Keimyung University Dongsan Hospital",
+          "facility": "Keimyung University",
           "city": "Daegu",
           "country": "South Korea",
           "geoPoint": {
             "lat": 35.87028,
             "lon": 128.59111
-          }
-        },
-        {
-          "facility": "Gachon University Gil Medical Center",
-          "city": "Incheon",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 37.45646,
-            "lon": 126.70515
-          }
-        },
-        {
-          "facility": "Inha University Hospital",
-          "city": "Incheon",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 37.45646,
-            "lon": 126.70515
           }
         },
         {
@@ -625,57 +476,12 @@
           }
         },
         {
-          "facility": "Jeonbuk National University Hospital",
-          "city": "Jeonju",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 35.82194,
-            "lon": 127.14889
-          }
-        },
-        {
           "facility": "Gyeongsang National University Hospital",
           "city": "Jinju",
           "country": "South Korea",
           "geoPoint": {
             "lat": 35.19278,
             "lon": 128.08472
-          }
-        },
-        {
-          "facility": "Cha University Bundang Medical Center",
-          "city": "Seongnam",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 35.54127,
-            "lon": 127.39683
-          }
-        },
-        {
-          "facility": "Asan Medical Center",
-          "city": "Seoul",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 37.566,
-            "lon": 126.9784
-          }
-        },
-        {
-          "facility": "Gangnam Severance Hospital Yonsei University Health System",
-          "city": "Seoul",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 37.566,
-            "lon": 126.9784
-          }
-        },
-        {
-          "facility": "Kangbuk Samsung Hospital",
-          "city": "Seoul",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 37.566,
-            "lon": 126.9784
           }
         },
         {
@@ -706,15 +512,6 @@
           }
         },
         {
-          "facility": "Ajou University Hospital.",
-          "city": "Suwon",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 37.29111,
-            "lon": 127.00889
-          }
-        },
-        {
           "facility": "The Catholic University of Korea St. Vincent Hospital",
           "city": "Suwon",
           "country": "South Korea",
@@ -724,57 +521,12 @@
           }
         },
         {
-          "facility": "Pusan National University Yangsan Hospital",
-          "city": "Yangsan",
-          "country": "South Korea",
-          "geoPoint": {
-            "lat": 35.34199,
-            "lon": 129.03358
-          }
-        },
-        {
-          "facility": "Chang Gung Medical Foundation Kaohsiung",
-          "city": "Kaohsiung City",
-          "country": "Taiwan",
-          "geoPoint": {
-            "lat": 22.61626,
-            "lon": 120.31333
-          }
-        },
-        {
-          "facility": "Kaohsiung Medical University Chung-Ho Memorial Hospital",
-          "city": "Kaohsiung City",
-          "country": "Taiwan",
-          "geoPoint": {
-            "lat": 22.61626,
-            "lon": 120.31333
-          }
-        },
-        {
           "facility": "China Medical University Hospital",
           "city": "Taichung",
           "country": "Taiwan",
           "geoPoint": {
             "lat": 24.1469,
             "lon": 120.6839
-          }
-        },
-        {
-          "facility": "Chung Shan Medical University Hospital",
-          "city": "Taichung",
-          "country": "Taiwan",
-          "geoPoint": {
-            "lat": 24.1469,
-            "lon": 120.6839
-          }
-        },
-        {
-          "facility": "Taipei Medical University Hospital",
-          "city": "Taipei",
-          "country": "Taiwan",
-          "geoPoint": {
-            "lat": 25.05306,
-            "lon": 121.52639
           }
         },
         {
@@ -913,15 +665,6 @@
           }
         },
         {
-          "facility": "Naresuan University Hospital",
-          "city": "Phitsanulok",
-          "country": "Thailand",
-          "geoPoint": {
-            "lat": 16.82481,
-            "lon": 100.25858
-          }
-        },
-        {
           "facility": "Songkhlanagarind Hospital",
           "city": "Songkhla",
           "country": "Thailand",
@@ -940,25 +683,7 @@
           }
         },
         {
-          "facility": "Udon Thani Hospital",
-          "city": "Udon Thani",
-          "country": "Thailand",
-          "geoPoint": {
-            "lat": 17.41567,
-            "lon": 102.78589
-          }
-        },
-        {
           "facility": "Adana City Hospital",
-          "city": "Adana",
-          "country": "Turkey (Türkiye)",
-          "geoPoint": {
-            "lat": 36.98615,
-            "lon": 35.32531
-          }
-        },
-        {
-          "facility": "Ankara City Hospital",
           "city": "Adana",
           "country": "Turkey (Türkiye)",
           "geoPoint": {
@@ -985,15 +710,6 @@
           }
         },
         {
-          "facility": "Gazi University Medical Faculty",
-          "city": "Çankaya",
-          "country": "Turkey (Türkiye)",
-          "geoPoint": {
-            "lat": 39.9179,
-            "lon": 32.86268
-          }
-        },
-        {
           "facility": "Trakya University Medical Faculty",
           "city": "Edirne",
           "country": "Turkey (Türkiye)",
@@ -1012,24 +728,6 @@
           }
         },
         {
-          "facility": "Goztepe Prof. Dr. Suleyman Yalcin City Hospital",
-          "city": "Istanbul",
-          "country": "Turkey (Türkiye)",
-          "geoPoint": {
-            "lat": 41.01384,
-            "lon": 28.94966
-          }
-        },
-        {
-          "facility": "Medipol University Medical Facility",
-          "city": "Istanbul",
-          "country": "Turkey (Türkiye)",
-          "geoPoint": {
-            "lat": 41.01384,
-            "lon": 28.94966
-          }
-        },
-        {
           "facility": "Medipol University Medical Faculty",
           "city": "Istanbul",
           "country": "Turkey (Türkiye)",
@@ -1039,39 +737,21 @@
           }
         },
         {
+          "facility": "Goztepe Prof. Dr. Suleyman Yalcin City Hospital",
+          "city": "Kocaeli",
+          "country": "Turkey (Türkiye)",
+          "geoPoint": {
+            "lat": 39.62497,
+            "lon": 27.51145
+          }
+        },
+        {
           "facility": "Kocaeli Universitesi Tip Fakultesi",
           "city": "Kocaeli",
           "country": "Turkey (Türkiye)",
           "geoPoint": {
             "lat": 39.62497,
             "lon": 27.51145
-          }
-        },
-        {
-          "facility": "Kocaeli Universitiesi Tip Fakultesi",
-          "city": "Kocaeli",
-          "country": "Turkey (Türkiye)",
-          "geoPoint": {
-            "lat": 39.62497,
-            "lon": 27.51145
-          }
-        },
-        {
-          "facility": "Dicle University, Medical faculty",
-          "city": "Sur",
-          "country": "Turkey (Türkiye)",
-          "geoPoint": {
-            "lat": 37.91351,
-            "lon": 40.22859
-          }
-        },
-        {
-          "facility": "103 Military Hospital",
-          "city": "Hanoi",
-          "country": "Vietnam",
-          "geoPoint": {
-            "lat": 21.0245,
-            "lon": 105.84117
           }
         },
         {
@@ -1115,14 +795,16 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-03-06",
+      "versionHolder": "2026-03-09",
       "removedCountries": [
         "Bangladesh",
         "Belarus",
         "Brazil",
         "Egypt",
         "France",
+        "Greece",
         "India",
+        "Mexico",
         "Peru",
         "Russia",
         "Serbia",

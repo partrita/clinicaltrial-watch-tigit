@@ -30,7 +30,7 @@
       "officialTitle": "A Phase 1b/2 Open-Label Clinical Study to Evaluate the Safety and Efficacy of MK-6070 and Ifinatamab Deruxtecan (I-DXd) in Participants With Relapsed/Refractory Extensive-Stage Small Cell Lung Cancer"
     },
     "statusModule": {
-      "statusVerifiedDate": "2026-02",
+      "statusVerifiedDate": "2026-03",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -44,7 +44,7 @@
         "type": "ESTIMATED"
       },
       "completionDateStruct": {
-        "date": "2030-02-14",
+        "date": "2030-01-17",
         "type": "ESTIMATED"
       },
       "studyFirstSubmitDate": "2025-01-13",
@@ -53,9 +53,9 @@
         "date": "2025-01-17",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-02-06",
+      "lastUpdateSubmitDate": "2026-03-04",
       "lastUpdatePostDateStruct": {
-        "date": "2026-02-10",
+        "date": "2026-03-06",
         "type": "ACTUAL"
       }
     },
@@ -97,14 +97,14 @@
       "designInfo": {
         "allocation": "RANDOMIZED",
         "interventionModel": "PARALLEL",
-        "interventionModelDescription": "Part 1 consists of four arms (gocatamig and I-DXd at different dosing intervals). Participants will be randomized to one of the four arms using an interactive response technology (IRT) system. Part 2 consist of three arms (gocatamig monotherapy in participants in Japan, gocatamig monotherapy in participants in China, and gocatamig at different dosing intervals). Part 3 consists of a single arm (gocatamig and durvalumab).",
+        "interventionModelDescription": "Part 1 consists of four arms (gocatamig and I-DXd at different dosing intervals). Participants will be randomized to one of the four arms using an interactive response technology (IRT) system. Part 2 consists of four arms (gocatamig monotherapy in participants in Japan, gocatamig monotherapy in participants in China, and gocatamig evaluated at different dosing intervals across two additional study arms). Part 3 consists of a single arm (gocatamig and durvalumab).",
         "primaryPurpose": "TREATMENT",
         "maskingInfo": {
           "masking": "NONE"
         }
       },
       "enrollmentInfo": {
-        "count": 242,
+        "count": 262,
         "type": "ESTIMATED"
       }
     },
@@ -177,6 +177,14 @@
             "Biological: Gocatamig",
             "Biological: Durvalumab"
           ]
+        },
+        {
+          "label": "Part 2 Arm 8: Gocatamig (Alternate Presentation)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive an alternate presentation of gocatamig at a determined dose until documented disease progression or discontinuation criteria are met.",
+          "interventionNames": [
+            "Biological: Gocatamig"
+          ]
         }
       ],
       "interventions": [
@@ -191,6 +199,7 @@
             "Part 2 Arm 4: Gocatamig Monotherapy in Japan",
             "Part 2 Arm 5: Gocatamig Monotherapy in China",
             "Part 2 Arm 6: Gocatamig",
+            "Part 2 Arm 8: Gocatamig (Alternate Presentation)",
             "Part 3 Arm 7: Gocatamig and Durvalumab"
           ],
           "otherNames": [
@@ -248,17 +257,17 @@
       ],
       "secondaryOutcomes": [
         {
-          "measure": "Part 1, Part 2 (Arm 5 and Arm 6), and Part 3 (Arm 7): Duration of Response (DOR)",
+          "measure": "Part 1, Part 2 (Arm 5, Arm 6, and Arm 8), and Part 3 (Arm 7): Duration of Response (DOR)",
           "description": "For participants who demonstrate a confirmed Complete Response (CR: disappearance of all target lesions) or Partial Response (PR: at least a 30% decrease in the sum of diameters of target lesions) per RECIST 1.1, DOR is defined as the time from first documented evidence of CR or PR until progressive disease (PD) or death. Per RECIST 1.1, PD is defined as at least a 20% increase in the sum of diameters of target lesions. In addition to the relative increase of 20%, the sum must also demonstrate an absolute increase of at least 5 mm. The appearance of one or more new lesions is also considered PD. DOR as assessed by the investigator will be presented.",
           "timeFrame": "Up to approximately 44 months"
         },
         {
-          "measure": "Part 1, Part 2 (Arm 6), and Part 3 (Arm 7): Progression-Free Survival (PFS)",
+          "measure": "Part 1, Part 2 (Arm 6 and Arm 8), and Part 3 (Arm 7): Progression-Free Survival (PFS)",
           "description": "PFS is defined as the time from randomization to the first documented PD or death due to any cause, whichever occurs first as assessed by RECIST 1.1. PD is defined as ≥20% increase in the sum of diameters of target lesions. In addition to the relative increase of 20%, the sum must also demonstrate an absolute increase of ≥5 mm. The appearance of one or more new lesions is also considered PD. PFS as assessed by the investigator will be presented.",
           "timeFrame": "Up to approximately 44 months"
         },
         {
-          "measure": "Part 2 (Arm 5 and Arm 6) and Part 3 (Arm 7): ORR",
+          "measure": "Part 2 (Arm 5, Arm 6, and Arm 8) and Part 3 (Arm 7): ORR",
           "description": "ORR is defined as the percentage of participants with Complete Response (CR: disappearance of all target lesions) or Partial Response (PR: at least a 30% decrease in the sum of diameters of target lesions) per Response Evaluation Criteria In Solid Tumors Version 1.1 (RECIST 1.1). The percentage of participants who experience CR or PR as assessed by the investigator will be presented.",
           "timeFrame": "Up to approximately 44 months"
         },
@@ -495,7 +504,7 @@
       ]
     },
     "eligibilityModule": {
-      "eligibilityCriteria": "Inclusion Criteria:\n\n* Has histologically or cytologically confirmed SCLC that is extensive stage (defined as Stage IV (T any, N any, M1a/b/c) following at least 1 prior line of systemic therapy that included platinum-based chemotherapy\n* Must be able to provide archival tumor tissue sample or fresh biopsy tissue sample\n* Human immunodeficiency virus (HIV) infected participants must have well controlled HIV on antiretroviral therapy (ART)\n\nExclusion Criteria:\n\n* Pleural effusion, pericardial effusion, or ascites requiring recurrent drainage procedure\n* History of (noninfectious) pneumonitis/interstitial lung disease (ILD) that required steroids or has current pneumonitis/ILD, and or suspected ILD/pneumonitis\n* Has clinically severe pulmonary compromise resulting from intercurrent pulmonary illnesses\n* Active or history of immune deficiency with the exception of HIV-infected participants with well controlled HIV on ART\n* History within 6 months before the first dose of study intervention of coronary/peripheral artery bypass graft and/or any coronary/peripheral angioplasty or clinically significant cardiovascular disease such as myocardial infarction, symptomatic congestive heart failure (CHF) (New York Heart Association \\> class II), and/or uncontrolled cardiac arrhythmia\n* History of arterial thrombosis (eg, stroke or transient ischemic attack) within 6 months before the first dose of study intervention\n* Active clinically significant infection requiring systemic therapy\n* History of allogeneic tissue/solid organ transplant\n* History of leptomeningeal disease\n* Received prior radiotherapy within 2 weeks of start of study intervention, or has radiation-related toxicities, requiring corticosteroids\n* Receiving chronic systemic steroid therapy (in dosing exceeding 10 mg daily of prednisone equivalent) or any other form of chronic immunosuppressive therapy within 7 days prior to the first dose of study intervention\n* Known additional malignancy that is progressing or has required active treatment within the past 3 years\n* Untreated or symptomatic brain metastases\n* Active viral hepatitis, defined as hepatitis A (hepatitis A virus immunoglobulin M \\[IgM\\] positive in the setting of associated signs/symptoms), hepatitis B (hepatitis B virus surface antigen \\[HbsAg\\] positive and/or detectable hepatitis B virus \\[HBV\\] deoxyribonucleic acid \\[DNA\\]), or hepatitis C (hepatitis C virus \\[HCV\\] antibody positive and detectable HCV ribonucleic acid). Participants with HBV with undetectable viral load after treatment are eligible. Participants with HCV with undetectable virus after treatment are eligible.\n* Part 1 only: Radiation therapy to the lung \\>30 Gy within 6 months before the start of study intervention\n* Part 1 only: Abdominal radiation within 4 weeks before start of study intervention\n* Part 1 only: Anticancer hormonal treatment (except luteinizing hormone-releasing hormone \\[LHRH\\]) within 2 weeks before start of study intervention\n* Part 1 only: Systemic anticancer therapy (except antibody-based anticancer therapy) or investigational agents within 3 weeks or 5 half-lives, whichever is longer\n* Part 1 only: Antibody-based cancer therapy within 3 weeks before start of study intervention\n* Part 1 only: Chloroquine/hydroxychloroquine within 2 weeks before start of study intervention\n* Part 1 only: Clinically significant corneal disease\n* Part 1 only: Has other uncontrolled or significant protocol-specified cardiovascular disease",
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Has histologically or cytologically confirmed SCLC that is extensive stage (defined as Stage IV (T any, N any, M1a/b/c) following at least 1 prior line of systemic therapy that included platinum-based chemotherapy\n* Must be able to provide archival tumor tissue sample or fresh biopsy tissue sample\n* Human immunodeficiency virus (HIV) infected participants must have well controlled HIV on antiretroviral therapy (ART)\n\nExclusion Criteria:\n\n* Pleural effusion, pericardial effusion, or ascites requiring recurrent drainage procedure\n* History of interstitial lung disease (ILD)/pneumonitis irrespective of steroid use or has current or suspected pneumonitis/ILD that cannot be ruled out by imaging at screening\n* Has clinically severe pulmonary compromise resulting from intercurrent pulmonary illnesses\n* Active or history of immune deficiency with the exception of HIV-infected participants with well controlled HIV on ART\n* History within 6 months before the first dose of study intervention of coronary/peripheral artery bypass graft and/or any coronary/peripheral angioplasty or clinically significant cardiovascular disease such as myocardial infarction, symptomatic congestive heart failure (CHF) (New York Heart Association \\> class II), and/or uncontrolled cardiac arrhythmia\n* History of arterial thrombosis (eg, stroke or transient ischemic attack) within 6 months before the first dose of study intervention\n* Active clinically significant infection requiring systemic therapy\n* History of allogeneic tissue/solid organ transplant\n* History of leptomeningeal disease\n* Received prior radiotherapy within 2 weeks of start of study intervention, or has radiation-related toxicities, requiring corticosteroids\n* Receiving chronic systemic steroid therapy (in dosing exceeding 10 mg daily of prednisone equivalent) or any other form of chronic immunosuppressive therapy within 7 days prior to the first dose of study intervention\n* Known additional malignancy that is progressing or has required active treatment within the past 3 years\n* Untreated or symptomatic brain metastases\n* Active viral hepatitis, defined as hepatitis A (hepatitis A virus immunoglobulin M \\[IgM\\] positive in the setting of associated signs/symptoms), hepatitis B (hepatitis B virus surface antigen \\[HbsAg\\] positive and/or detectable hepatitis B virus \\[HBV\\] deoxyribonucleic acid \\[DNA\\]), or hepatitis C (hepatitis C virus \\[HCV\\] antibody positive and detectable HCV ribonucleic acid). Participants with HBV with undetectable viral load after treatment are eligible. Participants with HCV with undetectable virus after treatment are eligible.\n* Part 1 only: Radiation therapy to the lung \\>30 Gy within 6 months before the start of study intervention\n* Part 1 only: Abdominal radiation within 4 weeks before start of study intervention\n* Part 1 only: Anticancer hormonal treatment (except luteinizing hormone-releasing hormone \\[LHRH\\]) within 2 weeks before start of study intervention\n* Part 1 only: Systemic anticancer therapy (except antibody-based anticancer therapy) or investigational agents within 3 weeks or 5 half-lives, whichever is longer\n* Part 1 only: Antibody-based cancer therapy within 3 weeks before start of study intervention\n* Part 1 only: Chloroquine/hydroxychloroquine within 2 weeks before start of study intervention\n* Part 1 only: Clinically significant corneal disease\n* Part 1 only: Has other uncontrolled or significant protocol-specified cardiovascular disease",
       "healthyVolunteers": false,
       "sex": "ALL",
       "minimumAge": "18 Years",
@@ -589,7 +598,7 @@
             {
               "name": "Study Coordinator",
               "role": "CONTACT",
-              "phone": "888-577-8839"
+              "phone": "617-632-6049"
             }
           ],
           "geoPoint": {
@@ -674,7 +683,7 @@
           }
         },
         {
-          "facility": "MEDICAL COLLEGE OF WISCONSIN ( Site 1112)",
+          "facility": "Medical College of Wisconsin ( Site 1112)",
           "status": "RECRUITING",
           "city": "Milwaukee",
           "state": "Wisconsin",
@@ -690,6 +699,44 @@
           "geoPoint": {
             "lat": 43.0389,
             "lon": -87.90647
+          }
+        },
+        {
+          "facility": "Hospital Universitario Austral ( Site 2204)",
+          "status": "RECRUITING",
+          "city": "Pilar",
+          "state": "Buenos Aires",
+          "zip": "B1629WWA",
+          "country": "Argentina",
+          "contacts": [
+            {
+              "name": "Study Coordinator",
+              "role": "CONTACT",
+              "phone": "02304482000"
+            }
+          ],
+          "geoPoint": {
+            "lat": -34.45867,
+            "lon": -58.91398
+          }
+        },
+        {
+          "facility": "Sanatorio Parque ( Site 2203)",
+          "status": "RECRUITING",
+          "city": "Rosario",
+          "state": "Santa Fe Province",
+          "zip": "S2000DSV",
+          "country": "Argentina",
+          "contacts": [
+            {
+              "name": "Study Coordinator",
+              "role": "CONTACT",
+              "phone": "+5493416955611"
+            }
+          ],
+          "geoPoint": {
+            "lat": -32.94682,
+            "lon": -60.63932
           }
         },
         {
@@ -719,6 +766,25 @@
               "name": "Study Coordinator",
               "role": "CONTACT",
               "phone": "+56224205098"
+            }
+          ],
+          "geoPoint": {
+            "lat": -33.45694,
+            "lon": -70.64827
+          }
+        },
+        {
+          "facility": "Pontificia Universidad Catolica de Chile ( Site 2102)",
+          "status": "RECRUITING",
+          "city": "Santiago",
+          "state": "Region M. de Santiago",
+          "zip": "8330032",
+          "country": "Chile",
+          "contacts": [
+            {
+              "name": "Study Coordinator",
+              "role": "CONTACT",
+              "phone": "+5690233407"
             }
           ],
           "geoPoint": {
@@ -997,6 +1063,21 @@
           ]
         },
         {
+          "facility": "Severance Hospital, Yonsei University Health System ( Site 5102)",
+          "status": "RECRUITING",
+          "city": "Seodaemun-gu",
+          "state": "Seoul",
+          "zip": "03722",
+          "country": "South Korea",
+          "contacts": [
+            {
+              "name": "Study Coordinator",
+              "role": "CONTACT",
+              "phone": "+82215991004"
+            }
+          ]
+        },
+        {
           "facility": "Seoul National University Hospital ( Site 5100)",
           "status": "RECRUITING",
           "city": "Seoul",
@@ -1240,6 +1321,10 @@
         {
           "label": "Merck Clinical Trials Information",
           "url": "http://www.merckclinicaltrials.com"
+        },
+        {
+          "label": "Plain Language Summary",
+          "url": "https://www.trialsummaries.com/Study/StudyDetails?id=26493&tenant=MT_MSD_9011"
         }
       ]
     },
@@ -1251,7 +1336,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-02-13"
+      "versionHolder": "2026-03-09"
     },
     "conditionBrowseModule": {
       "meshes": [
