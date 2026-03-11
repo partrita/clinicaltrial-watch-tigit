@@ -32,6 +32,11 @@ def compare_snapshots(
     old_protocol = old_data.get("protocolSection", {})
     new_protocol = new_data.get("protocolSection", {})
 
+    # Performance optimization: if the data is identical, return None immediately
+    # This avoids expensive DeepDiff calculations for unchanged trials (the common case)
+    if old_protocol == new_protocol:
+        return None
+
     if HAS_DEEPDIFF:
         diff = DeepDiff(old_protocol, new_protocol, ignore_order=True)
         return diff
