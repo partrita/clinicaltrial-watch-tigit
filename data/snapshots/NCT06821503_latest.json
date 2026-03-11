@@ -13,14 +13,14 @@
       "officialTitle": "An Open Label Phase Ib/II Clinical Study Evaluating the Safety, Tolerability, and Preliminary Efficacy of LM-108 ± Penpulimab Plus Chemotherapy in Patients With Advanced Solid Tumors - Cohort C"
     },
     "statusModule": {
-      "statusVerifiedDate": "2024-12",
-      "overallStatus": "NOT_YET_RECRUITING",
+      "statusVerifiedDate": "2025-12",
+      "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
       },
       "startDateStruct": {
-        "date": "2025-02",
-        "type": "ESTIMATED"
+        "date": "2025-04-11",
+        "type": "ACTUAL"
       },
       "primaryCompletionDateStruct": {
         "date": "2027-12",
@@ -36,9 +36,9 @@
         "date": "2025-02-12",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-02-13",
+      "lastUpdateSubmitDate": "2026-03-06",
       "lastUpdatePostDateStruct": {
-        "date": "2025-02-17",
+        "date": "2026-03-10",
         "type": "ACTUAL"
       }
     },
@@ -176,7 +176,7 @@
       ]
     },
     "eligibilityModule": {
-      "eligibilityCriteria": "Inclusion Criteria:\n\n* Age 18 or above.\n* The Eastern Cooperative Oncology Group (ECOG) physical fitness status score is 0-1 points.\n* There should be at least one measurable lesion.\n* All acute toxic reactions caused by previous anti-tumor treatments or surgical procedures have been relieved to grade 0-1 or to the levels specified in the inclusion/exclusion criteria.\n* Have sufficient organ and bone marrow function\n* Expected survival period ≥ 12 weeks\n* Infertility is defined as women who have reached menopause or have undergone bilateral oophorectomy with medical records. Male participants and female participants with fertility must agree to use one medically approved contraceptive measure during the trial period and within 6 months after the last administration of the trial drug or within 9 months after the last administration of chemotherapy drug (oxaliplatin) (whichever is later). The serum pregnancy test must be negative within 3 days before starting the study medication and not during lactation.\n* With my consent and signed informed consent form.\n* Patients diagnosed with Pancreatic ductal adenocarcinoma (PDAC) by pathology have evidence of advanced stage or metastasis that cannot be surgically removed.\n* Have not received systematic treatment for unresectable locally advanced or metastatic PDAC in the past\n\nExclusion Criteria:\n\n* Known High-frequency microsatellite instability (MSI-H)/deficient mismatch repair (dMMR).\n* There is uncontrolled or symptomatic active central nervous system metastasis, which can manifest as clinical symptoms, cerebral edema, spinal cord compression, cancerous meningitis, leptomeningeal disease, and/or progressive growth.\n* Within 14 days prior to enrollment, there were still uncontrollable pleural effusion and ascites despite treatment such as puncture and drainage; Pericardial effusion accompanied by clinical symptoms or moderate or above.\n* Within 14 days prior to enrollment, there is an unresolved biliary obstruction, or the clinical status has remained stable for less than 14 days after biliary stent implantation.\n* Participants' weight has decreased by more than 20% or their body mass index (BMI) is less than 18 kg/m ² within the first 2 months of enrollment.\n* Received the following treatments or medications before enrollment:\n\n  1. Prior to enrollment, received treatment with C-C chemokine Receptor 8 (CCR8) antibodies, cytotoxic T-lymphocyte associated protein-4 (CTLA-4) antibodies, or other drugs that act on Tregs.\n  2. Having undergone major surgery within 28 days prior to enrollment.\n  3. Used immunosuppressive drugs within 14 days prior to enrollment.\n  4. Vaccination with attenuated live vaccine should be administered within 28 days prior to enrollment or planned within the study period and 60 days after completion of study drug treatment.\n  5. Received anti-tumor therapy (including chemotherapy, radiotherapy, immunotherapy, endocrine therapy, targeted therapy, biological therapy, or tumor embolization) within 28 days before enrollment.\n* Diagnosed with any other malignant tumor within the 5 years prior to enrollment.\n* There are any active, known or suspected autoimmune diseases present.\n* Within the first 3 months of enrollment, there have been significant clinical bleeding symptoms or clear bleeding tendencies; Arterial/venous thrombotic events that occurred within the first 6 months of enrollment.\n* Significant vascular disease occurred within the first 6 months of enrollment.\n* Severe, unhealed, or cracked wounds, as well as active ulcers or untreated fractures.\n* There is peripheral neuropathy of grade\\>1 present.\n* Have experienced gastrointestinal perforation and/or gastrointestinal fistula within the 6 months prior to enrollment;\n* Within the 6 months prior to enrollment, there have been clinical signs or symptoms of intestinal obstruction and/or gastrointestinal obstruction.\n* Existence of interstitial lung disease, non infectious pneumonia, or uncontrolled systemic diseases.\n* Known to be allergic to the investigational drug or any of its excipients; Or have experienced severe allergic reactions to other monoclonal antibodies.\n* Human immunodeficiency virus (HIV) infection or known acquired immunodeficiency syndrome (AIDS), untreated active hepatitis or co infection with hepatitis B and hepatitis C.\n* Clinical symptoms or diseases of the heart that have not been well controlled:\n* Systemic use of antibiotics for at least 7 days within the 28 days prior to enrollment, or unexplained fever\\>38.5 °C during screening/before first administration.\n* Known history of allogeneic organ transplantation or allogeneic hematopoietic stem cell transplantation.\n* Have participated in any other drug clinical studies within 4 weeks prior to enrollment, or have not had more than 5 half lives since the last study medication.\n* Known history of abuse or drug use of psychotropic substances.\n* There are other serious physical or mental illnesses or laboratory abnormalities that may increase the risk of participating in the study, or interfere with the study results, as well as patients who the researcher deems unsuitable to participate in this study.",
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Age 18 or above.\n* The Eastern Cooperative Oncology Group (ECOG) physical fitness status score is 0-1 points.\n* There should be at least one measurable lesion.\n* All acute toxic reactions caused by previous anti-tumor treatments or surgical procedures have been relieved to grade 0-1 or to the levels specified in the inclusion/exclusion criteria.\n* Have sufficient organ and bone marrow function\n* Expected survival period ≥ 12 weeks\n* Infertility is defined as women who have reached menopause or have undergone bilateral oophorectomy with medical records. Male participants and female participants with fertility must agree to use one medically approved contraceptive measure during the trial period and within 6 months after the last administration of the trial drug or within 9 months after the last administration of chemotherapy drug (oxaliplatin) (whichever is later). The serum pregnancy test must be negative within 3 days before starting the study medication and not during lactation.\n* With my consent and signed informed consent form.\n* Patients with a pathological diagnosis of pancreatic cancer (ductal adenocarcinoma or adenocarcinoma) have evidence of advanced or metastatic disease that is not resectable.\n* Previously received no systemic treatment for unresectable locally advanced or metastatic pancreatic cancer.\n\nExclusion Criteria:\n\n* Known High-frequency microsatellite instability (MSI-H)/deficient mismatch repair (dMMR).\n* There is uncontrolled or symptomatic active central nervous system metastasis, which can manifest as clinical symptoms, cerebral edema, spinal cord compression, cancerous meningitis, leptomeningeal disease, and/or progressive growth.\n* Within 14 days prior to enrollment, there were still uncontrollable pleural effusion and ascites despite treatment such as puncture and drainage; Pericardial effusion accompanied by clinical symptoms or moderate or above.\n* Within 14 days prior to enrollment, there is an unresolved biliary obstruction, or the clinical status has remained stable for less than 14 days after biliary stent implantation.\n* Participants' weight has decreased by more than 20% or their body mass index (BMI) is less than 18 kg/m ² within the first 2 months of enrollment.\n* Received the following treatments or medications before enrollment:\n\n  1. Prior to enrollment, received treatment with C-C chemokine Receptor 8 (CCR8) antibodies, cytotoxic T-lymphocyte associated protein-4 (CTLA-4) antibodies, or other drugs that act on Tregs.\n  2. Having undergone major surgery within 28 days prior to enrollment.\n  3. Used immunosuppressive drugs within 14 days prior to enrollment.\n  4. Vaccination with attenuated live vaccine should be administered within 28 days prior to enrollment or planned within the study period and 60 days after completion of study drug treatment.\n  5. Received anti-tumor therapy (including chemotherapy, radiotherapy, immunotherapy, endocrine therapy, targeted therapy, biological therapy, or tumor embolization) within 28 days before enrollment.\n* Diagnosed with any other malignant tumor within the 5 years prior to enrollment.\n* There are any active, known or suspected autoimmune diseases present.\n* Within the first 3 months of enrollment, there have been significant clinical bleeding symptoms or clear bleeding tendencies; Arterial/venous thrombotic events that occurred within the first 6 months of enrollment.\n* Significant vascular disease occurred within the first 6 months of enrollment.\n* Severe, unhealed, or cracked wounds, as well as active ulcers or untreated fractures.\n* There is peripheral neuropathy of grade\\>1 present.\n* Have experienced gastrointestinal perforation and/or gastrointestinal fistula within the 6 months prior to enrollment;\n* Within the 6 months prior to enrollment, there have been clinical signs or symptoms of intestinal obstruction and/or gastrointestinal obstruction.\n* Existence of interstitial lung disease, non infectious pneumonia, or uncontrolled systemic diseases.\n* Known to be allergic to the investigational drug or any of its excipients; Or have experienced severe allergic reactions to other monoclonal antibodies.\n* Human immunodeficiency virus (HIV) infection or known acquired immunodeficiency syndrome (AIDS), untreated active hepatitis or co infection with hepatitis B and hepatitis C.\n* Clinical symptoms or diseases of the heart that have not been well controlled:\n* Systemic use of antibiotics for at least 7 days within the 28 days prior to enrollment, or unexplained fever\\>38.5 °C during screening/before first administration.\n* Known history of allogeneic organ transplantation or allogeneic hematopoietic stem cell transplantation.\n* Have participated in any other drug clinical studies within 4 weeks prior to enrollment, or have not had more than 5 half lives since the last study medication.\n* Known history of abuse or drug use of psychotropic substances.\n* There are other serious physical or mental illnesses or laboratory abnormalities that may increase the risk of participating in the study, or interfere with the study results, as well as patients who the researcher deems unsuitable to participate in this study.",
       "healthyVolunteers": false,
       "sex": "ALL",
       "minimumAge": "18 Years",
@@ -203,6 +203,7 @@
       "locations": [
         {
           "facility": "Peking Union Medical College Hospital",
+          "status": "NOT_YET_RECRUITING",
           "city": "Beijing",
           "state": "Beijing Municipality",
           "zip": "100005",
@@ -222,6 +223,7 @@
         },
         {
           "facility": "Cancer Hospital Chinese Academy of Medical Science",
+          "status": "NOT_YET_RECRUITING",
           "city": "Beijing",
           "state": "Beijing Municipality",
           "zip": "100021",
@@ -241,6 +243,7 @@
         },
         {
           "facility": "Beijing Cancer Hospital",
+          "status": "RECRUITING",
           "city": "Beijing",
           "state": "Beijing Municipality",
           "zip": "100142",
@@ -260,6 +263,7 @@
         },
         {
           "facility": "Chongqing Qeneral Hospital",
+          "status": "NOT_YET_RECRUITING",
           "city": "Chongqing",
           "state": "Chongqing Municipality",
           "zip": "400013",
@@ -279,6 +283,7 @@
         },
         {
           "facility": "Harbin Medical University Cancer Hospital",
+          "status": "NOT_YET_RECRUITING",
           "city": "Harbin",
           "state": "Heilongjiang",
           "zip": "150081",
@@ -298,6 +303,7 @@
         },
         {
           "facility": "The First Affiliated Hospital of Zhengzhou University",
+          "status": "NOT_YET_RECRUITING",
           "city": "Zhengzhou",
           "state": "Henan",
           "zip": "450000",
@@ -323,6 +329,7 @@
         },
         {
           "facility": "Huazhong University of Science and Technology Tongji Medical College of Huazhong University of Science and Technology",
+          "status": "NOT_YET_RECRUITING",
           "city": "Wuhan",
           "state": "Hubei",
           "zip": "430000",
@@ -342,6 +349,7 @@
         },
         {
           "facility": "Jiangsu Cancer Hospital",
+          "status": "NOT_YET_RECRUITING",
           "city": "Nanjing",
           "state": "Jiangsu",
           "zip": "210000",
@@ -361,6 +369,7 @@
         },
         {
           "facility": "Jiangsu Provincial People's Hospital",
+          "status": "NOT_YET_RECRUITING",
           "city": "Nanjing",
           "state": "Jiangsu",
           "zip": "210000",
@@ -380,6 +389,7 @@
         },
         {
           "facility": "The First Affiliated Hospital of Nanchang University",
+          "status": "NOT_YET_RECRUITING",
           "city": "Nanchang",
           "state": "Jiangxi",
           "zip": "330006",
@@ -399,6 +409,7 @@
         },
         {
           "facility": "The First Affiliated Hospital of China Medical University",
+          "status": "NOT_YET_RECRUITING",
           "city": "Shenyang",
           "state": "Liaoning",
           "zip": "110000",
@@ -418,6 +429,7 @@
         },
         {
           "facility": "The Sixth People's Hospital of Shenyang",
+          "status": "NOT_YET_RECRUITING",
           "city": "Shenyang",
           "state": "Liaoning",
           "zip": "110002",
@@ -437,6 +449,7 @@
         },
         {
           "facility": "The First Affiliated Hospital of Xi'an Jiaotong University Medical College",
+          "status": "NOT_YET_RECRUITING",
           "city": "Xi'an",
           "state": "Shaanxi",
           "zip": "710000",
@@ -456,6 +469,7 @@
         },
         {
           "facility": "The First Affiliated Hospital of Naval Medical University",
+          "status": "NOT_YET_RECRUITING",
           "city": "Shanghai",
           "state": "Shanghai Municipality",
           "zip": "200336",
@@ -475,6 +489,7 @@
         },
         {
           "facility": "Tianjin Cancer Hospital Airport Hospital",
+          "status": "NOT_YET_RECRUITING",
           "city": "Tianjin",
           "state": "Tianjin Municipality",
           "zip": "300000",
@@ -494,6 +509,7 @@
         },
         {
           "facility": "Tianjin Medical University Cancer Institute & Hospital",
+          "status": "NOT_YET_RECRUITING",
           "city": "Tianjin",
           "state": "Tianjin Municipality",
           "zip": "300000",
@@ -516,7 +532,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-03-09"
+      "versionHolder": "2026-03-10"
     },
     "interventionBrowseModule": {
       "meshes": [

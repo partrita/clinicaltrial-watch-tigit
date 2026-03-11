@@ -14,7 +14,7 @@
       "acronym": "DOMISOL"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-11",
+      "statusVerifiedDate": "2026-03",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -37,9 +37,9 @@
         "date": "2025-02-11",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-11-14",
+      "lastUpdateSubmitDate": "2026-03-06",
       "lastUpdatePostDateStruct": {
-        "date": "2025-11-18",
+        "date": "2026-03-10",
         "type": "ACTUAL"
       }
     },
@@ -242,6 +242,39 @@
             "lat": -31.98184,
             "lon": 115.8073
           }
+        },
+        {
+          "facility": "Institut Bergonié",
+          "status": "NOT_YET_RECRUITING",
+          "city": "Bordeaux",
+          "zip": "33076",
+          "country": "France",
+          "geoPoint": {
+            "lat": 44.84124,
+            "lon": -0.58046
+          }
+        },
+        {
+          "facility": "Hôpitaux Universitaires de Strasbourg",
+          "status": "RECRUITING",
+          "city": "Strasbourg",
+          "zip": "67200",
+          "country": "France",
+          "geoPoint": {
+            "lat": 48.58392,
+            "lon": 7.74553
+          }
+        },
+        {
+          "facility": "Institut Gustave Roussy",
+          "status": "RECRUITING",
+          "city": "Villejuif",
+          "zip": "94800",
+          "country": "France",
+          "geoPoint": {
+            "lat": 48.7939,
+            "lon": 2.35992
+          }
         }
       ]
     },
@@ -251,7 +284,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-03-09"
+      "versionHolder": "2026-03-10"
     },
     "interventionBrowseModule": {
       "meshes": [
