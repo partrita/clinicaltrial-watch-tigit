@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="./targets/ccr8.html">CCR8</a></td>
 <td>CCR8 타겟 임상시험 모니터링</td>
 <td>34</td>
-<td>🔴 7</td>
+<td>🔴 9</td>
 </tr>
 <tr class="even">
 <td><a href="./targets/tigit.html">TIGIT</a></td>
@@ -185,16 +185,10 @@ ul.task-list li input[type="checkbox"] {
 <td>🔴 23</td>
 </tr>
 <tr class="odd">
-<td><a href="targets/ige.qmd">IgE</a></td>
-<td>그냥 테스트용</td>
-<td>1002</td>
-<td>🔴 1</td>
-</tr>
-<tr class="even">
 <td><a href="./targets/b7-h3.html">B7-H3</a></td>
 <td>B7-H3 타겟 임상시험 모니터링</td>
-<td>117</td>
-<td>🔴 17</td>
+<td>118</td>
+<td>🔴 2</td>
 </tr>
 </tbody>
 </table>
@@ -276,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/partrita\.github\.io\/clinicaltrial-watch\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
