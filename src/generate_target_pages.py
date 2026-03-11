@@ -1,7 +1,7 @@
 import os
 import yaml
 from typing import Any, Dict, List
-from utils import sanitize_id
+from utils import sanitize_id, escape_html
 
 
 def load_trials_yaml(path: str = "trials.yaml") -> List[Dict[str, Any]]:
@@ -145,7 +145,7 @@ if os.path.exists(csv_path):
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 target_name = "'''
         + target_lower
@@ -161,8 +161,8 @@ if os.path.exists(target_h_file):
         history = []
     
     for record in reversed(history[-10:]):
-        print(f"**Date:** {record['timestamp']}")
-        print(f"\n{record['event']}\n")
+        print(f"**Date:** {escape_html(record['timestamp'])}")
+        print(f"\n{escape_html(record['event'])}\n")
         print("***")
 else:
     print(f"No target-level milestones recorded yet for {target_name}.")
@@ -175,7 +175,7 @@ else:
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 target_name = "'''
         + target_lower
@@ -207,13 +207,13 @@ for trial_id in target_trials:
         if real_changes:
             if not history_found:
                 history_found = True
-            print(f"#### {trial_id}")
+            print(f"#### {escape_html(trial_id)}")
             for record in reversed(real_changes[-5:]):
-                print(f"**{record['timestamp']}**")
+                print(f"**{escape_html(record['timestamp'])}**")
                 for line in record['diff'].splitlines():
                     line = line.strip()
                     if line:
-                        print(f"- {line}")
+                        print(f"- {escape_html(line)}")
                 print("")
                 print("***")
 
@@ -241,7 +241,7 @@ if not history_found:
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 target_name = "'''
         + target_lower
@@ -272,14 +272,28 @@ if os.path.exists(summary_path):
             'WITHDRAWN': 'danger'
         }
         badge_class = status_map.get(status, 'light text-dark')
-        status_badge = f'<span class="badge bg-{badge_class}">{status}</span>'
+        # status and badge_class are controlled by our code, but status comes from API
+        status_badge = f'<span class="badge bg-{badge_class}">{escape_html(status)}</span>'
+
         sponsor = item.get('sponsor', 'N/A')
         if len(sponsor) > 30:
             sponsor = sponsor[:30] + "..."
+        sponsor = escape_html(sponsor)
+
         conditions = item.get('conditions', 'N/A')
         if len(conditions) > 30:
             conditions = conditions[:30] + "..."
-        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {sponsor} | {update_color} {item.get('monitor_status')} | {status_badge} | {conditions} | {item.get('phases', 'N/A')} | {item.get('study_start', 'N/A')} | {item.get('study_end', 'N/A')} | {item.get('enrollment', 'N/A')} | {item.get('last_updated', 'N/A')} |")
+        conditions = escape_html(conditions)
+
+        trial_id = escape_html(item.get('id', 'N/A'))
+        phases = escape_html(str(item.get('phases', 'N/A')))
+        study_start = escape_html(str(item.get('study_start', 'N/A')))
+        study_end = escape_html(str(item.get('study_end', 'N/A')))
+        enrollment = escape_html(str(item.get('enrollment', 'N/A')))
+        last_updated = escape_html(str(item.get('last_updated', 'N/A')))
+        monitor_status = escape_html(str(item.get('monitor_status', 'N/A')))
+
+        print(f"| [{trial_id}](https://clinicaltrials.gov/study/{trial_id}) | {sponsor} | {update_color} {monitor_status} | {status_badge} | {conditions} | {phases} | {study_start} | {study_end} | {enrollment} | {last_updated} |")
     print('</div>')
 else:
     print(f"No monitoring data available yet for {target_name} at {os.path.abspath(summary_path)}. Run the data collection script first.")
@@ -310,7 +324,7 @@ title: "Clinical Trial Watch"
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html
 
 summary_path = "data/targets_summary.json"
 
@@ -325,10 +339,12 @@ if os.path.exists(summary_path):
     print("| Target | Description | Trials | Changed |")
     print("| --- | --- | --- | --- |")
     for target in targets:
-        name = target['name']
-        link = f"targets/{name.lower()}.qmd"
+        raw_name = target['name']
+        name = escape_html(raw_name)
+        description = escape_html(target.get('description', ''))
+        link = f"targets/{sanitize_id(raw_name).lower()}.qmd"
         changed_badge = f"🔴 {target['changed_count']}" if target['changed_count'] > 0 else "🟢 0"
-        print(f"| [{name}]({link}) | {target.get('description', '')} | {target['trial_count']} | {changed_badge} |")
+        print(f"| [{name}]({link}) | {description} | {target['trial_count']} | {changed_badge} |")
 else:
     print("No summary data available yet. Showing targets from configuration:")
     print("")
@@ -340,9 +356,10 @@ else:
         with open("trials.yaml", "r", encoding="utf-8") as f:
             config = yaml.safe_load(f) or {}
             for target in config.get('targets', []):
-                name = target['name']
-                desc = target.get('description', f"{name} 타겟 임상시험 모니터링")
-                print(f"| [{name}](targets/{name.lower()}.qmd) | {desc} |")
+                raw_name = target['name']
+                name = escape_html(raw_name)
+                desc = escape_html(target.get('description', f"{raw_name} 타겟 임상시험 모니터링"))
+                print(f"| [{name}](targets/{sanitize_id(raw_name).lower()}.qmd) | {desc} |")
     except Exception as e:
         print(f"Error loading targets: {e}")
 ```
