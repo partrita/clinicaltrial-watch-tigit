@@ -241,7 +241,7 @@ if not history_found:
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html, get_status_badge, get_update_badge
 
 target_name = "'''
         + target_lower
@@ -260,26 +260,26 @@ if os.path.exists(summary_path):
     print("| Trial ID | Sponsor | Update | Status | Conditions | Phases | Start | End | Enroll | Last Updated |")
     print("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
     for item in summary:
-        update_color = "🟢" if item.get('monitor_status') == "No Change" else "🔴"
-        status = item.get('status', 'N/A')
-        status_map = {
-            'RECRUITING': 'success',
-            'ACTIVE_NOT_RECRUITING': 'info',
-            'COMPLETED': 'secondary',
-            'NOT_YET_RECRUITING': 'warning',
-            'SUSPENDED': 'danger',
-            'TERMINATED': 'danger',
-            'WITHDRAWN': 'danger'
-        }
-        badge_class = status_map.get(status, 'light text-dark')
-        status_badge = f'<span class="badge bg-{badge_class}">{status}</span>'
+        update_badge = get_update_badge(item.get('monitor_status'))
+        status_badge = get_status_badge(item.get('status'))
+
         sponsor = item.get('sponsor', 'N/A')
-        if len(sponsor) > 30:
+        if sponsor and len(sponsor) > 30:
             sponsor = sponsor[:30] + "..."
+        sponsor = escape_html(sponsor)
+
         conditions = item.get('conditions', 'N/A')
-        if len(conditions) > 30:
+        if conditions and len(conditions) > 30:
             conditions = conditions[:30] + "..."
-        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {sponsor} | {update_color} {item.get('monitor_status')} | {status_badge} | {conditions} | {item.get('phases', 'N/A')} | {item.get('study_start', 'N/A')} | {item.get('study_end', 'N/A')} | {item.get('enrollment', 'N/A')} | {item.get('last_updated', 'N/A')} |")
+        conditions = escape_html(conditions)
+
+        phases = escape_html(item.get('phases', 'N/A'))
+        start = escape_html(item.get('study_start', 'N/A'))
+        end = escape_html(item.get('study_end', 'N/A'))
+        enroll = escape_html(item.get('enrollment', 'N/A'))
+        updated = escape_html(item.get('last_updated', 'N/A'))
+
+        print(f"| [{item['id']}](https://clinicaltrials.gov/study/{item['id']}) | {sponsor} | {update_badge} | {status_badge} | {conditions} | {phases} | {start} | {end} | {enroll} | {updated} |")
     print('</div>')
 else:
     print(f"No monitoring data available yet for {target_name} at {os.path.abspath(summary_path)}. Run the data collection script first.")
@@ -310,7 +310,7 @@ title: "Clinical Trial Watch"
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id
+from src.utils import sanitize_id, escape_html, get_changed_count_badge
 
 summary_path = "data/targets_summary.json"
 
@@ -327,8 +327,8 @@ if os.path.exists(summary_path):
     for target in targets:
         name = target['name']
         link = f"targets/{name.lower()}.qmd"
-        changed_badge = f"🔴 {target['changed_count']}" if target['changed_count'] > 0 else "🟢 0"
-        print(f"| [{name}]({link}) | {target.get('description', '')} | {target['trial_count']} | {changed_badge} |")
+        changed_badge = get_changed_count_badge(target['changed_count'])
+        print(f"| [{escape_html(name)}]({link}) | {escape_html(target.get('description', ''))} | {target['trial_count']} | {changed_badge} |")
 else:
     print("No summary data available yet. Showing targets from configuration:")
     print("")
@@ -342,7 +342,7 @@ else:
             for target in config.get('targets', []):
                 name = target['name']
                 desc = target.get('description', f"{name} 타겟 임상시험 모니터링")
-                print(f"| [{name}](targets/{name.lower()}.qmd) | {desc} |")
+                print(f"| [{escape_html(name)}](targets/{name.lower()}.qmd) | {escape_html(desc)} |")
     except Exception as e:
         print(f"Error loading targets: {e}")
 ```
