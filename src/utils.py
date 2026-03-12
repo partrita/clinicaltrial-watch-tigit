@@ -1,4 +1,6 @@
 import re
+import html
+from typing import Any
 
 
 def sanitize_id(identifier: str) -> str:
@@ -14,3 +16,19 @@ def sanitize_id(identifier: str) -> str:
     # Remove leading/trailing underscores and prevent empty string
     sanitized = sanitized.strip("_")
     return sanitized if sanitized else "unknown"
+
+
+def escape_html(text: Any) -> str:
+    """
+    Escape HTML characters to prevent XSS.
+    Also escapes the pipe character '|' to prevent breaking Markdown tables.
+    Handles None and numeric inputs by converting them to strings.
+    """
+    if text is None:
+        return ""
+
+    # Convert to string and escape standard HTML characters
+    escaped = html.escape(str(text), quote=True)
+
+    # Additionally escape the pipe character for Markdown table safety
+    return escaped.replace("|", "&#124;")
