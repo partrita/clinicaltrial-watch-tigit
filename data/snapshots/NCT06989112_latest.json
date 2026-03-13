@@ -31,7 +31,7 @@
       "acronym": "DE-01"
     },
     "statusModule": {
-      "statusVerifiedDate": "2026-02",
+      "statusVerifiedDate": "2026-03",
       "overallStatus": "RECRUITING",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
@@ -54,9 +54,9 @@
         "date": "2025-05-25",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2026-02-09",
+      "lastUpdateSubmitDate": "2026-03-11",
       "lastUpdatePostDateStruct": {
-        "date": "2026-02-10",
+        "date": "2026-03-12",
         "type": "ACTUAL"
       }
     },
@@ -370,6 +370,18 @@
         {
           "facility": "Research Site",
           "status": "NOT_YET_RECRUITING",
+          "city": "Irvine",
+          "state": "California",
+          "zip": "92618",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 33.66946,
+            "lon": -117.82311
+          }
+        },
+        {
+          "facility": "Research Site",
+          "status": "NOT_YET_RECRUITING",
           "city": "La Jolla",
           "state": "California",
           "zip": "92037",
@@ -393,7 +405,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "SUSPENDED",
           "city": "San Francisco",
           "state": "California",
           "zip": "94143",
@@ -525,7 +537,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Evanston",
           "state": "Illinois",
           "zip": "60201",
@@ -549,7 +561,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Baltimore",
           "state": "Maryland",
           "zip": "21201",
@@ -561,7 +573,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Boston",
           "state": "Massachusetts",
           "zip": "02111",
@@ -669,7 +681,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "St Louis",
           "state": "Missouri",
           "zip": "63141",
@@ -873,7 +885,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Pittsburgh",
           "state": "Pennsylvania",
           "zip": "15224",
@@ -945,7 +957,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Houston",
           "state": "Texas",
           "zip": "77030",
@@ -1124,7 +1136,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Brussels",
           "zip": "1200",
           "country": "Belgium",
@@ -1190,7 +1202,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Barretos",
           "zip": "14784-057",
           "country": "Brazil",
@@ -1278,7 +1290,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "São Paulo",
           "zip": "01246-000",
           "country": "Brazil",
@@ -1531,7 +1543,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Fuzhou",
           "zip": "350014",
           "country": "China",
@@ -1926,7 +1938,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "WITHDRAWN",
           "city": "Besançon",
           "zip": "25030",
           "country": "France",
@@ -1948,7 +1960,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Caen",
           "zip": "14076",
           "country": "France",
@@ -1970,7 +1982,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Lyon",
           "zip": "69373",
           "country": "France",
@@ -1981,7 +1993,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Montpellier",
           "zip": "34298",
           "country": "France",
@@ -2003,7 +2015,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Paris",
           "zip": "75015",
           "country": "France",
@@ -2157,7 +2169,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "WITHDRAWN",
           "city": "Marburg",
           "zip": "35043",
           "country": "Germany",
@@ -2245,7 +2257,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Milan",
           "zip": "20141",
           "country": "Italy",
@@ -2289,7 +2301,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Napoli",
           "zip": "80131",
           "country": "Italy",
@@ -2344,7 +2356,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Turin",
           "zip": "10128",
           "country": "Italy",
@@ -2649,7 +2661,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Siedlce",
           "zip": "08-110",
           "country": "Poland",
@@ -2781,7 +2793,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "L'Hospitalet de Llobregat",
           "zip": "08908",
           "country": "Spain",
@@ -2858,7 +2870,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Linköping",
           "zip": "581 85",
           "country": "Sweden",
@@ -2880,7 +2892,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Stockholm",
           "zip": "17164",
           "country": "Sweden",
@@ -2891,7 +2903,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Uppsala",
           "zip": "751 85",
           "country": "Sweden",
@@ -2913,7 +2925,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Liestal",
           "zip": "CH- 4410",
           "country": "Switzerland",
@@ -2924,7 +2936,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Sankt Gallen",
           "zip": "9007",
           "country": "Switzerland",
@@ -3034,7 +3046,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "Leeds",
           "zip": "LS9 7TF",
           "country": "United Kingdom",
@@ -3045,7 +3057,7 @@
         },
         {
           "facility": "Research Site",
-          "status": "NOT_YET_RECRUITING",
+          "status": "RECRUITING",
           "city": "London",
           "zip": "EC1A 7BE",
           "country": "United Kingdom",
@@ -3103,7 +3115,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-03-11"
+      "versionHolder": "2026-03-12"
     },
     "conditionBrowseModule": {
       "meshes": [
