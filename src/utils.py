@@ -1,4 +1,22 @@
 import re
+import html
+from typing import Any
+
+
+def escape_html(text: Any) -> str:
+    """
+    Escape HTML special characters in a string to prevent XSS.
+    Also escapes the pipe character '|' to prevent breaking Markdown tables.
+    """
+    if text is None:
+        return ""
+    if not isinstance(text, str):
+        text = str(text)
+
+    # Standard HTML escaping
+    escaped = html.escape(text)
+    # Escape pipe character for Markdown tables
+    return escaped.replace("|", "&#124;")
 
 
 def sanitize_id(identifier: str) -> str:
