@@ -485,8 +485,8 @@
             }
           ],
           "geoPoint": {
-            "lat": 32.99472,
-            "lon": 112.53278
+            "lat": 33.00524,
+            "lon": 112.54659
           }
         },
         {
@@ -926,7 +926,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-03-12"
+      "versionHolder": "2026-03-13"
     },
     "interventionBrowseModule": {
       "meshes": [

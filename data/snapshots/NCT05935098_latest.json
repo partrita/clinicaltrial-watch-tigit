@@ -17,15 +17,16 @@
         }
       ],
       "organization": {
-        "fullName": "BeiGene",
+        "fullName": "BeOne Medicines",
         "class": "INDUSTRY"
       },
       "briefTitle": "BGB-A3055 Alone and in Combination With Tislelizumab in Participants With Solid Tumors",
       "officialTitle": "A Phase 1a/1b Study Investigating the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics, and Preliminary Antitumor Activity of BGB-A3055, Alone and in Combination With Tislelizumab in Patients With Selected Advanced or Metastatic Solid Tumors"
     },
     "statusModule": {
-      "statusVerifiedDate": "2025-06",
-      "overallStatus": "ACTIVE_NOT_RECRUITING",
+      "statusVerifiedDate": "2026-03",
+      "overallStatus": "TERMINATED",
+      "whyStopped": "This decision was conducted by the sponsor and not driven by safety concerns as no new safety signals have been observed in the CCR8 program.",
       "expandedAccessInfo": {
         "hasExpandedAccess": false
       },
@@ -34,12 +35,12 @@
         "type": "ACTUAL"
       },
       "primaryCompletionDateStruct": {
-        "date": "2027-03-31",
-        "type": "ESTIMATED"
+        "date": "2026-01-27",
+        "type": "ACTUAL"
       },
       "completionDateStruct": {
-        "date": "2027-03-31",
-        "type": "ESTIMATED"
+        "date": "2026-01-27",
+        "type": "ACTUAL"
       },
       "studyFirstSubmitDate": "2023-06-26",
       "studyFirstSubmitQcDate": "2023-07-05",
@@ -47,9 +48,9 @@
         "date": "2023-07-07",
         "type": "ACTUAL"
       },
-      "lastUpdateSubmitDate": "2025-06-23",
+      "lastUpdateSubmitDate": "2026-03-11",
       "lastUpdatePostDateStruct": {
-        "date": "2025-06-25",
+        "date": "2026-03-13",
         "type": "ACTUAL"
       }
     },
@@ -103,8 +104,8 @@
         }
       },
       "enrollmentInfo": {
-        "count": 263,
-        "type": "ESTIMATED"
+        "count": 99,
+        "type": "ACTUAL"
       }
     },
     "armsInterventionsModule": {
@@ -548,7 +549,7 @@
   },
   "derivedSection": {
     "miscInfoModule": {
-      "versionHolder": "2026-03-12"
+      "versionHolder": "2026-03-13"
     },
     "conditionBrowseModule": {
       "meshes": [
