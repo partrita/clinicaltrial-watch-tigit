@@ -1,5 +1,6 @@
 import re
 import html
+from typing import Any
 from functools import lru_cache
 
 
@@ -58,12 +59,29 @@ def get_status_badge(status: str) -> str:
     )
 
 
-def get_update_badge(monitor_status: str) -> str:
+def get_update_badge(monitor_status: str, last_change_date: str = None) -> str:
     """Return a badge/emoji for monitoring status with ARIA label and title."""
     safe_status = escape_html(monitor_status)
     if monitor_status == "Changed":
-        return f'<span aria-label="Changes detected" title="Changes detected since last crawl">🔴 {safe_status}</span>'
-    return f'<span aria-label="No recent changes" title="No changes detected since last crawl">🟢 {safe_status}</span>'
+        title = "Changes detected since last crawl"
+        if last_change_date:
+            title += f" (Last change: {escape_html(last_change_date)})"
+        return f'<span aria-label="Changes detected" title="{title}">🔴 {safe_status}</span>'
+
+    title = "No changes detected since last crawl"
+    if last_change_date:
+        title += f" (Last change: {escape_html(last_change_date)})"
+    return f'<span aria-label="No recent changes" title="{title}">🟢 {safe_status}</span>'
+
+
+def format_enrollment(count: Any) -> str:
+    """Format enrollment count with commas."""
+    if count is None or count == "N/A":
+        return "N/A"
+    try:
+        return f"{int(count):,}"
+    except (ValueError, TypeError):
+        return str(count)
 
 
 def get_changed_count_badge(count: int) -> str:
