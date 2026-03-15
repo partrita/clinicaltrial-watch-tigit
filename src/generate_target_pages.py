@@ -1,6 +1,6 @@
 import os
 import yaml
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 from utils import sanitize_id
 
 
@@ -401,9 +401,10 @@ execute:
     print(f"Updated: {quarto_path}")
 
 
-def main() -> None:
-    # Load targets
-    targets = load_trials_yaml()
+def main(targets: Optional[List[Dict[str, Any]]] = None) -> None:
+    # Load targets if not provided
+    if targets is None:
+        targets = load_trials_yaml()
 
     if not targets:
         print("No targets found in trials.yaml")
