@@ -1,1 +1,13 @@
 /* css styles */
+
+/* Highlight table rows on hover for better scannability */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: background-color 0.15s ease-in-out;
+}
+
+/* Ensure our custom span tooltips look like they are interactive */
+span[title] {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}

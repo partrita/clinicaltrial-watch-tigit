@@ -1,7 +1,7 @@
 import os
 import yaml
 from typing import Any, Dict, List
-from utils import sanitize_id
+from utils import sanitize_id, format_enrollment
 
 
 def load_trials_yaml(path: str = "trials.yaml") -> List[Dict[str, Any]]:
@@ -89,6 +89,15 @@ if os.path.exists(csv_path):
         fig1 = px.bar(status_counts, x='Status', y='Count', 
                      title='Study Status Distribution', 
                      color='Status',
+                     color_discrete_map={
+                         'RECRUITING': '#198754',
+                         'COMPLETED': '#6c757d',
+                         'ACTIVE_NOT_RECRUITING': '#0dcaf0',
+                         'NOT_YET_RECRUITING': '#ffc107',
+                         'TERMINATED': '#dc3545',
+                         'SUSPENDED': '#dc3545',
+                         'WITHDRAWN': '#dc3545'
+                     },
                      template='plotly_white')
         fig1.update_layout(showlegend=False)
         fig1.show()
@@ -145,7 +154,7 @@ if os.path.exists(csv_path):
 #| output: asis
 import json
 import os
-from src.utils import sanitize_id, escape_html
+from src.utils import sanitize_id, get_status_badge, get_update_badge, escape_html, format_enrollment
 
 target_name = "'''
         + target_lower
@@ -260,21 +269,30 @@ if os.path.exists(summary_path):
     print("| Trial ID | Sponsor | Update | Status | Conditions | Phases | Start | End | Enroll | Last Updated |")
     print("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
     for item in summary:
-        update_badge = get_update_badge(item.get('monitor_status', 'No Change'))
+        update_badge = get_update_badge(
+            item.get('monitor_status', 'No Change'),
+            item.get('last_monitored_change')
+        )
         status_badge = get_status_badge(item.get('status', 'N/A'))
 
         sponsor = item.get('sponsor', 'N/A')
-        if len(sponsor) > 30:
-            sponsor = sponsor[:30] + "..."
         safe_sponsor = escape_html(sponsor)
+        if len(sponsor) > 30:
+            display_sponsor = f'<span title="{safe_sponsor}">{escape_html(sponsor[:30])}...</span>'
+        else:
+            display_sponsor = safe_sponsor
 
         conditions = item.get('conditions', 'N/A')
-        if len(conditions) > 30:
-            conditions = conditions[:30] + "..."
         safe_conditions = escape_html(conditions)
+        if len(conditions) > 30:
+            display_conditions = f'<span title="{safe_conditions}">{escape_html(conditions[:30])}...</span>'
+        else:
+            display_conditions = safe_conditions
 
         trial_id = item['id']
-        print(f"| [{trial_id}](https://clinicaltrials.gov/study/{trial_id}) | {safe_sponsor} | {update_badge} | {status_badge} | {safe_conditions} | {escape_html(item.get('phases', 'N/A'))} | {escape_html(item.get('study_start', 'N/A'))} | {escape_html(item.get('study_end', 'N/A'))} | {escape_html(item.get('enrollment', 'N/A'))} | {escape_html(item.get('last_updated', 'N/A'))} |")
+        enrollment = format_enrollment(item.get('enrollment', 'N/A'))
+
+        print(f"| [{trial_id}](https://clinicaltrials.gov/study/{trial_id}) | {display_sponsor} | {update_badge} | {status_badge} | {display_conditions} | {escape_html(item.get('phases', 'N/A'))} | {escape_html(item.get('study_start', 'N/A'))} | {escape_html(item.get('study_end', 'N/A'))} | {escape_html(enrollment)} | {escape_html(item.get('last_updated', 'N/A'))} |")
     print('</div>')
 else:
     print(f"No monitoring data available yet for {target_name} at {os.path.abspath(summary_path)}. Run the data collection script first.")
