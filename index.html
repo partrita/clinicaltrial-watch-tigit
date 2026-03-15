@@ -176,19 +176,19 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="./targets/ccr8.html">CCR8</a></td>
 <td>CCR8 타겟 임상시험 모니터링</td>
 <td>34</td>
-<td>🔴 10</td>
+<td><span aria-label="10 trials changed" title="10 trials have updates">🔴 10</span></td>
 </tr>
 <tr class="even">
 <td><a href="./targets/tigit.html">TIGIT</a></td>
 <td>TIGIT 타겟 임상시험 모니터링</td>
 <td>133</td>
-<td>🔴 21</td>
+<td><span aria-label="21 trials changed" title="21 trials have updates">🔴 21</span></td>
 </tr>
 <tr class="odd">
 <td><a href="./targets/b7-h3.html">B7-H3</a></td>
 <td>B7-H3 타겟 임상시험 모니터링</td>
 <td>118</td>
-<td>🟢 0</td>
+<td><span aria-label="No trials changed" title="No trials have updates">🟢 0</span></td>
 </tr>
 </tbody>
 </table>
@@ -284,6 +284,13 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
