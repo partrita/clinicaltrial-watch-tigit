@@ -170,33 +170,29 @@ def flatten_dict(
     if result is None:
         result = {}
 
-    is_top_level = not parent_key
+    TOP_LEVEL_SKIP = ("protocolSection", "derivedSection", "annotationSection", "resultsSection")
 
     for k, v in d.items():
-        clean_k = k
-        if is_top_level:
-            if k == "protocolSection": clean_k = "Prot"
-            elif k == "derivedSection": clean_k = "Deriv"
-            elif k == "annotationSection": clean_k = "Annot"
-            elif k == "resultsSection": clean_k = "Res"
+        # Optimization: skip adding top-level section names to keys
+        if not parent_key and k in TOP_LEVEL_SKIP:
+            if isinstance(v, dict):
+                flatten_dict(v, "", sep, result)
+                continue
 
-        if clean_k.endswith("Module"):
-            clean_k = clean_k[:-6]
-        elif clean_k.endswith("Struct"):
+        clean_k = k
+        if clean_k.endswith(("Module", "Struct")):
             clean_k = clean_k[:-6]
 
         new_key = f"{parent_key}{sep}{clean_k}" if parent_key else clean_k
 
-        # Restore aggressive prefix stripping
-        for prefix in ("Prot_", "Deriv_", "Annot_", "Res_"):
-            if new_key.startswith(prefix):
-                new_key = new_key[len(prefix) :]
-
         if isinstance(v, dict):
             flatten_dict(v, new_key, sep, result)
         elif isinstance(v, list):
-            # Restore original behavior: all([]) returns True, so empty list becomes ""
-            if all(isinstance(i, (str, int, float, bool)) for i in v):
+            if not v:
+                result[new_key] = ""
+            elif isinstance(v[0], (str, int, float, bool)) and all(
+                isinstance(i, (str, int, float, bool)) for i in v
+            ):
                 result[new_key] = ", ".join(map(str, v))
             else:
                 result[new_key] = json.dumps(v, ensure_ascii=False)
@@ -486,7 +482,7 @@ def main() -> None:
 
     # Automatically update target pages and _quarto.yml
     print("\nUpdating website pages...")
-    generate_pages()
+    generate_pages(targets)
 
 
 if __name__ == "__main__":
